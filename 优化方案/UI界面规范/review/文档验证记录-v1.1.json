@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "layouts": [
+    {
+      "name": "04-UI规范阅读版.html",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "04-UI规范阅读版.html",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "06-图标速查.html",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "06-图标速查.html",
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "icons": 57,
+  "toolMappings": 11,
+  "acceptanceItems": 51,
+  "pdfPages": 14,
+  "rulesPresent": 22,
+  "errors": [],
+  "sourceSha256": "5c7a2a01aa571b20dad176158ae77cc2df2eb3eee643f05ca186041b4db10fce"
+}

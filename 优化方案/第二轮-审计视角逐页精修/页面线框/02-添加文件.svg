@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img">
+<title>添加文件：逐页精修设计</title>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif}</style>
+<rect x="0" y="0" width="1600" height="1000" rx="0" fill="#f4f6fa"/>
+<text x="40" y="48" xml:space="preserve" font-size="29" fill="#263a53" font-weight="700">02 / 添加文件</text>
+<text x="40" y="84" xml:space="preserve" font-size="16" fill="#6b7b90">静态设计评审 · 保留现有业务流程 · 示例名称、内容及数量均为虚构</text>
+<rect x="1323" y="29" width="233" height="26" rx="4" fill="#edf4ff"/>
+<text x="1332" y="47" xml:space="preserve" font-size="13" fill="#215eb8">V0.2 · 最小改动</text>
+<rect x="40" y="126" width="1520" height="642" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="58" y="163" xml:space="preserve" font-size="22" fill="#263a53" font-weight="700">添加文件</text>
+<rect x="405" y="142" width="175" height="26" rx="4" fill="#edf4ff"/>
+<text x="414" y="160" xml:space="preserve" font-size="13" fill="#215eb8">弹窗暂存选择</text>
+<text x="1365" y="162" xml:space="preserve" font-size="15" fill="#215eb8">任务中心   关闭 ×</text>
+<text x="58" y="207" xml:space="preserve" font-size="17" fill="#6b7b90">勾选即加入已选；取消不改变原工作集；确认后追加资料。</text>
+<path d="M40 226 h1520" stroke="#dce3ed"/>
+<rect x="56" y="244" width="236" height="458" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="74" y="276" xml:space="preserve" font-size="18" fill="#263a53" font-weight="700">资料位置</text>
+<text x="74" y="330" xml:space="preserve" font-size="16" fill="#263a53">▾ 个人空间</text>
+<text x="74" y="378" xml:space="preserve" font-size="16" fill="#263a53">  ▾ 演示项目</text>
+<text x="74" y="426" xml:space="preserve" font-size="16" fill="#215eb8">      采购资料</text>
+<text x="74" y="474" xml:space="preserve" font-size="16" fill="#263a53">▸ 项目空间</text>
+<text x="74" y="522" xml:space="preserve" font-size="16" fill="#263a53">▸ 公共空间</text>
+<text x="325" y="275" xml:space="preserve" font-size="17" fill="#263a53" font-weight="700">演示项目 / 采购资料 · 包含子目录</text>
+<rect x="325" y="298" width="192" height="34" rx="4" fill="white" stroke="#dce3ed"/>
+<text x="337" y="321" xml:space="preserve" font-size="15" fill="#215eb8">选择当前页（5）</text>
+<rect x="534" y="298" width="200" height="34" rx="4" fill="white" stroke="#dce3ed"/>
+<text x="546" y="321" xml:space="preserve" font-size="15" fill="#215eb8">选择所有页（24）</text>
+<rect x="323" y="351" width="815" height="36" rx="0" fill="#eef2f7"/>
+<text x="333" y="375" xml:space="preserve" font-size="14" fill="#6b7b90">选择 / 文件</text>
+<text x="743" y="375" xml:space="preserve" font-size="14" fill="#6b7b90">状态</text>
+<text x="883" y="375" xml:space="preserve" font-size="14" fill="#6b7b90">来源目录</text>
+<text x="333" y="409" xml:space="preserve" font-size="14" fill="#263a53">☑ 采购合同.pdf</text>
+<text x="743" y="409" xml:space="preserve" font-size="14" fill="#263a53">可分析</text>
+<text x="883" y="409" xml:space="preserve" font-size="14" fill="#263a53">采购资料</text>
+<path d="M323 436 h815" stroke="#dce3ed"/>
+<rect x="323" y="436" width="815" height="49" rx="0" fill="#f8fafc"/>
+<text x="333" y="458" xml:space="preserve" font-size="14" fill="#263a53">☑ 补充协议.pdf</text>
+<text x="743" y="458" xml:space="preserve" font-size="14" fill="#263a53">可分析</text>
+<text x="883" y="458" xml:space="preserve" font-size="14" fill="#263a53">采购资料</text>
+<path d="M323 485 h815" stroke="#dce3ed"/>
+<text x="333" y="507" xml:space="preserve" font-size="14" fill="#263a53">□ 旧版合同.pdf</text>
+<text x="743" y="507" xml:space="preserve" font-size="14" fill="#263a53">已排除</text>
+<text x="883" y="507" xml:space="preserve" font-size="14" fill="#263a53">采购资料</text>
+<path d="M323 534 h815" stroke="#dce3ed"/>
+<rect x="323" y="534" width="815" height="49" rx="0" fill="#f8fafc"/>
+<text x="333" y="556" xml:space="preserve" font-size="14" fill="#263a53">☑ 项目说明.docx</text>
+<text x="743" y="556" xml:space="preserve" font-size="14" fill="#263a53">可分析</text>
+<text x="883" y="556" xml:space="preserve" font-size="14" fill="#263a53">采购资料</text>
+<path d="M323 583 h815" stroke="#dce3ed"/>
+<text x="333" y="605" xml:space="preserve" font-size="14" fill="#263a53">☑ 验收记录.pdf</text>
+<text x="743" y="605" xml:space="preserve" font-size="14" fill="#263a53">可分析</text>
+<text x="883" y="605" xml:space="preserve" font-size="14" fill="#263a53">采购资料</text>
+<path d="M323 632 h815" stroke="#dce3ed"/>
+<text x="325" y="673" xml:space="preserve" font-size="14" fill="#6b7b90">共24份   第1/5页    ‹  1  2  3  4  5  ›</text>
+<rect x="1154" y="244" width="390" height="458" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="1172" y="274" xml:space="preserve" font-size="18" fill="#263a53" font-weight="700">已选范围</text>
+<text x="1174" y="325" xml:space="preserve" font-size="17" fill="#263a53">采购资料</text>
+<text x="1174" y="359" xml:space="preserve" font-size="17" fill="#263a53">包含本级和子目录</text>
+<text x="1174" y="393" xml:space="preserve" font-size="17" fill="#263a53">匹配24份，排除1份，纳入23份</text>
+<path d="M1173 430 h350" stroke="#dce3ed"/>
+<text x="1174" y="465" xml:space="preserve" font-size="16" fill="#263a53">已排除：旧版合同.pdf</text>
+<text x="1437" y="502" xml:space="preserve" font-size="15" fill="#215eb8">恢复</text>
+<text x="1174" y="558" xml:space="preserve" font-size="16" fill="#215eb8">查看全部已选 →</text>
+<rect x="1174" y="650" width="100" height="34" rx="4" fill="white" stroke="#dce3ed"/>
+<text x="1186" y="673" xml:space="preserve" font-size="15" fill="#215eb8">取消</text>
+<rect x="1290" y="650" width="232" height="34" rx="4" fill="#215eb8" stroke="#215eb8"/>
+<text x="1302" y="673" xml:space="preserve" font-size="15" fill="white">添加23份文件</text>
+<path d="M40 718 h1520" stroke="#dce3ed"/>
+<text x="58" y="749" xml:space="preserve" font-size="15" fill="#6b7b90">本次纳入23份资料，排除1份；点击“添加23份文件”确认。</text>
+<text x="40" y="818" xml:space="preserve" font-size="17" fill="#263a53" font-weight="700">产品经理批注</text>
+<text x="40" y="852" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">01</text>
+<text x="80" y="852" xml:space="preserve" font-size="16" fill="#6b7b90">去掉原来的“勾选后再添加到已选择”一步；翻页和搜索保留暂存选择。</text>
+<text x="40" y="897" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">02</text>
+<text x="80" y="897" xml:space="preserve" font-size="16" fill="#6b7b90">当前页与所有页是不同动作；文件夹数不能替代文件数。</text>
+<text x="40" y="942" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">03</text>
+<text x="80" y="942" xml:space="preserve" font-size="16" fill="#6b7b90">优先复用现有目录范围载荷；无法表达的全局筛选范围不做虚假全选。</text>
+</svg>

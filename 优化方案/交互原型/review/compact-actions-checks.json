@@ -1,0 +1,112 @@
+{
+  "checks": [
+    "5种宽度、选中与未选中10组：操作栏单行、没有独立排序行、浮层不越屏、没有项目/权限标签或大管理按钮",
+    "实时缩放时范围与筛选移动到更多，不丢值、不重复DOM",
+    "权限仍可在更多查看，只读用简洁锁图标提示",
+    "移动与删除保持确认；取消不改资料；工具区收起后可恢复",
+    "菜单支持键盘进入、Esc返回焦点和点击外部关闭"
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": false
+    },
+    {
+      "width": 1440,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": true
+    },
+    {
+      "width": 1366,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": false
+    },
+    {
+      "width": 1366,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": true
+    },
+    {
+      "width": 1280,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": false
+    },
+    {
+      "width": 1280,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": true
+    },
+    {
+      "width": 1024,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": false
+    },
+    {
+      "width": 1024,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": true
+    },
+    {
+      "width": 390,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": false
+    },
+    {
+      "width": 390,
+      "mode": "narrow",
+      "height": 58,
+      "single": true,
+      "inside": true,
+      "selectionHeight": 0,
+      "overflow": 0,
+      "selected": true
+    }
+  ],
+  "errors": []
+}

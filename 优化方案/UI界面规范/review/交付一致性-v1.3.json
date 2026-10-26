@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-19",
+  "htmlLayouts": [
+    {
+      "width": 1440,
+      "height": 900,
+      "offline": true,
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "offline": true,
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 700,
+      "offline": true,
+      "imagesLoaded": true,
+      "overflow": false
+    }
+  ],
+  "pdf": {
+    "pages": 20,
+    "hasChinese": true,
+    "hasLatestRules": true,
+    "textLength": 14803,
+    "textNormalization": "NFKC"
+  }
+}

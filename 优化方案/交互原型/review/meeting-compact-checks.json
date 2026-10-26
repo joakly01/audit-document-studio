@@ -1,0 +1,35 @@
+{
+  "layouts": [
+    {
+      "w": 1366,
+      "h": 768,
+      "top": 150,
+      "height": 607,
+      "outer": 1366,
+      "scroll": 768,
+      "nav": 46,
+      "controls": 49
+    },
+    {
+      "w": 1024,
+      "h": 480,
+      "top": 148,
+      "height": 323,
+      "outer": 1024,
+      "scroll": 480,
+      "nav": 46,
+      "controls": 49
+    },
+    {
+      "w": 390,
+      "h": 600,
+      "top": 299.390625,
+      "height": 292,
+      "outer": 390,
+      "scroll": 600,
+      "nav": 82.390625,
+      "controls": 128
+    }
+  ],
+  "errors": []
+}

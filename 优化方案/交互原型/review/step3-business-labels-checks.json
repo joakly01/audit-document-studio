@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "tool": "theme",
+      "title": "设置主题归纳提示词",
+      "width": 1366,
+      "height": 768,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "theme",
+      "title": "设置主题归纳提示词",
+      "width": 1024,
+      "height": 480,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "theme",
+      "title": "设置主题归纳提示词",
+      "width": 390,
+      "height": 600,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "timeline",
+      "title": "设置事项提取提示词",
+      "width": 1366,
+      "height": 768,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "timeline",
+      "title": "设置事项提取提示词",
+      "width": 1024,
+      "height": 480,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "timeline",
+      "title": "设置事项提取提示词",
+      "width": 390,
+      "height": 600,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "meeting",
+      "title": "设置会议分析提示词",
+      "width": 1366,
+      "height": 768,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "meeting",
+      "title": "设置会议分析提示词",
+      "width": 1024,
+      "height": 480,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "meeting",
+      "title": "设置会议分析提示词",
+      "width": 390,
+      "height": 600,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "risk",
+      "title": "设置风险分析内容",
+      "width": 1366,
+      "height": 768,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "risk",
+      "title": "设置风险分析内容",
+      "width": 1024,
+      "height": 480,
+      "editorCancelPreservesConfig": true
+    },
+    {
+      "tool": "risk",
+      "title": "设置风险分析内容",
+      "width": 390,
+      "height": 600,
+      "editorCancelPreservesConfig": true
+    }
+  ],
+  "errors": []
+}

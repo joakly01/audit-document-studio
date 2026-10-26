@@ -1,0 +1,23 @@
+{
+  "localLinks": 42,
+  "missingLinks": [],
+  "docxHeadings": 118,
+  "docxTables": 57,
+  "htmlLayouts": [
+    {
+      "width": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1024,
+      "body": 1024
+    },
+    {
+      "width": 390,
+      "body": 390
+    }
+  ],
+  "htmlErrors": [],
+  "applicationDistSha256": "818f81bc7fbf41ea1aba8e25c09fb64bf09123999050c15ed341e88dd1d7c5bd",
+  "applicationUnchanged": true
+}

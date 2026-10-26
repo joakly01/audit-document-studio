@@ -1,0 +1,40 @@
+{
+  "checks": [
+    "字段名称+说明可编辑并保存",
+    "提示词本次应用与个人复用",
+    "完整配置可导出",
+    "word 核心流程与配置",
+    "theme 核心流程与配置",
+    "timeline 核心流程与配置",
+    "risk 核心流程与配置",
+    "meeting 核心流程与配置",
+    "contract 核心流程与配置",
+    "bidding 核心流程与配置",
+    "prepaid 核心流程与配置",
+    "engineering 核心流程与配置",
+    "association 核心流程与配置",
+    "1366/1280/1024主操作可见，390无整页横向溢出"
+  ],
+  "layout": [
+    {
+      "width": 1366,
+      "height": 768,
+      "workTop": 56,
+      "runBottom": 44,
+      "configHeight": 712
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "workTop": 56,
+      "runBottom": 44
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "workTop": 56,
+      "runBottom": 43.04710388183594
+    }
+  ],
+  "errors": []
+}

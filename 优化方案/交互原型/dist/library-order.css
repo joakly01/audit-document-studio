@@ -1,0 +1,7 @@
+.lib-tree-scroll .dir-nav-line[data-order-path]{position:relative;cursor:grab}
+.folder-order-grip{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;width:18px;height:24px;padding:0;border:0;border-radius:4px;background:transparent;color:#718494;cursor:grab;opacity:.45}
+.dir-nav-line:hover .folder-order-grip,.dir-nav-line:focus-within .folder-order-grip,.folder-order-grip:focus-visible{opacity:1}
+.folder-order-grip:focus-visible{outline:2px solid #2475c7;outline-offset:1px}
+.lib-tree-scroll .folder-order-source{opacity:.45;cursor:grabbing}
+.lib-tree-scroll .folder-order-before:before,.lib-tree-scroll .folder-order-after:after{content:'';position:absolute;left:calc(12px + var(--depth,0)*16px);right:8px;height:2px;background:#2475c7;box-shadow:0 0 0 1px #fff;pointer-events:none;z-index:2}
+.lib-tree-scroll .folder-order-before:before{top:0}.lib-tree-scroll .folder-order-after:after{bottom:0}

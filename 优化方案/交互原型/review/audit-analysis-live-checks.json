@@ -1,0 +1,14 @@
+{
+  "url": "http://43.128.232.108",
+  "checks": [
+    "extract: simplified result header",
+    "word: simplified result header",
+    "theme: simplified result header",
+    "meeting: simplified result header",
+    "risk: simplified result header",
+    "meeting business tabs, report readiness and question input",
+    "risk states and embedded viewport",
+    "historical config reload"
+  ],
+  "errors": []
+}

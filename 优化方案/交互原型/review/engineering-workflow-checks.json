@@ -1,0 +1,165 @@
+{
+  "checks": [
+    "两类分析独立配置并同时执行；编辑取消/权重0.99与逐文件缺列校验",
+    "原始请求结构、派生字段、扩展规则保留及删除字段重编号同步",
+    "1000字段检索分页不裁剪请求，三种屏幕下列表与分页可用",
+    "结果动态列、0/false、字段评分、编码匹配、源行与导出、历史只读和再分析"
+  ],
+  "failures": [],
+  "errors": [],
+  "layouts": [
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "table": {
+        "x": 563,
+        "y": 400.796875,
+        "width": 803,
+        "height": 310.203125,
+        "top": 400.796875,
+        "right": 1366,
+        "bottom": 711,
+        "left": 563
+      },
+      "pager": {
+        "x": 563,
+        "y": 711,
+        "width": 803,
+        "height": 57,
+        "top": 711,
+        "right": 1366,
+        "bottom": 768,
+        "left": 563
+      }
+    },
+    {
+      "width": 1024,
+      "height": 480,
+      "scrollWidth": 1024,
+      "table": {
+        "x": 395,
+        "y": 327.796875,
+        "width": 629,
+        "height": 101.203125,
+        "top": 327.796875,
+        "right": 1024,
+        "bottom": 429,
+        "left": 395
+      },
+      "pager": {
+        "x": 395,
+        "y": 429,
+        "width": 629,
+        "height": 51,
+        "top": 429,
+        "right": 1024,
+        "bottom": 480,
+        "left": 395
+      }
+    },
+    {
+      "width": 390,
+      "height": 600,
+      "scrollWidth": 390,
+      "table": {
+        "x": 1,
+        "y": 431.796875,
+        "width": 389,
+        "height": 115.203125,
+        "top": 431.796875,
+        "right": 390,
+        "bottom": 547,
+        "left": 1
+      },
+      "pager": {
+        "x": 1,
+        "y": 547,
+        "width": 389,
+        "height": 53,
+        "top": 547,
+        "right": 390,
+        "bottom": 600,
+        "left": 1
+      }
+    },
+    {
+      "view": "result",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "table": {
+        "x": 203,
+        "y": 301.59375,
+        "width": 1152,
+        "height": 396.40625,
+        "top": 301.59375,
+        "right": 1355,
+        "bottom": 698,
+        "left": 203
+      },
+      "pager": {
+        "x": 203,
+        "y": 698,
+        "width": 1152,
+        "height": 59,
+        "top": 698,
+        "right": 1355,
+        "bottom": 757,
+        "left": 203
+      }
+    },
+    {
+      "view": "result",
+      "width": 1024,
+      "height": 480,
+      "scrollWidth": 1024,
+      "table": {
+        "x": 75,
+        "y": 301.59375,
+        "width": 938,
+        "height": 114.40625,
+        "top": 301.59375,
+        "right": 1013,
+        "bottom": 416,
+        "left": 75
+      },
+      "pager": {
+        "x": 75,
+        "y": 416,
+        "width": 938,
+        "height": 53,
+        "top": 416,
+        "right": 1013,
+        "bottom": 469,
+        "left": 75
+      }
+    },
+    {
+      "view": "result",
+      "width": 390,
+      "height": 600,
+      "scrollWidth": 390,
+      "table": {
+        "x": 11,
+        "y": 385.390625,
+        "width": 368,
+        "height": 150.609375,
+        "top": 385.390625,
+        "right": 379,
+        "bottom": 536,
+        "left": 11
+      },
+      "pager": {
+        "x": 11,
+        "y": 536,
+        "width": 368,
+        "height": 53,
+        "top": 536,
+        "right": 379,
+        "bottom": 589,
+        "left": 11
+      }
+    }
+  ]
+}

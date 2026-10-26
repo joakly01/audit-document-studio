@@ -1,0 +1,38 @@
+.picker-center .mixed-table th:first-child{width:76px;min-width:76px}
+.picker-center .range-page-label{min-width:48px}
+.picker-center .range-page-label input[type=checkbox]{flex:0 0 16px;width:16px;height:16px;padding:0;margin:0}
+.picker-range-selection{flex:none;gap:8px;padding:7px 12px;min-height:38px;font-size:14px;line-height:1.6;background:#f1f6ff;border-top:1px solid #dce7fa;border-bottom:1px solid #dce7fa}
+.picker-range-selection .range-selection-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.picker-range-selection .link{font-size:14px;white-space:nowrap}
+.picker-range-selection strong{color:var(--blue);font-size:16px}
+.picker-center .selectionbar>[class=row]{flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.picker-center .selectionbar{gap:8px;flex-wrap:wrap}
+.picker-center .selectionbar [data-action=picker-all]{white-space:nowrap;font-size:16px}
+.modal:has(.picker-layout){height:min(720px,calc(100dvh - 28px));max-height:calc(100dvh - 28px)}
+.modal:has(.picker-layout)>.modalbody{flex:1;min-height:0}
+.picker-center{display:flex;flex-direction:column;min-height:0}
+.picker-center>.browser-toolbar,.picker-center>.selectionbar,.picker-center>.pagination{flex:none}
+.picker-center>.mixed-table{flex:1;min-height:0;overflow:auto}
+.picker-center .mixed-table thead th{position:sticky;top:0;background:#f5f7fa;z-index:1}
+.picker-center>.pagination{min-height:44px;padding:5px 12px}
+@media(min-width:801px){.modal:has(.picker-layout)>.modalbody{overflow:hidden}.picker-layout{height:100%;min-height:0}.picker-left,.picker-center,.picker-right{max-height:none;min-height:0}.picker-center>.selectionbar{padding:6px 12px;min-height:46px}.picker-center .browser-toolbar{padding:8px 12px}}
+@media(min-width:801px){.picker-center>.browser-toolbar{flex-direction:row;align-items:center;gap:10px;min-height:54px}.picker-center>.browser-toolbar>.folder-crumbs{flex:0 1 25%;min-width:70px;max-width:180px;flex-wrap:nowrap;overflow:auto;white-space:nowrap}.picker-center>.browser-toolbar>.row{flex:1;min-width:0;flex-wrap:nowrap}.picker-center>.browser-toolbar .search{flex:1;min-width:70px}.picker-center>.browser-toolbar input{min-width:0;width:100%}.picker-center>.browser-toolbar select{max-width:120px;font-size:16px;flex:none}}
+@media(max-height:600px) and (min-width:801px){.modal:has(.picker-layout)>.modalhead{padding:10px 18px}.modal:has(.picker-layout)>.modalfoot{padding:8px 18px}.picker-range-selection{min-height:34px;padding:4px 12px}.picker-center .mixed-table td{padding-top:8px;padding-bottom:8px}}
+@media(max-width:800px){.picker-center{min-height:330px;flex:none}.picker-center>.mixed-table{max-height:260px;flex:auto}.modal:has(.picker-layout)>.modalbody{overflow:auto}}
+@media(max-width:760px){.picker-range-selection{flex-wrap:wrap;gap:3px;padding:6px 10px}.picker-range-selection .range-selection-actions{gap:10px}.picker-center .selectionbar>[class=row]{justify-content:flex-start}.picker-center .mixed-table th:first-child{min-width:72px}}
+
+.picker-ready-note{flex:none;margin:0;padding:7px 12px;font-size:14px;line-height:1.6;color:#365b83;background:#f5f8fe;border-bottom:1px solid #dce7fa}
+.picker-unavailable input{cursor:not-allowed}.picker-unavailable td{background:#f8fafc}.picker-unavailable .filename{color:#6a798d}
+
+.picker-ready-inline{display:none;font-size:14px;color:#365b83;font-weight:400;margin-left:12px;white-space:nowrap}
+@media(max-height:600px) and (min-width:801px){.picker-ready-note{display:none}.picker-ready-inline{display:inline}}
+/* The same scope and all-page selection bar precedes both document tables. */
+.range-table-top{flex-wrap:wrap;gap:6px 12px;min-height:48px;padding:6px 10px;align-items:center}.range-table-top .range-selected-description{flex:1 1 110px;line-height:1.5;white-space:normal;overflow:visible;font-size:14px}.range-table-top .range-selection-actions{flex-wrap:wrap;gap:8px 12px;margin-left:auto;justify-content:flex-end}.range-table-top .range-selection-actions .link{font-size:14px;line-height:1.5;min-height:30px;white-space:nowrap}.range-table-top [data-action=range-select-all],.range-table-top [data-action=picker-all]{font-size:16px;font-weight:600}.range-table-top .link:disabled{color:#65758a;cursor:default;text-decoration:none}.picker-center [data-v3-change=picker-scope][hidden]{display:none!important}.range-table-top .range-selected-description:empty{display:none}@media(max-width:600px){.range-table-top{gap:4px 8px;padding:5px 8px}.range-table-top .range-selection-actions{flex:1 1 auto;justify-content:flex-start;margin-left:0}.range-table-top .range-selected-description{flex-basis:100%}}
+.picker-center .browser-toolbar [data-action=audit-picker-upload]{flex:none;white-space:nowrap;font-size:16px;min-height:36px;padding:5px 8px}.picker-center .browser-toolbar [data-action=audit-picker-upload] .icon-sm{width:16px;height:16px}
+/* File visibility is one optional expansion of the chosen directory, not a selection action. */
+.directory-file-toolbar{background:#fff;border-bottom:1px solid #e1e7ef;min-height:44px;gap:6px 14px}.directory-file-scope{display:inline-flex;align-items:center;gap:7px;min-height:32px;flex:none;font-size:14px;line-height:1.5;color:#425a76;cursor:pointer;white-space:nowrap}.directory-file-scope input[type=checkbox]{width:16px;height:16px;min-height:16px;flex:none;margin:0;padding:0;accent-color:#2c65b8}.directory-file-scope:has(input:checked){color:#245ba9}.directory-file-scope input:focus-visible{outline:2px solid #2c65b8;outline-offset:3px}.directory-file-toolbar .range-selected-description{font-size:14px;color:#60748c}.directory-file-toolbar .range-selection-actions{border-left:1px solid #e0e7ef;padding-left:12px}.directory-file-toolbar .range-selection-actions .link{font-weight:400}.picker-center>.directory-file-toolbar{background:#fff;min-height:44px}@media(max-width:600px){.directory-file-toolbar{gap:4px 10px}.directory-file-toolbar .range-selection-actions{border-left:0;padding-left:0}.directory-file-scope{white-space:normal;min-height:32px}.directory-file-scope span{line-height:1.5}}
+
+/* The selection list owns the total. Keep its heading reachable while checking long lists. */
+.picker-right>.row:first-child{position:sticky;top:-12px;z-index:2;background:#fff;margin:-12px -12px 8px;padding:12px;border-bottom:1px solid var(--line);gap:8px}
+.picker-right h4{font-size:16px;margin:0;line-height:1.6}.picker-right h4 strong{color:var(--blue);font-variant-numeric:tabular-nums}
+.picker-right .picked-item{font-size:16px}.range-selected-description:empty{display:none}

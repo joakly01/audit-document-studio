@@ -1,0 +1,172 @@
+/* Three stable work areas, shared library typography and controls. */
+.ef-workspace .ew-grid{grid-template-columns:368px minmax(0,1fr) 368px}
+.ef-workspace .ew-grid.ew-without-config{grid-template-columns:368px minmax(0,1fr)}
+.ef-workspace .ew-panel-head{height:48px;min-height:48px;border-bottom:1px solid var(--line);padding:0 12px}
+.ef-workspace .ew-panel-head h2{display:flex;align-items:center;gap:7px;font-size:16px;white-space:nowrap}
+.ef-step{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;background:#edf3ff;color:#3266bc;font-size:14px;font-weight:600;flex:none}
+.ef-workspace .ew-center{padding:4px}
+.ef-workspace .ew-material-controls{padding:10px 12px}
+.ef-workspace .ew-material-controls .search{border:1px solid var(--line);border-radius:6px;background:#f8faff}
+.ef-workspace .ew-material-controls .search input{border:0;border-radius:0;background:transparent;box-shadow:none;font-size:16px}
+.ef-workspace .ew-scope-note{padding:8px 12px;color:#596b80}
+.ef-workspace .ew-scope-note span{color:#596b80}
+.ef-workspace .ew-scope-note strong{color:var(--blue);font-variant-numeric:tabular-nums}
+.ef-workspace .ew-folder button{font-size:16px}
+.ef-workspace .ew-file .fileicon{width:28px;height:28px;font-size:12px}
+.ef-workspace .ew-file{padding-left:calc(4px + var(--depth)*10px)}
+.ef-workspace .ew-file-name small{color:#596b80}
+.ef-workspace .ew-tree{padding:2px 6px 8px}
+.ef-workspace .ew-folder small{color:#596b80}
+.ef-workspace .ew-ready strong{font-size:16px}
+.ef-preview-head{gap:7px;height:40px!important;min-height:40px!important}
+.ef-preview-tabs{display:flex;gap:14px;height:100%;margin-left:auto;white-space:nowrap}
+.ef-preview-tabs button{border:0;border-bottom:2px solid transparent;background:none;color:#596b80;font-size:16px;padding:0 0 2px}
+.ef-preview-tabs button.active{color:var(--blue);border-bottom-color:var(--blue);font-weight:600}
+.ef-preview-head>.btn{padding:5px;min-width:32px}
+.ef-preview-menu{margin:0;padding:0;flex:none}.ef-preview-menu>.iconbtn{display:grid;place-items:center;width:28px;height:32px;color:#526b86;border:0;background:none}.ef-preview-menu>.lib-menu{right:0;min-width:170px;z-index:9}.ef-preview-menu>.lib-menu>.btn{width:100%;justify-content:flex-start;font-size:16px}
+.ef-preview-caption{display:flex;align-items:center;gap:8px;padding:5px 10px;border-bottom:1px solid var(--line);flex:none}
+.ef-preview-caption>div{min-width:0;flex:1}
+.ef-preview-caption strong,.ef-preview-caption span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.6}
+.ef-preview-caption strong{font-size:16px;font-weight:500;color:#263e55}
+.ef-preview-caption span{display:none;font-size:14px;color:#596b80}
+.ef-preview-caption>.btn{font-size:16px;padding:5px 6px;white-space:nowrap}
+.ef-preview-content{flex:1;min-height:0;overflow:auto;background:#eef2f7;position:relative}
+.ef-preview-content[hidden]{display:none!important}
+.ef-preview-content .preview-raw-toolbar{position:sticky;top:0;background:#fff;z-index:2;min-height:36px;padding:3px 6px;gap:6px;flex-wrap:nowrap;font-size:14px;border-bottom:1px solid var(--line)}
+.ef-preview-content .preview-raw-toolbar .btn{font-size:14px;min-height:30px;padding:3px 7px}
+.ef-preview-content .preview-raw-toolbar select{margin-left:auto;font-size:14px;min-height:30px;height:30px;padding:3px 5px;width:auto;max-width:140px}
+.ef-preview-content .preview-raw-toolbar label{display:flex;align-items:center;gap:4px;white-space:nowrap}.ef-preview-content .preview-raw-toolbar .btn{width:28px;min-width:28px;padding:3px}.ef-preview-content .preview-raw-toolbar input{font-size:14px;min-height:30px;height:30px;width:46px;padding:3px 4px}
+.ef-preview-content .preview-pdf-page{padding:6px;display:flex;justify-content:safe center;min-width:max-content}
+.ef-preview-content .preview-pdf-page canvas{box-shadow:0 2px 10px #20394d1c;max-width:none}
+.ef-preview-content .preview-docx-frame{height:100%;min-height:100%;width:100%;border:0;display:block}
+.ef-preview-content .preview-raw-text{background:white;padding:20px;font-size:16px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere;margin:12px}
+.ef-preview-content .preview-parsed-markdown{padding:20px 24px;background:#fff;min-height:100%;box-sizing:border-box;font-size:16px;line-height:1.9}
+.ef-preview-content .preview-empty{padding:28px 20px}
+.ef-preview-content .preview-empty h3{font-size:18px}
+.ef-preview-content .preview-empty p{font-size:16px;color:#596b80;line-height:1.8}
+.ef-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;padding:20px;text-align:center;overflow:auto}
+.ef-empty-symbol{display:grid;place-items:center;background:#edf3ff;color:var(--blue);border-radius:12px;width:48px;height:48px;margin-bottom:14px}
+.ef-empty h2{font-size:18px;margin:0 0 10px}.ef-empty p{font-size:16px;color:#596b80;line-height:1.8;max-width:360px;margin:0 0 18px}
+.ef-config .ew-panel-head>.link{font-size:14px;white-space:nowrap}
+.config.ef-config details{margin:0;padding:0}
+.config.ef-config summary::after{content:none}
+.ef-template{padding:10px 12px 8px;flex:none;border-bottom:1px solid var(--line)}
+.ef-template>label{font-size:14px;color:#596b80;display:block;margin-bottom:6px}
+.ef-template select{height:38px;min-height:38px;font-size:16px;width:100%;padding:6px 9px}
+.ef-template p{font-size:14px;line-height:1.6;color:#596b80;margin:6px 0 0}
+.ef-fields-head{display:flex;justify-content:space-between;align-items:center;padding:6px 12px;border-bottom:1px solid var(--line);flex:none;min-height:44px;gap:6px}
+.ef-fields-head>label{display:flex;align-items:center;gap:5px;font-size:14px;white-space:nowrap}
+.ef-fields-head strong{font-size:16px;color:var(--blue)}
+.ef-config .btn.sm{font-size:16px;min-height:34px;padding:5px 8px}
+.ef-fields-scroll{flex:1;overflow:auto;min-height:80px;scrollbar-gutter:stable}
+.ef-field{padding:10px 12px;border-bottom:1px solid #e6ebf1;background:#fff;position:relative}
+.ef-field:focus-within{background:#f6f9ff;box-shadow:inset 3px 0 var(--blue)}
+.ef-field-heading{display:flex;align-items:center;gap:8px}
+.ef-field input[type=checkbox],.ef-fields-head input{width:17px;height:17px;min-height:17px;flex:none;accent-color:var(--blue)}
+.ef-field input:not([type=checkbox]){width:0;min-width:0;flex:1;font-size:16px;height:36px;min-height:36px;padding:5px 8px;color:#263e55}
+.ef-field textarea{display:block;resize:vertical;width:calc(100% - 25px);margin:7px 0 0 25px;min-height:54px;font-size:16px;line-height:1.5;padding:5px 8px;color:#36506b}
+.ef-field-menu .iconbtn{display:grid;place-items:center;color:#526b86;width:28px;height:32px;min-width:28px;padding:4px;border:0;border-radius:4px;background:transparent}
+.ef-field-menu .iconbtn:hover,.ef-field-menu[open] .iconbtn{color:var(--blue);background:#eaf1fc}
+.ef-field-menu .lib-menu{width:160px;min-width:160px;z-index:5;right:0;top:34px}
+.ef-field-menu .lib-menu>.btn{width:100%;justify-content:flex-start;font-size:16px}
+.ef-config-bottom{flex:none;border-top:1px solid var(--line);padding:0 12px;background:#fff;position:relative}
+.ef-config-bottom>#ef-field-error:empty{display:none}
+.ef-config-bottom>#ef-field-error{font-size:14px;margin:7px 0;line-height:1.6}
+.ef-settings>summary{display:flex;align-items:center;gap:7px;font-size:16px;color:#36506b;min-height:42px;cursor:pointer;list-style:none}
+.ef-settings>summary::-webkit-details-marker{display:none}
+.ef-settings>summary>.icon:last-child{margin-left:auto}.ef-settings[open]>summary>.icon:last-child{transform:rotate(180deg)}
+.ef-settings-body{position:absolute;bottom:100%;left:0;right:0;z-index:8;border:1px solid var(--line);border-radius:8px 8px 0 0;padding:14px;background:white;box-shadow:0 -6px 24px #20394d16;max-height:calc(100dvh - 150px);overflow:auto}
+.ef-settings-body .hint{color:#596b80;font-size:14px;line-height:1.7;margin:7px 0}
+.ef-settings-body>.link{font-size:14px}
+.ef-settings-body .ew-number-grid{margin-top:14px;gap:8px}
+.ef-settings-body .ew-number-grid input{height:36px;min-height:36px;padding:6px}
+.ef-settings-body .ew-number-grid label{font-size:14px}
+.ef-apply-note{font-size:14px;margin:0 -12px;padding:7px 12px;background:#f7f9fc;border-top:1px solid var(--line);color:#596b80}
+.ef-apply-note strong{color:var(--blue);font-size:16px}
+.ef-mobile-tabs{display:none}
+.ef-field-heading{min-height:36px}
+.ef-fields-head{padding-top:2px;padding-bottom:2px}
+.ef-apply-note{line-height:1.5}
+@media(max-width:1200px){.ef-workspace .ew-grid{grid-template-columns:320px minmax(0,1fr) 320px}.ef-workspace .ew-grid.ew-without-config{grid-template-columns:320px minmax(0,1fr)}.ef-preview-head{padding:0 9px!important;gap:6px}.ef-preview-head h2{font-size:16px}.ef-preview-head .ef-step{display:none}.ef-preview-tabs{gap:10px}.ef-preview-tabs button{font-size:14px}.ef-workspace .ew-ready{display:none}.ef-workspace .ew-center{padding:4px}.ef-config .ew-panel-head>.link{font-size:14px}.ef-workspace .ew-panel-head{padding:0 10px}.ef-field{padding:9px 10px}.ef-template,.ef-fields-head{padding-left:10px;padding-right:10px}}
+@media(max-width:900px){.ef-workspace{height:100dvh;min-height:0;overflow:hidden}.ef-mobile-tabs{display:flex;background:white;border-bottom:1px solid var(--line);flex:none;min-height:40px}.ef-mobile-tabs button{flex:1;border:0;border-bottom:2px solid transparent;background:none;padding:6px;font-size:16px;color:#596b80}.ef-mobile-tabs button.active{color:var(--blue);border-color:var(--blue);font-weight:600}.ef-workspace .ew-grid,.ef-workspace .ew-grid.ew-without-config{display:flex;flex-direction:row;min-height:0;overflow:hidden}.ef-workspace .ew-grid>.ew-materials,.ef-workspace .ew-grid>.ew-center,.ef-workspace .ew-grid>.ew-config{display:none}.ef-workspace .ew-grid[data-ef-panel=materials]>.ew-materials,.ef-workspace .ew-grid[data-ef-panel=preview]>.ew-center,.ef-workspace .ew-grid[data-ef-panel=fields]>.ew-config{display:flex;flex:1;width:100%;max-height:none;min-height:0}.ef-workspace .ew-tree{max-height:none}.ef-workspace .ew-scope-note{display:block}.ef-workspace .ew-material-controls{display:block}.ef-workspace .ew-material-controls .btn{width:100%}.ef-workspace .ew-material-controls .search{margin-top:8px}.ef-workspace .ew-center{padding:4px}.ef-workspace .ew-heading h1{font-size:18px}.ef-workspace .ew-command-actions .btn{font-size:16px;min-height:36px}.ef-workspace .ew-panel-head h2{font-size:16px}.ef-workspace .ef-preview-tabs button{font-size:16px}.ef-fields-scroll{max-height:none}.ef-field textarea{min-height:60px}.ef-workspace .ew-commandbar{min-height:50px}.ef-workspace .ef-config{grid-column:auto}.ef-preview-caption>.btn{min-width:32px}}
+@media(max-height:600px) and (min-width:901px){.ef-workspace .ew-commandbar{height:48px;min-height:48px}.ef-workspace .ew-panel-head{height:42px;min-height:42px}.ef-template{padding-top:8px;padding-bottom:6px}.ef-template>label{display:none}.ef-fields-head{min-height:40px}.ef-field{padding-top:8px;padding-bottom:8px}.ef-preview-caption{padding-top:6px;padding-bottom:6px}.ef-workspace .ew-scope-note{padding-top:6px;padding-bottom:6px}.ef-workspace .ew-material-controls{padding-top:8px;padding-bottom:8px}}
+@media(max-height:600px) and (min-width:901px){.ef-template p{display:none}}
+
+.ef-field input[aria-invalid=true]{border-color:#b73e3e;box-shadow:0 0 0 1px #b73e3e18}
+
+/* Clear scope management: adding, previewing and removing have separate meanings. */
+.ef-material-intro{padding:8px 12px;font-size:14px;line-height:1.65;color:#596b80;flex:none}
+.ef-workspace .ew-materials>.ew-panel-head>.btn{font-size:16px;min-height:34px;padding:4px 7px;white-space:nowrap}
+.ef-workspace .ew-material-controls .btn{font-size:16px}
+.ef-workspace .ew-file{gap:7px;min-height:42px;align-items:center;padding-top:4px;padding-bottom:4px}
+.ef-workspace .ew-file-name span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ef-material-info{display:flex;align-items:center;gap:5px;flex:1;min-width:0}.ef-material-info>.ew-file-name{width:0;flex:1;padding:0;display:block;min-width:0}.ef-material-meta{display:flex;align-items:center;gap:5px;margin:0;min-height:32px;flex:none}.ef-material-meta>small{font-size:14px;color:#596b80;max-width:88px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ef-material-actions{display:flex;align-items:center;gap:3px;flex:none}.ef-material-actions .btn{display:grid;place-items:center;width:32px;height:32px;min-height:32px;padding:6px;border-radius:5px;flex:none}.ef-material-attachments{color:#3266bc}.ef-material-actions .btn .icon{width:18px;height:18px}.ef-material-attachments.has-attachments{background:#edf3ff;color:#2e63bc}.ef-material-attachments:hover{background:#e6eefc}
+.ef-workspace .ew-file .ef-remove-material{padding:6px;min-height:32px;flex:none;color:#596b80}
+.ef-workspace .ew-file .ef-remove-material:hover{color:#b73e3e;background:#fff1ef}
+.ef-workspace .ew-file.active .ef-remove-material{color:#3a65a5}
+.ef-material-empty{padding:26px 15px;text-align:center;color:#596b80}
+.ef-material-empty h3{font-size:16px;font-weight:500;color:#36506b;margin:0 0 10px}
+.ef-material-empty p{font-size:14px;line-height:1.8;margin:0}
+.ef-field-number{width:18px;flex:none;color:#596b80;font-size:14px;text-align:center;font-variant-numeric:tabular-nums}
+.ef-fields-head h3{font-size:16px;margin:0;font-weight:500;white-space:nowrap}
+.ef-fields-head .ef-field-actions{gap:5px;flex-wrap:nowrap}
+.ef-config .ef-field-actions .btn{font-size:16px;min-height:34px;padding:4px 6px;white-space:nowrap;gap:4px}
+.ef-field-actions .btn .icon{width:15px;height:15px}
+.ef-save-dialog{width:min(540px,calc(100vw - 28px));max-height:calc(100dvh - 28px);display:flex;flex-direction:column}
+.ef-save-dialog .modalbody{overflow:auto;min-height:0;padding:18px 22px}
+.ef-save-dialog .field{display:grid;gap:7px;margin:14px 0}
+.ef-save-dialog .field>span,.ef-save-dialog input,.ef-save-dialog select,.ef-save-dialog textarea{font-size:16px}
+.ef-save-dialog input,.ef-save-dialog select,.ef-save-dialog textarea{width:100%}
+.ef-save-summary{padding:10px 12px;border-radius:6px;background:#f2f6fe;font-size:14px;line-height:1.7;color:#596b80}
+.ef-save-summary strong{color:var(--blue);font-size:16px}
+.ef-save-dialog .modalfoot{display:flex;justify-content:flex-end;gap:10px;flex:none}
+@media(max-width:1200px) and (min-width:901px){.ef-preview-head h2{display:flex}.ef-preview-tabs{margin-left:auto;margin-right:0}.ef-preview-head{gap:5px}.ef-workspace .ew-scope-note span{font-size:14px}.ef-config .ef-field-actions .btn{padding-left:5px;padding-right:5px}.ef-field-actions .btn .icon{display:none}}
+@media(max-height:600px){.ef-save-dialog .modalhead{padding:12px 18px}.ef-save-dialog .modalbody{padding:10px 18px}.ef-save-dialog .field{margin:10px 0}.ef-save-dialog .modalfoot{padding:10px 18px}}
+
+.ef-attachment-option{padding:10px 12px;margin-bottom:12px;background:#f5f8fd;border:1px solid #e0e8f4;border-radius:6px}.ef-attachment-option .ew-switch{font-size:16px;gap:14px}.ef-attachment-option .hint{margin:7px 0 0;font-size:14px;line-height:1.7;color:#596b80}
+
+.ew-attachments-table .link+.link{margin-left:12px}
+
+/* Steps and their actions share one compact row. */
+.ef-step{width:auto;min-width:48px;height:24px;padding:0 5px;font-size:14px;border-radius:5px;white-space:nowrap}
+.ef-workspace .ef-step{display:inline-grid!important}
+.ef-material-head{justify-content:space-between;gap:8px}
+.ef-workspace .ef-material-head{height:46px;min-height:46px;padding:0 12px}
+.ef-workspace .ef-material-head h2{gap:8px}
+.ef-workspace .ef-material-head>.btn{font-size:16px;min-height:32px;padding:4px 8px;flex:none}
+.ef-workspace .ew-materials>.ew-material-controls{padding:4px 12px 8px}
+@media(max-height:600px){.ef-workspace .ef-material-head{height:40px;min-height:40px}.ef-material-intro{padding-top:6px;padding-bottom:6px}}
+.ef-material-intro strong{font-size:16px;color:var(--blue);font-variant-numeric:tabular-nums}
+.ef-preview-caption>.ef-preview-tabs{height:30px;flex:none;display:flex;gap:10px;margin-left:auto}
+.ef-preview-caption>.ef-preview-tabs button{font-size:14px}
+.ef-preview-caption>div:first-child{min-width:0;flex:1}
+.ef-preview-head>h2{margin-right:auto}
+.ef-config .ew-panel-head>.link{font-size:14px}
+.ea-dialog{width:min(880px,calc(100vw - 28px));height:min(660px,calc(100dvh - 28px));max-height:calc(100dvh - 28px);display:flex;flex-direction:column}
+.ea-dialog>.modalbody{display:flex;flex-direction:column;overflow:hidden;min-height:0;flex:1;padding:14px 18px}
+.ea-hint{font-size:14px;line-height:1.7;color:#596b80;background:#f2f6fc;padding:9px 12px;border:1px solid #e0e8f4;border-radius:6px;margin:0 0 12px;flex:none}
+.ea-toolbar{display:flex;gap:10px;align-items:center;margin-bottom:10px;flex:none;font-size:14px;color:#596b80}
+.ea-toolbar>.search{flex:1;min-width:120px}.ea-toolbar strong{font-size:16px;color:var(--blue)}
+.ea-toolbar>.search input{font-size:16px;width:100%}.ea-toolbar>.btn{font-size:14px;white-space:nowrap}.ea-toolbar>span{white-space:nowrap}
+.ea-table-scroll{flex:1;min-height:0;overflow:auto;border:1px solid var(--line);border-radius:6px}
+.ea-table{width:100%;table-layout:fixed;margin:0}.ea-table th{position:sticky;top:0;z-index:1;background:#f5f7fa;font-size:14px;color:#52657b;height:40px}.ea-table th:first-child{width:78px}.ea-table th:last-child{width:29%}
+.ea-table th label{display:flex;gap:5px;align-items:center;font-size:14px;white-space:nowrap}.ea-table td{font-size:16px;padding:10px 12px;vertical-align:middle;border-bottom:1px solid var(--line)}
+.ea-table input{accent-color:var(--blue);width:16px;height:16px}.ea-name{display:flex;gap:8px;align-items:center;overflow-wrap:anywhere;cursor:pointer;line-height:1.6}
+.ea-table td:last-child{font-size:14px;overflow-wrap:anywhere;line-height:1.6;color:#596b80}.ea-table .fileicon{width:32px;height:32px;flex:none;font-size:12px}
+.ea-pagination{display:flex;align-items:center;justify-content:space-between;padding:9px 0 0;font-size:14px;color:#596b80;flex:none}.ea-pagination .btn{font-size:14px;min-height:32px}
+.ea-dialog #ea-error{font-size:14px;flex:none;margin:8px 0 0}.ea-dialog #ea-error:empty{display:none}.ea-dialog .modalfoot{flex:none;display:flex;justify-content:flex-end;gap:10px}
+@media(max-height:600px){.ea-dialog .modalhead{padding:9px 16px}.ea-dialog>.modalbody{padding:10px 14px}.ea-hint{margin-bottom:7px;padding:6px 9px}.ea-toolbar{margin-bottom:6px}.ea-dialog .modalfoot{padding:9px 14px}}
+@media(max-width:600px){.ea-toolbar{gap:6px;flex-wrap:wrap}.ea-toolbar>.search{flex-basis:100%}.ea-table th:last-child,.ea-table td:last-child{display:none}.ea-dialog .modalhead,.ea-dialog>.modalbody{padding:10px 12px}.ea-table td{padding:8px}.ea-toolbar>.btn{margin-left:auto}}
+
+
+/* Template reuse is secondary; adding a field has one stable, explicit button. */
+.ef-template-header{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:28px;margin-bottom:4px}
+.ef-template-header label{font-size:14px;color:#596b80;white-space:nowrap}.ef-template-header label span{font-size:14px}
+.ef-config .ef-save-as.btn{font-size:14px;min-height:28px;height:28px;padding:2px 4px;font-weight:400;color:#365b83;white-space:nowrap;border:0;background:transparent;box-shadow:none}
+.ef-config .ef-save-as.btn:hover:not(:disabled){background:#edf3ff;color:#2458bb}.ef-config .ef-save-as.btn:disabled{color:#8b98a9;cursor:default}
+.ef-config .ef-add-field.btn{font-size:16px;min-height:34px;padding:4px 9px;gap:5px;color:#2e63bc;border-color:#cbdaf3;background:#f8faff;box-shadow:none}
+.ef-config .ef-add-field.btn:hover{background:#edf3ff;border-color:#aac2ed}.ef-config .ef-add-field .icon{width:16px;height:16px}
+@media(max-height:600px) and (min-width:901px){.ef-template-header{margin-bottom:0}.ef-template-header label span{display:none}}
+
+@media(max-height:600px) and (min-width:901px){.ef-config .ef-template{padding-top:4px;padding-bottom:3px}}
+/* File type labels remain readable in the dense material list and attachment chooser. */
+.ef-workspace .ew-file .fileicon,.ea-table .fileicon{font-size:14px;width:32px;min-width:32px}

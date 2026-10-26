@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2300" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+<title id="title">文档挖掘助手交互优化静态线框</title>
+<desc id="desc">三个设计画面：添加文件、准备分析、结果核验。所有名称、内容与数量均为虚构示意，不连接后台。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif} .title{font-weight:700} </style>
+<rect x="0" y="0" width="1600" height="2300" rx="0" fill="#f1f5fa"/>
+<rect x="0" y="0" width="1600" height="147" rx="0" fill="#172d49"/>
+<text x="48" y="58" font-size="34" fill="white" class="title">文档挖掘助手 · 交互优化线框</text>
+<text x="48" y="100" font-size="20" fill="#cbd9ee">让资料范围清楚、配置容易理解、执行状态可信、结果可核验</text>
+<text x="1200" y="58" font-size="18" fill="#cbd9ee">V0.1 / 设计评审稿</text>
+<text x="1200" y="94" font-size="17" fill="#cbd9ee">静态示意 · 未连接后台</text>
+<text x="48" y="199" font-size="18" fill="#245fc3" class="title">01</text>
+<text x="91" y="199" font-size="26" fill="#172d49" class="title">添加文件：一次选择，范围清楚</text>
+<text x="91" y="230" font-size="16" fill="#66788d">勾选即加入暂存选择；支持当前页 / 所有页；按文件数确认；取消不改变原工作集。</text>
+<rect x="48" y="253" width="1504" height="535" rx="12" fill="white" stroke="#dce4ef"/>
+<text x="70" y="290" font-size="20" fill="#172d49" class="title">添加文件</text>
+<text x="1400" y="290" font-size="16" fill="#66788d">取消   ×</text>
+<path d="M48 309 H1552" stroke="#dce4ef"/>
+<rect x="65" y="325" width="251" height="383" rx="6" fill="#f8fafc" stroke="#dce4ef"/>
+<text x="83" y="357" font-size="17" fill="#172d49" class="title">资料位置</text>
+<text x="84" y="398" font-size="16" fill="#172d49">▾  个人空间</text>
+<text x="84" y="439" font-size="16" fill="#172d49">   ▾  演示项目资料</text>
+<rect x="76" y="455" width="228" height="37" rx="4" fill="#edf4ff"/>
+<text x="84" y="480" font-size="16" fill="#245fc3">       采购资料</text>
+<text x="84" y="536" font-size="16" fill="#172d49">▸  项目空间</text>
+<text x="84" y="580" font-size="16" fill="#172d49">▸  公共空间</text>
+<text x="82" y="681" font-size="14" fill="#66788d">当前目录：采购资料</text>
+<text x="339" y="355" font-size="17" fill="#172d49" class="title">个人空间 / 演示项目资料 / 采购资料</text>
+<rect x="338" y="372" width="430" height="37" rx="4" fill="white" stroke="#dce4ef"/>
+<text x="350" y="397" font-size="15" fill="#66788d">搜索文件名</text>
+<rect x="784" y="377" width="135" height="27" rx="4" fill="#edf4ff"/>
+<text x="793" y="396" font-size="13" fill="#245fc3">包含子目录</text>
+<rect x="934" y="377" width="139" height="27" rx="4" fill="#edf4ff"/>
+<text x="943" y="396" font-size="13" fill="#245fc3">仅看可用资料</text>
+<rect x="339" y="427" width="184" height="36" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="353" y="451" font-size="15" fill="#245fc3">选择当前页（5）</text>
+<rect x="537" y="427" width="191" height="36" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="551" y="451" font-size="15" fill="#245fc3">选择所有页（24）</text>
+<text x="750" y="451" font-size="16" fill="#245fc3">已选 23 份 · 已排除 1 份</text>
+<rect x="338" y="476" width="757" height="35" rx="0" fill="#f3f6fa"/>
+<text x="376" y="500" font-size="15" fill="#66788d">文件名称</text>
+<text x="885" y="500" font-size="15" fill="#66788d">状态</text>
+<rect x="346" y="517" width="16" height="16" rx="3" fill="#245fc3" stroke="#245fc3"/>
+<path d="M349 525 l4 4 l6 -8" fill="none" stroke="white" stroke-width="2"/>
+<text x="376" y="531" font-size="15" fill="#172d49">01  采购合同.pdf</text>
+<text x="885" y="531" font-size="14" fill="#237453">可分析</text>
+<path d="M339 541 H1095" stroke="#dce4ef"/>
+<rect x="346" y="549" width="16" height="16" rx="3" fill="#245fc3" stroke="#245fc3"/>
+<path d="M349 557 l4 4 l6 -8" fill="none" stroke="white" stroke-width="2"/>
+<text x="376" y="563" font-size="15" fill="#172d49">02  补充协议.pdf</text>
+<text x="885" y="563" font-size="14" fill="#237453">可分析</text>
+<path d="M339 573 H1095" stroke="#dce4ef"/>
+<rect x="346" y="581" width="16" height="16" rx="3" fill="white" stroke="#aebaca"/>
+<text x="376" y="595" font-size="15" fill="#66788d">03  旧版合同.pdf</text>
+<text x="885" y="595" font-size="14" fill="#9a6310">已排除</text>
+<path d="M339 605 H1095" stroke="#dce4ef"/>
+<rect x="346" y="613" width="16" height="16" rx="3" fill="#245fc3" stroke="#245fc3"/>
+<path d="M349 621 l4 4 l6 -8" fill="none" stroke="white" stroke-width="2"/>
+<text x="376" y="627" font-size="15" fill="#172d49">04  项目说明.docx</text>
+<text x="885" y="627" font-size="14" fill="#237453">可分析</text>
+<path d="M339 637 H1095" stroke="#dce4ef"/>
+<rect x="346" y="645" width="16" height="16" rx="3" fill="#245fc3" stroke="#245fc3"/>
+<path d="M349 653 l4 4 l6 -8" fill="none" stroke="white" stroke-width="2"/>
+<text x="376" y="659" font-size="15" fill="#172d49">05  验收记录.pdf</text>
+<text x="885" y="659" font-size="14" fill="#237453">可分析</text>
+<path d="M339 669 H1095" stroke="#dce4ef"/>
+<text x="345" y="712" font-size="14" fill="#66788d">共 24 份资料    第 1 / 5 页          ‹    1    2    3    4    5    ›</text>
+<rect x="1117" y="325" width="416" height="383" rx="6" fill="#f8fafc" stroke="#dce4ef"/>
+<text x="1139" y="358" font-size="18" fill="#172d49" class="title">已选范围</text>
+<rect x="1411" y="337" width="99" height="27" rx="4" fill="#edf4ff"/>
+<text x="1420" y="356" font-size="13" fill="#245fc3">23 份文件</text>
+<text x="1139" y="404" font-size="17" fill="#172d49" class="title">采购资料</text>
+<text x="1139" y="434" font-size="15" fill="#66788d">当前目录及子目录</text>
+<text x="1139" y="464" font-size="15" fill="#66788d">匹配 24 份 · 排除 1 份 · 纳入 23 份</text>
+<path d="M1139 485 H1513" stroke="#dce4ef"/>
+<text x="1139" y="519" font-size="15" fill="#66788d">已排除</text>
+<text x="1139" y="551" font-size="16" fill="#172d49">03  旧版合同.pdf</text>
+<text x="1450" y="551" font-size="15" fill="#245fc3">恢复</text>
+<text x="1139" y="606" font-size="15" fill="#245fc3">查看全部已选文件 →</text>
+<text x="1139" y="667" font-size="15" fill="#66788d">路径与选择范围随资料一起带入工具。</text>
+<path d="M48 731 H1552" stroke="#dce4ef"/>
+<text x="70" y="765" font-size="16" fill="#66788d">已选 23 份文件；原资料保持不变。</text>
+<rect x="1262" y="742" width="94" height="36" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="1276" y="766" font-size="15" fill="#245fc3">取消</text>
+<rect x="1371" y="742" width="157" height="36" rx="5" fill="#245fc3"/>
+<text x="1385" y="766" font-size="15" fill="white">添加 23 份文件</text>
+<text x="69" y="874" font-size="17" fill="#66788d">关键约定：范围按“文件身份 + 目录范围 + 筛选 + 排除项”计算，文件夹数量不能代替文件数量。</text>
+<text x="48" y="892" font-size="18" fill="#245fc3" class="title">02</text>
+<text x="91" y="892" font-size="26" fill="#172d49" class="title">准备分析：资料、原文、配置各司其职</text>
+<text x="91" y="923" font-size="16" fill="#66788d">本次资料默认参与执行，移出才排除；优先展示业务模板，技术参数按需展开。</text>
+<rect x="48" y="946" width="1504" height="535" rx="12" fill="white" stroke="#dce4ef"/>
+<text x="70" y="983" font-size="20" fill="#172d49" class="title">信息提取</text>
+<text x="211" y="983" font-size="17" fill="#66788d">采购资料 · 基础信息提取</text>
+<text x="1288" y="983" font-size="16" fill="#245fc3">历史任务   返回资料库</text>
+<path d="M48 1002 H1552" stroke="#dce4ef"/>
+<rect x="65" y="1018" width="267" height="382" rx="5" fill="#f8fafc" stroke="#dce4ef"/>
+<text x="83" y="1048" font-size="18" fill="#172d49" class="title">本次资料 · 23 份</text>
+<rect x="83" y="1066" width="230" height="36" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="97" y="1090" font-size="15" fill="#245fc3">＋ 添加文件</text>
+<rect x="82" y="1114" width="231" height="33" rx="4" fill="white" stroke="#dce4ef"/>
+<text x="95" y="1137" font-size="15" fill="#66788d">搜索本次资料</text>
+<text x="85" y="1183" font-size="17" fill="#172d49" class="title">▾  采购资料</text>
+<rect x="76" y="1197" width="246" height="34" rx="4" fill="#edf4ff"/>
+<text x="99" y="1221" font-size="15" fill="#245fc3">01  采购合同.pdf</text>
+<text x="99" y="1256" font-size="15" fill="#172d49">02  补充协议.pdf</text>
+<text x="99" y="1291" font-size="15" fill="#172d49">04  项目说明.docx</text>
+<text x="99" y="1326" font-size="15" fill="#172d49">05  验收记录.pdf</text>
+<text x="86" y="1367" font-size="15" fill="#245fc3">已排除 1 份    ·    批量管理</text>
+<rect x="350" y="1018" width="745" height="382" rx="5" fill="#edf0f5" stroke="#dce4ef"/>
+<text x="370" y="1048" font-size="17" fill="#172d49" class="title">01  采购合同.pdf</text>
+<text x="880" y="1048" font-size="15" fill="#66788d">第 2 / 8 页   全屏</text>
+<rect x="426" y="1065" width="594" height="319" rx="2" fill="white" stroke="#dce4ef"/>
+<text x="613" y="1112" font-size="23" fill="#172d49" class="title">采 购 合 同（示意）</text>
+<text x="457" y="1154" font-size="16" fill="#172d49">甲方：示例单位 A</text>
+<text x="457" y="1188" font-size="16" fill="#172d49">乙方：示例供应商 B</text>
+<text x="457" y="1222" font-size="16" fill="#172d49">一、项目概况</text>
+<text x="457" y="1256" font-size="16" fill="#172d49">本项目采购办公设备，用于业务办公。</text>
+<text x="457" y="1290" font-size="16" fill="#172d49">二、合同履行</text>
+<text x="457" y="1324" font-size="16" fill="#172d49">具体交付要求及验收安排见相关条款。</text>
+<rect x="1114" y="1018" width="419" height="382" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="1134" y="1048" font-size="18" fill="#172d49" class="title">分析配置</text>
+<text x="1134" y="1086" font-size="15" fill="#66788d">提取模板</text>
+<rect x="1133" y="1100" width="379" height="38" rx="4" fill="white" stroke="#dce4ef"/>
+<text x="1145" y="1126" font-size="16" fill="#172d49">通用文档基础信息                         ▾</text>
+<text x="1134" y="1170" font-size="15" fill="#66788d">生成每份文件的基础信息与来源出处。</text>
+<text x="1134" y="1205" font-size="16" fill="#172d49" class="title">提取字段</text>
+<text x="1429" y="1205" font-size="14" fill="#245fc3">修改字段</text>
+<rect x="1134" y="1222" width="88" height="27" rx="4" fill="#edf4ff"/>
+<text x="1143" y="1241" font-size="13" fill="#245fc3">文档标题</text>
+<rect x="1241" y="1222" width="88" height="27" rx="4" fill="#edf4ff"/>
+<text x="1250" y="1241" font-size="13" fill="#245fc3">文档类型</text>
+<rect x="1348" y="1222" width="88" height="27" rx="4" fill="#edf4ff"/>
+<text x="1357" y="1241" font-size="13" fill="#245fc3">文档日期</text>
+<text x="1134" y="1276" font-size="15" fill="#66788d">主体 · 主要事项 · 摘要 · 原文出处</text>
+<path d="M1134 1294 H1513" stroke="#dce4ef"/>
+<text x="1134" y="1325" font-size="16" fill="#172d49">附件处理：不合并</text>
+<text x="1134" y="1369" font-size="16" fill="#245fc3">▸ 高级设置</text>
+<path d="M48 1424 H1552" stroke="#dce4ef"/>
+<text x="70" y="1457" font-size="18" fill="#172d49" class="title">本次执行 23 份可用文件</text>
+<text x="360" y="1457" font-size="16" fill="#245fc3">查看范围</text>
+<text x="1164" y="1457" font-size="16" fill="#237453">模板已就绪</text>
+<rect x="1394" y="1435" width="134" height="36" rx="5" fill="#245fc3"/>
+<text x="1408" y="1459" font-size="15" fill="white">执行</text>
+<text x="69" y="1567" font-size="17" fill="#66788d">提交原则：收到任务编号才显示“已受理”；等待超时显示“正在确认提交状态”，保留当前工作。</text>
+<text x="48" y="1585" font-size="18" fill="#245fc3" class="title">03</text>
+<text x="91" y="1585" font-size="26" fill="#172d49" class="title">查看结果：先看到产出，再逐项核验</text>
+<text x="91" y="1616" font-size="16" fill="#66788d">结果占主区；点击结果联动原文；成功结果可用，失败资料可单独处理。</text>
+<rect x="48" y="1639" width="1504" height="535" rx="12" fill="white" stroke="#dce4ef"/>
+<text x="70" y="1676" font-size="20" fill="#172d49" class="title">信息提取结果</text>
+<text x="250" y="1676" font-size="17" fill="#66788d">演示任务 A</text>
+<rect x="417" y="1654" width="100" height="27" rx="4" fill="#edf4ff"/>
+<text x="426" y="1673" font-size="13" fill="#9a6310">部分失败</text>
+<text x="547" y="1676" font-size="16" fill="#66788d">22 份成功 / 1 份失败</text>
+<rect x="1254" y="1652" width="132" height="36" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="1268" y="1676" font-size="15" fill="#245fc3">重试失败</text>
+<rect x="1400" y="1652" width="130" height="36" rx="5" fill="#245fc3"/>
+<text x="1414" y="1676" font-size="15" fill="white">导出全部</text>
+<path d="M48 1695 H1552" stroke="#dce4ef"/>
+<rect x="65" y="1711" width="267" height="382" rx="5" fill="#f8fafc" stroke="#dce4ef"/>
+<text x="83" y="1742" font-size="18" fill="#172d49" class="title">本次资料 · 23 份</text>
+<rect x="83" y="1761" width="64" height="27" rx="4" fill="#edf4ff"/>
+<text x="92" y="1780" font-size="13" fill="#245fc3">全部</text>
+<rect x="158" y="1761" width="71" height="27" rx="4" fill="#edf4ff"/>
+<text x="167" y="1780" font-size="13" fill="#245fc3">成功</text>
+<rect x="239" y="1761" width="74" height="27" rx="4" fill="#edf4ff"/>
+<text x="248" y="1780" font-size="13" fill="#245fc3">失败</text>
+<text x="84" y="1824" font-size="17" fill="#172d49" class="title">▾  采购资料</text>
+<rect x="76" y="1841" width="246" height="35" rx="4" fill="#edf4ff"/>
+<text x="99" y="1865" font-size="15" fill="#245fc3">01  采购合同.pdf</text>
+<text x="99" y="1904" font-size="15" fill="#172d49">02  补充协议.pdf</text>
+<text x="99" y="1943" font-size="15" fill="#172d49">04  项目说明.docx</text>
+<text x="99" y="1982" font-size="15" fill="#172d49">05  验收记录.pdf</text>
+<text x="84" y="2040" font-size="14" fill="#9a6310">失败资料：可查看原因并重试</text>
+<text x="84" y="2072" font-size="14" fill="#66788d">已排除：03 旧版合同.pdf</text>
+<rect x="350" y="1711" width="745" height="382" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="371" y="1742" font-size="18" fill="#172d49" class="title">01 采购合同.pdf · 提取结果</text>
+<text x="917" y="1742" font-size="15" fill="#245fc3">查看本次配置</text>
+<rect x="364" y="1763" width="715" height="36" rx="0" fill="#f3f6fa"/>
+<text x="379" y="1788" font-size="15" fill="#66788d">字段</text>
+<text x="564" y="1788" font-size="15" fill="#66788d">提取内容</text>
+<text x="926" y="1788" font-size="15" fill="#66788d">原文出处</text>
+<text x="379" y="1829" font-size="15" fill="#172d49">文档标题</text>
+<text x="564" y="1829" font-size="15" fill="#172d49">采购合同</text>
+<text x="926" y="1829" font-size="15" fill="#245fc3">第 1 页</text>
+<path d="M364 1842 H1079" stroke="#dce4ef"/>
+<text x="379" y="1872" font-size="15" fill="#172d49">文档类型</text>
+<text x="564" y="1872" font-size="15" fill="#172d49">采购合同</text>
+<text x="926" y="1872" font-size="15" fill="#245fc3">第 1 页</text>
+<path d="M364 1885 H1079" stroke="#dce4ef"/>
+<rect x="364" y="1888" width="715" height="41" rx="0" fill="#edf4ff"/>
+<text x="379" y="1915" font-size="15" fill="#172d49">涉及主体</text>
+<text x="564" y="1915" font-size="15" fill="#172d49">示例单位 A；示例供应商 B</text>
+<text x="926" y="1915" font-size="15" fill="#245fc3">第 2 页</text>
+<path d="M364 1928 H1079" stroke="#dce4ef"/>
+<text x="379" y="1958" font-size="15" fill="#172d49">文档日期</text>
+<text x="564" y="1958" font-size="15" fill="#172d49">未提及</text>
+<text x="926" y="1958" font-size="15" fill="#66788d">—</text>
+<path d="M364 1971 H1079" stroke="#dce4ef"/>
+<text x="379" y="2001" font-size="15" fill="#172d49">主要事项</text>
+<text x="564" y="2001" font-size="15" fill="#172d49">采购办公设备</text>
+<text x="926" y="2001" font-size="15" fill="#245fc3">第 2 页</text>
+<path d="M364 2014 H1079" stroke="#dce4ef"/>
+<text x="373" y="2066" font-size="15" fill="#66788d">“未提及”表示原文无相应信息，与提取失败分开。</text>
+<rect x="1114" y="1711" width="419" height="382" rx="5" fill="#f8fafc" stroke="#dce4ef"/>
+<text x="1135" y="1742" font-size="18" fill="#172d49" class="title">原文证据</text>
+<text x="1135" y="1777" font-size="15" fill="#66788d">01 采购合同.pdf · 第 2 页</text>
+<rect x="1134" y="1797" width="379" height="224" rx="2" fill="white" stroke="#dce4ef"/>
+<text x="1163" y="1835" font-size="19" fill="#172d49" class="title">采购合同（示意）</text>
+<rect x="1155" y="1854" width="336" height="71" rx="3" fill="#fff1c7"/>
+<text x="1166" y="1883" font-size="17" fill="#172d49">甲方：示例单位 A</text>
+<text x="1166" y="1914" font-size="17" fill="#172d49">乙方：示例供应商 B</text>
+<text x="1166" y="1965" font-size="16" fill="#172d49">本项目采购办公设备。</text>
+<text x="1135" y="2065" font-size="15" fill="#245fc3">打开完整原文 →</text>
+<path d="M48 2117 H1552" stroke="#dce4ef"/>
+<text x="70" y="2150" font-size="16" fill="#66788d">结果依据本次资料与模板快照；重新配置将创建新分析。</text>
+<rect x="1201" y="2128" width="168" height="36" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="1215" y="2152" font-size="15" fill="#245fc3">复制配置新建</text>
+<rect x="1383" y="2128" width="145" height="36" rx="5" fill="white" stroke="#dce4ef"/>
+<text x="1397" y="2152" font-size="15" fill="#245fc3">继续使用资料</text>
+<text x="69" y="2260" font-size="17" fill="#66788d">证据原则：有可靠页码或坐标才精确定位；否则展示原文片段，并明确说明定位限制。</text>
+</svg>

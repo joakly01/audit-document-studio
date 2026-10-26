@@ -1,0 +1,67 @@
+{
+  "checks": [
+    "从有资料且已调整要求的准备页打开时间轴演示；返回会议分析后，资料、预览、完整配置与其他草稿字段保持一致",
+    "7份真实DOCX均可在原文栏渲染并下载；文件名、会议、摘录、参会及列席人员与结果一致；合并纪要包含两场会议，未错用旧d3源文件",
+    "刷新保持演示记录备注和配置修改，不重复创建任务或资料；结果路由可恢复",
+    "通过任务信息删除演示后刷新不补回，原DOCX资料保留；原会议准备草稿仍可继续"
+  ],
+  "sources": [
+    {
+      "id": "meeting-timeline-demo-doc-v1-01",
+      "name": "01-第1次园区改造项目专题会纪要.docx",
+      "rawReady": "docx",
+      "meetingCount": 1,
+      "bytes": 2537
+    },
+    {
+      "id": "meeting-timeline-demo-doc-v1-02",
+      "name": "02-第2次园区改造项目专题会纪要.docx",
+      "rawReady": "docx",
+      "meetingCount": 1,
+      "bytes": 2531
+    },
+    {
+      "id": "meeting-timeline-demo-doc-v1-03",
+      "name": "03-2026年2月5日专题会与采购协调会纪要.docx",
+      "rawReady": "docx",
+      "meetingCount": 2,
+      "bytes": 2979
+    },
+    {
+      "id": "meeting-timeline-demo-doc-v1-04",
+      "name": "04-第4次园区改造项目专题会纪要.docx",
+      "rawReady": "docx",
+      "meetingCount": 1,
+      "bytes": 2594
+    },
+    {
+      "id": "meeting-timeline-demo-doc-v1-05",
+      "name": "05-第5次园区改造项目专题会纪要.docx",
+      "rawReady": "docx",
+      "meetingCount": 1,
+      "bytes": 2590
+    },
+    {
+      "id": "meeting-timeline-demo-doc-v1-06",
+      "name": "06-第6次园区改造项目专题会纪要.docx",
+      "rawReady": "docx",
+      "meetingCount": 1,
+      "bytes": 2588
+    },
+    {
+      "id": "meeting-timeline-demo-doc-v1-07",
+      "name": "07-设备运维补充协调会纪要-日期待核对.docx",
+      "rawReady": "docx",
+      "meetingCount": 1,
+      "bytes": 2563
+    }
+  ],
+  "initialSeed": {
+    "seeded": true,
+    "taskId": "demo-meeting-timeline-v1",
+    "documents": 7,
+    "meetings": 8,
+    "topics": 24
+  },
+  "errors": []
+}

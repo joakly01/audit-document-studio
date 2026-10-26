@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-18",
+  "kind": "文档及阅读版验证，不是业务系统全量验收",
+  "offline": true,
+  "layouts": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "sections": 18,
+      "minimumTextPx": 14,
+      "pageOverflow": false
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "sections": 18,
+      "minimumTextPx": 14,
+      "pageOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "sections": 18,
+      "minimumTextPx": 14,
+      "pageOverflow": false
+    }
+  ],
+  "htmlTables": 16,
+  "errors": [],
+  "sourceSha256": "dc0ce290f76d32393843f9012036219b80bc8e9b6764d43a20f96df309223e28",
+  "pdf": {
+    "pages": 13,
+    "rulesPresent": 21,
+    "documentTitlePresent": true,
+    "renderedPages": [
+      1,
+      7,
+      13
+    ],
+    "textNormalization": "NFKC for CJK compatibility radicals"
+  },
+  "acceptanceItems": 50,
+  "localLinkCheck": "passed"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "w": 1366,
+    "previewHeight": 625,
+    "headerHeight": 39,
+    "headerWidth": 428,
+    "headerScroll": 428,
+    "toolbarHeight": 42,
+    "toolbarWidth": 428,
+    "toolbarScroll": 428
+  },
+  {
+    "w": 1024,
+    "previewHeight": 341,
+    "headerHeight": 39,
+    "headerWidth": 310,
+    "headerScroll": 310,
+    "toolbarHeight": 42,
+    "toolbarWidth": 310,
+    "toolbarScroll": 310
+  }
+]

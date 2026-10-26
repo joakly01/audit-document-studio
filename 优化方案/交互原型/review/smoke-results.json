@@ -1,0 +1,71 @@
+{
+  "tools": [
+    {
+      "tool": "extract",
+      "status": "completed",
+      "rows": 3,
+      "files": 3
+    },
+    {
+      "tool": "word",
+      "status": "completed",
+      "rows": 14,
+      "files": 4
+    },
+    {
+      "tool": "theme",
+      "status": "completed",
+      "rows": 3,
+      "files": 3
+    },
+    {
+      "tool": "timeline",
+      "status": "completed",
+      "rows": 3,
+      "files": 3
+    },
+    {
+      "tool": "risk",
+      "status": "completed",
+      "rows": 12,
+      "files": 3
+    },
+    {
+      "tool": "meeting",
+      "status": "completed",
+      "rows": 6,
+      "files": 3
+    },
+    {
+      "tool": "contract",
+      "status": "completed",
+      "rows": 4,
+      "files": 1
+    },
+    {
+      "tool": "bidding",
+      "status": "completed",
+      "rows": 2,
+      "files": 3
+    },
+    {
+      "tool": "prepaid",
+      "status": "awaiting",
+      "rows": 1,
+      "files": 1
+    },
+    {
+      "tool": "engineering",
+      "status": "completed",
+      "rows": 2,
+      "files": 1
+    },
+    {
+      "tool": "association",
+      "status": "completed",
+      "rows": 3,
+      "files": 2
+    }
+  ],
+  "browser_errors": []
+}

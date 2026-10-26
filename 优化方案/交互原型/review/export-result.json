@@ -1,0 +1,273 @@
+{
+  "notice": "分析结果与本次配置",
+  "task": "信息提取 · 10/18 07:28",
+  "scope": "任务全部资料",
+  "config": {
+    "template": "通用资料信息提取",
+    "prompt": "请依据所选资料，把关键内容整理成结构化信息表。保留原文引用；未提取到的内容如实标注，不补充资料外事实。",
+    "fields": [
+      "文件主题",
+      "涉及单位",
+      "金额与单位",
+      "关键日期"
+    ],
+    "checks": [],
+    "merge": true,
+    "top": 30,
+    "mode": "file",
+    "failure": "none",
+    "stageFailure": "none",
+    "secondTemplate": "主子项目关系识别",
+    "contractDataTemplate": "合同基础信息提取",
+    "bidTenderTemplate": "招标条件与评分检查",
+    "bidBidTemplate": "投标响应完整性检查",
+    "bidJointTemplate": "招投标联合对照检查",
+    "contractType": "非施工类合同",
+    "feeType": "工程监理费",
+    "mapName": "项目名称",
+    "mapUnit": "建设单位",
+    "mapAmount": "计划投资（万元）",
+    "mapBName": "项目名称",
+    "mapBUnit": "实施单位",
+    "mapBAmount": "安排资金（万元）",
+    "threshold": 4,
+    "perfectThreshold": 5,
+    "lockStrategy": "保留全部候选",
+    "compareRules": [
+      {
+        "name": "项目名称",
+        "type": "文本相似",
+        "weight": 0.6,
+        "threshold": 4
+      },
+      {
+        "name": "建设 / 实施单位",
+        "type": "精确匹配",
+        "weight": 0.3,
+        "threshold": 5
+      },
+      {
+        "name": "投资金额（万元）",
+        "type": "数值比较",
+        "weight": 0.1,
+        "threshold": 4
+      }
+    ],
+    "weightName": 0.6,
+    "weightUnit": 0.4,
+    "matchMode": "standard",
+    "cap": 20,
+    "base": "",
+    "chunk": 2000,
+    "overlap": 200,
+    "schemaVersion": 2,
+    "stages": {
+      "extract": {
+        "template": "通用资料信息提取",
+        "content": "请依据所选资料，把关键内容整理成结构化信息表。保留原文引用；未提取到的内容如实标注，不补充资料外事实。",
+        "functionType": "template-api",
+        "origin": "system"
+      }
+    },
+    "fieldDefs": [
+      {
+        "name": "文件主题",
+        "description": "提取原文中的文件主题，保留原始单位及限定条件；无法取得时标注未提取到。"
+      },
+      {
+        "name": "涉及单位",
+        "description": "提取原文中的涉及单位，保留原始单位及限定条件；无法取得时标注未提取到。"
+      },
+      {
+        "name": "金额与单位",
+        "description": "提取原文中的金额与单位，保留原始单位及限定条件；无法取得时标注未提取到。"
+      },
+      {
+        "name": "关键日期",
+        "description": "提取原文中的关键日期，保留原始单位及限定条件；无法取得时标注未提取到。"
+      }
+    ],
+    "riskNodes": [],
+    "contractRules": [],
+    "engineering": {
+      "duplicate": {
+        "threshold": 3.35,
+        "rows": [
+          {
+            "key": "F1",
+            "name": "项目名称",
+            "a": "项目名称",
+            "b": "项目名称",
+            "type": "similarity",
+            "threshold": 0.8,
+            "weight": 0.6,
+            "rule": "按原字段内容评分，保留匹配理由，不能仅凭相近名称确定为同一事项。"
+          },
+          {
+            "key": "F2",
+            "name": "建设 / 实施单位",
+            "a": "建设单位",
+            "b": "实施单位",
+            "type": "exact",
+            "threshold": 0,
+            "weight": 0.3,
+            "rule": "按原字段内容评分，保留匹配理由，不能仅凭相近名称确定为同一事项。"
+          },
+          {
+            "key": "F3",
+            "name": "投资金额（万元）",
+            "a": "计划投资（万元）",
+            "b": "安排资金（万元）",
+            "type": "investment_diff",
+            "threshold": 0.04,
+            "weight": 0.1,
+            "rule": "比较金额及单位，明确差异；空值不得视为相等。"
+          }
+        ],
+        "additional": "",
+        "minFields": 2
+      },
+      "parent": {
+        "threshold": 3.4,
+        "rows": [
+          {
+            "key": "F1",
+            "name": "项目名称",
+            "a": "项目名称",
+            "b": "项目名称",
+            "type": "similarity",
+            "threshold": 0.8,
+            "weight": 0.6,
+            "rule": "按原字段内容评分，保留匹配理由，不能仅凭相近名称确定为同一事项。"
+          },
+          {
+            "key": "F2",
+            "name": "建设 / 实施单位",
+            "a": "建设单位",
+            "b": "实施单位",
+            "type": "exact",
+            "threshold": 0,
+            "weight": 0.3,
+            "rule": "按原字段内容评分，保留匹配理由，不能仅凭相近名称确定为同一事项。"
+          },
+          {
+            "key": "F3",
+            "name": "投资金额（万元）",
+            "a": "计划投资（万元）",
+            "b": "安排资金（万元）",
+            "type": "investment_diff",
+            "threshold": 0.04,
+            "weight": 0.1,
+            "rule": "比较金额及单位，明确差异；空值不得视为相等。"
+          }
+        ],
+        "additional": "",
+        "minFields": 2
+      }
+    },
+    "association": {
+      "rows": [
+        {
+          "key": "F1",
+          "name": "项目名称",
+          "a": "项目名称",
+          "b": "项目名称",
+          "type": "similarity",
+          "threshold": 0.8,
+          "weight": 0.6,
+          "rule": "按原字段内容评分，保留匹配理由，不能仅凭相近名称确定为同一事项。"
+        },
+        {
+          "key": "F2",
+          "name": "建设 / 实施单位",
+          "a": "建设单位",
+          "b": "实施单位",
+          "type": "exact",
+          "threshold": 0,
+          "weight": 0.3,
+          "rule": "按原字段内容评分，保留匹配理由，不能仅凭相近名称确定为同一事项。"
+        },
+        {
+          "key": "F3",
+          "name": "投资金额（万元）",
+          "a": "计划投资（万元）",
+          "b": "安排资金（万元）",
+          "type": "investment_diff",
+          "threshold": 0.04,
+          "weight": 0.1,
+          "rule": "比较金额及单位，明确差异；空值不得视为相等。"
+        }
+      ],
+      "full": 4.5,
+      "partial": 3.5,
+      "mode": "batch",
+      "perRow": 5,
+      "total": 10000,
+      "minFields": 2,
+      "locks": {
+        "full": true,
+        "partial": false,
+        "table1": true,
+        "table2": true
+      },
+      "hardRules": [],
+      "additional": ""
+    },
+    "similarityThreshold": 80,
+    "minClusterSize": 2,
+    "taskName": "",
+    "taskNotes": "",
+    "auditObjective": "",
+    "lexiconSelection": {
+      "stop": null,
+      "user": null
+    }
+  },
+  "results": [
+    {
+      "doc": "d1",
+      "title": "设备采购合同",
+      "unit": "园区建设中心 / 华辰设备有限公司",
+      "amount": "128 万元",
+      "date": "2026-03-18",
+      "topic": "设备采购",
+      "excerpt": "双方约定：合同生效后支付30%预付款；设备交付且验收合格后支付60%；质保期满支付10%。",
+      "values": [
+        "设备采购合同",
+        "园区建设中心 / 华辰设备有限公司",
+        "园区建设中心 / 华辰设备有限公司",
+        "2026-03-18"
+      ]
+    },
+    {
+      "doc": "d2",
+      "title": "年度项目资金批复",
+      "unit": "园区建设中心",
+      "amount": "860 万元",
+      "date": "2026-01-12",
+      "topic": "项目建设",
+      "excerpt": "项目包含基础设施改造与配套设备购置。资金须专款专用，重大调整按原审批程序报批。",
+      "values": [
+        "年度项目资金批复",
+        "园区建设中心",
+        "园区建设中心",
+        "2026-01-12"
+      ]
+    },
+    {
+      "doc": "d3",
+      "title": "第3次项目专题会议",
+      "unit": "园区建设中心",
+      "amount": "120 万元",
+      "date": "2026-02-06",
+      "topic": "设备采购",
+      "excerpt": "议题一：设备采购安排。会议同意启动设备采购，采购预算控制在120万元内，要求完善需求清单后组织采购。",
+      "values": [
+        "第3次项目专题会议",
+        "园区建设中心",
+        "园区建设中心",
+        "2026-02-06"
+      ]
+    }
+  ]
+}

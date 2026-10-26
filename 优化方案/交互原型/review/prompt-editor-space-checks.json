@@ -1,0 +1,401 @@
+{
+  "checks": [
+    "9个工具首阶段×3尺寸：正文可编辑滚动，底部按钮完整可见，无横向溢出",
+    "配套规则提示始终可见，未被放大的正文挤出",
+    "会议只读提示词与后续风险提示词的编辑模式、长文、按钮均正常",
+    "11工具真实准备页Step标题简短动宾，无重复介绍；两类工程分析、两表角色、计费续算、会议后续操作提示保留"
+  ],
+  "metrics": [
+    {
+      "tool": "theme",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 493,
+      "footerBottom": 754
+    },
+    {
+      "tool": "theme",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 229,
+      "footerBottom": 466
+    },
+    {
+      "tool": "theme",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 312.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "timeline",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 537,
+      "footerBottom": 754
+    },
+    {
+      "tool": "timeline",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 267,
+      "footerBottom": 466
+    },
+    {
+      "tool": "timeline",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 353.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "risk",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 537,
+      "footerBottom": 754
+    },
+    {
+      "tool": "risk",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 267,
+      "footerBottom": 466
+    },
+    {
+      "tool": "risk",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 353.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "meeting",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 493,
+      "footerBottom": 754
+    },
+    {
+      "tool": "meeting",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 229,
+      "footerBottom": 466
+    },
+    {
+      "tool": "meeting",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 312.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "contract",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 493,
+      "footerBottom": 754
+    },
+    {
+      "tool": "contract",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 229,
+      "footerBottom": 466
+    },
+    {
+      "tool": "contract",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 312.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "bidding",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 537,
+      "footerBottom": 754
+    },
+    {
+      "tool": "bidding",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 267,
+      "footerBottom": 466
+    },
+    {
+      "tool": "bidding",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 353.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "prepaid",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 493,
+      "footerBottom": 754
+    },
+    {
+      "tool": "prepaid",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 229,
+      "footerBottom": 466
+    },
+    {
+      "tool": "prepaid",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 312.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "engineering",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 493,
+      "footerBottom": 754
+    },
+    {
+      "tool": "engineering",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 229,
+      "footerBottom": 466
+    },
+    {
+      "tool": "engineering",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 312.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "association",
+      "kind": "editable",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 537,
+      "footerBottom": 754
+    },
+    {
+      "tool": "association",
+      "kind": "editable",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 267,
+      "footerBottom": 466
+    },
+    {
+      "tool": "association",
+      "kind": "editable",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 353.4,
+      "footerBottom": 586
+    },
+    {
+      "tool": "meeting",
+      "kind": "readonly",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 476.4,
+      "footerBottom": 754
+    },
+    {
+      "tool": "meeting",
+      "kind": "readonly",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 212.4,
+      "footerBottom": 466
+    },
+    {
+      "tool": "meeting",
+      "kind": "readonly",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 298.6,
+      "footerBottom": 586
+    },
+    {
+      "tool": "meeting",
+      "kind": "secondary",
+      "width": 1366,
+      "height": 768,
+      "editorHeight": 519.4,
+      "footerBottom": 754
+    },
+    {
+      "tool": "meeting",
+      "kind": "secondary",
+      "width": 1024,
+      "height": 480,
+      "editorHeight": 249.4,
+      "footerBottom": 466
+    },
+    {
+      "tool": "meeting",
+      "kind": "secondary",
+      "width": 390,
+      "height": 600,
+      "editorHeight": 319.0,
+      "footerBottom": 586
+    }
+  ],
+  "titles": [
+    {
+      "tool": "extract",
+      "headings": [
+        "Step 1添加资料",
+        "Step 2核对原文",
+        "Step 3设置提取字段"
+      ],
+      "introductions": []
+    },
+    {
+      "tool": "word",
+      "headings": [
+        "Step 1 添加资料",
+        "Step 2核对原文",
+        "Step 3 设置统计规则"
+      ],
+      "introductions": [
+        "点击“添加”选择文件，下方为已选资料。",
+        "设置停用词、新词和展示词数。"
+      ]
+    },
+    {
+      "tool": "theme",
+      "headings": [
+        "Step 1 添加资料",
+        "Step 2核对原文",
+        "Step 3 设置归纳要求"
+      ],
+      "introductions": [
+        "点击“添加”选择文件，下方为已选资料。",
+        "先设置资料摘录要求，再设置主题归纳要求。"
+      ]
+    },
+    {
+      "tool": "timeline",
+      "headings": [
+        "Step 1 添加资料",
+        "Step 2核对原文",
+        "Step 3 设置提取要求"
+      ],
+      "introductions": [
+        "点击“添加”选择文件，下方为已选资料。",
+        "设置日期和事项的提取要求，生成可追溯的时间线。"
+      ]
+    },
+    {
+      "tool": "risk",
+      "headings": [
+        "Step 1 添加资料",
+        "Step 2核对原文",
+        "Step 3 选择风险点"
+      ],
+      "introductions": [
+        "点击“添加”选择文件，下方为已选资料。",
+        "选择要检查的风险点，提取线索和原文依据。"
+      ]
+    },
+    {
+      "tool": "meeting",
+      "headings": [
+        "Step 1 添加资料",
+        "Step 2核对原文",
+        "Step 3 设置分析要求"
+      ],
+      "introductions": [
+        "点击“添加”选择文件，下方为已选资料。",
+        "设置会议提取要求，生成时间轴和议题聚类；完成后可分析风险或提问。"
+      ]
+    },
+    {
+      "tool": "contract",
+      "headings": [
+        "Step 1 添加合同",
+        "Step 2 设置检查规则"
+      ],
+      "introductions": [
+        "点击“添加”选择合同，下方为已选合同。可按需关联补充资料。",
+        "选择合同类别，再设置检查规则。"
+      ]
+    },
+    {
+      "tool": "bidding",
+      "headings": [
+        "Step 1 添加项目资料",
+        "Step 2 设置检查内容"
+      ],
+      "introductions": [
+        "选择检查环节，按需调整提示词和规则。"
+      ]
+    },
+    {
+      "tool": "prepaid",
+      "headings": [
+        "Step 1 添加合同",
+        "Step 2核对原文",
+        "Step 3 设置计费要求"
+      ],
+      "introductions": [
+        "点击“添加”选择合同，下方为已选合同。可按需关联补充资料。",
+        "选择费用类型，提取计费约定后填写基数计算费用。"
+      ]
+    },
+    {
+      "tool": "engineering",
+      "headings": [
+        "Step 1 添加台账",
+        "Step 2 设置比较规则"
+      ],
+      "introductions": [
+        "添加项目台账，分别查找每张表内的重复项目和主子项目。",
+        "设置比较字段与规则，同时查找各台账内的重复、主子项目。"
+      ]
+    },
+    {
+      "tool": "association",
+      "headings": [
+        "Step 1 选择对照表",
+        "Step 2 设置关联规则"
+      ],
+      "introductions": [
+        "先选待查台账，再选用于核对的另一张台账。",
+        "先对应两表字段，再设置关联规则。"
+      ]
+    }
+  ],
+  "errors": []
+}

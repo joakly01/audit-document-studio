@@ -1,0 +1,52 @@
+{
+  "baseUrl": "http://43.128.232.108",
+  "indexSha256": "14e460574b57bfa68544f720bd58959161352e3e9f6df41de6fdfb85324443f5",
+  "checks": [
+    {
+      "health": true,
+      "moduleMime": true,
+      "sourceTreeNotServed": true,
+      "pdfRange": true
+    },
+    {
+      "route": "library",
+      "http": 200,
+      "view": "library"
+    },
+    {
+      "route": "tool/extract",
+      "http": 200,
+      "view": "tool"
+    },
+    {
+      "route": "tasks",
+      "http": 200,
+      "view": "tasks"
+    },
+    {
+      "route": "templates",
+      "http": 200,
+      "view": "templates"
+    },
+    {
+      "uuidFormatAndUniqueness": true,
+      "secureContext": false
+    },
+    {
+      "preview": "pdf",
+      "fileId": "d1",
+      "rendered": true
+    },
+    {
+      "preview": "docx",
+      "fileId": "d3",
+      "rendered": true
+    },
+    {
+      "preview": "xlsx",
+      "fileId": "d10",
+      "rendered": true
+    }
+  ],
+  "errors": []
+}

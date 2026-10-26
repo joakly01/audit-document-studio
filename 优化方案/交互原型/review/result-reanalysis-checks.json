@@ -1,0 +1,93 @@
+{
+  "checks": [
+    "extract：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "word：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "theme：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "timeline：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "risk：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "meeting：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "contract：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "bidding：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "prepaid：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "engineering：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "association：结果页动作统一，沿用设置和资料后可编辑，明确提交新任务且旧结果完整保留",
+    "会议重新分析优先继承尚未执行的风险要求，没有草稿时沿用已生成风险报告的要求",
+    "失败与部分失败保留原任务重试；运行中仍可停止，已停止任务仅经明确再次分析继续",
+    "提取、会议、合同与两表结果页在三种屏幕尺寸下动作可见且无横向溢出"
+  ],
+  "layouts": [
+    {
+      "tool": "extract",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366
+    },
+    {
+      "tool": "meeting",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366
+    },
+    {
+      "tool": "contract",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366
+    },
+    {
+      "tool": "association",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366
+    },
+    {
+      "tool": "extract",
+      "width": 1024,
+      "height": 480,
+      "scrollWidth": 1024
+    },
+    {
+      "tool": "meeting",
+      "width": 1024,
+      "height": 480,
+      "scrollWidth": 1024
+    },
+    {
+      "tool": "contract",
+      "width": 1024,
+      "height": 480,
+      "scrollWidth": 1024
+    },
+    {
+      "tool": "association",
+      "width": 1024,
+      "height": 480,
+      "scrollWidth": 1024
+    },
+    {
+      "tool": "extract",
+      "width": 390,
+      "height": 600,
+      "scrollWidth": 390
+    },
+    {
+      "tool": "meeting",
+      "width": 390,
+      "height": 600,
+      "scrollWidth": 390
+    },
+    {
+      "tool": "contract",
+      "width": 390,
+      "height": 600,
+      "scrollWidth": 390
+    },
+    {
+      "tool": "association",
+      "width": 390,
+      "height": 600,
+      "scrollWidth": 390
+    }
+  ],
+  "errors": []
+}

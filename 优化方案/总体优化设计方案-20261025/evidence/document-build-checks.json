@@ -1,0 +1,17 @@
+{
+  "pdfPages": 55,
+  "pdfBytes": 3738651,
+  "docxBytes": 1173006,
+  "chapters": 8,
+  "emptyPages": [],
+  "chapterTextFound": {
+    "文档挖掘助手 · 总体优化设计与研发落地方案": true,
+    "文档挖掘助手总体优化设计方案": true,
+    "模块设计与能力对照": true,
+    "UI 交互与开发规范": true,
+    "后端对接与开发清单": true,
+    "审查问题与实施验收": true,
+    "对标参考与设计取舍": true,
+    "证据索引与版本说明": true
+  }
+}
