@@ -1,0 +1,62 @@
+/* Shared screen typography. Compact layouts must not shrink readable text. */
+:root{--font-body:16px;--font-caption:14px;--font-section:18px;--font-page:22px;font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",Arial,sans-serif;font-size:var(--font-body);--muted:#657589}
+body{line-height:1.6}
+button,input,select,textarea{line-height:1.5}
+input:not([type=checkbox]):not([type=radio]):not([type=range]),select{min-height:36px}
+.btn,.btn.sm,.command-actions .btn,.lib-toolbar .btn,.lib-top-actions .btn,.v7-directory-actions .btn,.v6-search-dialog .btn{font-size:var(--font-body);min-height:36px;line-height:1.5}
+.link,.tab,.stage-tabs button,.filename,.lib-folders .dir-nav-name,.work-file button.filename,.lib-tool,.navbtn,.shell.nav-expanded .navbtn{font-size:var(--font-body)}
+.pagehead h1,.lib-commandbar h1{font-size:var(--font-page);line-height:1.4}
+.work-heading h1{font-size:20px;line-height:1.4}
+.modalhead h2,.v6-search-dialog .modalhead h2{font-size:20px;line-height:1.5}
+h3,.config h3,.workset-top h3,.lib-tools-head h3,.cardhead h3{font-size:var(--font-section);line-height:1.5}
+.hint,.file-sub,.small,small,.tag,.lib-meta,.lib-table .file-sub,.lib-table .tag,.lib-table th,.table th,.lib-selection,.lib-selection-detail,.lib-pagination,.v7-list-guide,.v7-location-label,.lib-storage,.lib-storage .link,.tool-group-title,.navgroup,.shell.nav-expanded .navgroup{font-size:var(--font-caption);line-height:1.6}
+.hint,.file-sub,.lib-table .file-sub,.lib-meta,.lib-total,.lib-pagination,.lib-storage,.v7-list-guide,.v7-location-label,.v6-source-position,.v6-source-head small,.v6-result-file small,.v6-result-file>button>span{color:#657589}
+.table th,.lib-table th{color:#52657b;font-weight:600}
+.table,.lib-table,.table .filename,.lib-table .filename,.field input,.field textarea,.field select,.search input,.config label,.field-label{font-size:var(--font-body)}
+.document p,.v6-source-scroll pre{font-size:var(--font-body);line-height:1.9;color:#40556e}
+.config .hint,.config .stage-line .hint{white-space:normal;overflow:visible;text-overflow:clip}
+.config .config-toolbar,.config-toolbar,.modalfoot,.result-actions,.result-tools,.editor-toolbar,.lib-selection,.lib-pagination,.lib-commandbar{flex-wrap:wrap}
+.lib-commandbar{height:auto;min-height:40px;flex-shrink:0}
+.lib-top-actions{flex-wrap:wrap}
+.lib-path-row{min-height:44px;flex-shrink:0}
+.lib-toolbar{flex-wrap:wrap;flex-shrink:0}
+.lib-toolbar select{height:auto;max-width:none}
+.lib-toolbar>.search{flex-basis:180px}
+.lib-selection{flex-shrink:0;min-height:40px}
+.lib-pagination{flex-shrink:0}
+.lib-pagination select{max-width:110px}
+.lib-selection select{max-width:156px}
+.lib-tools-head{height:auto;min-height:46px}
+.lib-folders .dir-nav-line{min-height:38px}
+.lib-folder-head{flex-wrap:wrap}
+.lib-folder-head>select{min-width:108px}
+.lib-table{min-width:740px}
+.lib-table .lib-name{width:260px}
+.lib-table .lib-status{width:100px}
+.lib-table .lib-col-owner{width:94px}
+.lib-table .lib-col-uploaded{width:118px}
+.lib-table .lib-actions{width:132px}
+.lib-table .lib-row-actions .link{font-size:var(--font-body)}
+.fileicon,.lib-table .fileicon,.work-file .fileicon{width:38px;min-width:38px;height:38px;font-size:var(--font-caption);letter-spacing:-.5px}
+.number-label,.step-n,.workhead .step-n{min-width:24px;min-height:24px;width:auto;height:auto;font-size:var(--font-caption)}
+.shell.nav-expanded .brand small,.compactnav .brand small{display:none}
+.brand b,.shell.nav-expanded .brand b{font-size:var(--font-body)}
+.sidebar{scrollbar-width:thin}
+.sidebar-toggle{font-size:var(--font-caption);line-height:1.5}
+.navgroup,.shell.nav-expanded .navgroup{color:#a2b3c5;letter-spacing:0}
+.lib-tools .tool-group-title{color:#657589;letter-spacing:0}
+.v6-search-command,.v6-search-scope,.v6-result-toolbar,.v6-match-controls{flex-wrap:wrap;flex-shrink:0}
+.v6-search-command>.search{flex-basis:220px}
+.v6-search-command .row-radio,.v6-result-select label{font-size:var(--font-body)}
+.v6-result-file b,.v6-source-head h3{font-size:var(--font-body)}
+.v6-search-dialog .modalhead,.v6-search-dialog .modalfoot{flex-shrink:0}
+.v6-search-layout{grid-template-columns:310px minmax(0,1fr)}
+.v6-result-toolbar select{max-width:230px}
+.v6-match-controls select{max-width:150px}
+.work-heading{min-width:0}
+.work-commandbar{flex-wrap:wrap;height:auto!important;min-height:56px}
+.work-commandbar>.command-actions{min-width:0;flex-wrap:wrap}
+@media(min-width:801px){.work-view{--command-height:56px}.work-view .workbench{height:calc(100dvh - var(--command-height))}.work-commandbar{height:var(--command-height)!important}}
+@media(max-width:1200px) and (min-width:801px){.work-view .workset{width:200px}.config{width:280px}.work-commandbar .inline-steps{display:none}.work-commandbar .command-actions{gap:5px}.work-commandbar .btn{padding:6px 8px}}
+@media(max-width:760px){.lib-workspace .lib-table{min-width:0}.lib-top-actions{gap:5px}.lib-top-actions .btn{padding:5px 8px}.lib-table .lib-actions,.lib-table .lib-row-actions{width:90px}.lib-table .lib-name{width:auto}.lib-table .file-sub{white-space:normal}.lib-pagination>.row{flex-wrap:wrap}.lib-commandbar>.row{flex-wrap:wrap}.v6-search-layout{display:flex}.v6-search-dialog .modalbody{overflow:auto}.v6-search-command>.search{flex-basis:180px}.v6-result-list{height:240px}.work-commandbar{white-space:normal}.work-heading h1{font-size:20px}.lib-selection .row{flex-wrap:wrap}.lib-storage .row{flex-wrap:wrap}}
+@media(min-width:541px){.shell.nav-expanded .navbtn{padding:6px 10px!important;margin-bottom:2px;line-height:1.5}.shell.nav-expanded .navgroup{padding:8px 10px 4px}.shell.nav-expanded .brand{padding-bottom:12px!important}}

@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "tool": "extract",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "word",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "theme",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "timeline",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "risk",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "meeting",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "contract",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "bidding",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "prepaid",
+      "checked": false,
+      "reason": "没有已完成的结果演示记录；本次未修改该工具结果导出实现"
+    },
+    {
+      "tool": "engineering",
+      "checked": true,
+      "exportResultEnabled": true
+    },
+    {
+      "tool": "association",
+      "checked": true,
+      "exportResultEnabled": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,119 @@
+{
+  "checks": [
+    "会议准备、参数原值映射、三种业务成果、人员中文分隔筛选、原文与总览返回、报告失败保留/重试/更新确认、四格式报告和问答来源",
+    "91项议题、19类事项和46次会议分区分页；动态字段保留，筛选自动返回首页，全部议题弹窗独立分页",
+    "风险点检索、编辑草稿与新增定位、真实检查方式；三种结果状态、等级原值、筛选导出一致、240条检查结果分页与分组渐进展开",
+    "会议议题/风险报告/问答、风险结果与只读配置：1366、1024×480和390屏宽；编辑弹窗与底部操作始终可达"
+  ],
+  "layouts": [
+    {
+      "tool": "meeting",
+      "tab": "regular",
+      "w": 1366,
+      "h": 768,
+      "outer": 1366,
+      "scroll": 768,
+      "center": 724
+    },
+    {
+      "tool": "meeting",
+      "tab": "risk",
+      "w": 1366,
+      "h": 768,
+      "outer": 1366,
+      "scroll": 768,
+      "center": 724
+    },
+    {
+      "tool": "meeting",
+      "tab": "qa",
+      "w": 1366,
+      "h": 768,
+      "outer": 1366,
+      "scroll": 768,
+      "center": 724
+    },
+    {
+      "tool": "risk",
+      "tab": "main",
+      "w": 1366,
+      "h": 768,
+      "outer": 1366,
+      "scroll": 768,
+      "center": 724
+    },
+    {
+      "tool": "meeting",
+      "tab": "regular",
+      "w": 1024,
+      "h": 480,
+      "outer": 1024,
+      "scroll": 480,
+      "center": 436
+    },
+    {
+      "tool": "meeting",
+      "tab": "risk",
+      "w": 1024,
+      "h": 480,
+      "outer": 1024,
+      "scroll": 480,
+      "center": 436
+    },
+    {
+      "tool": "meeting",
+      "tab": "qa",
+      "w": 1024,
+      "h": 480,
+      "outer": 1024,
+      "scroll": 480,
+      "center": 436
+    },
+    {
+      "tool": "risk",
+      "tab": "main",
+      "w": 1024,
+      "h": 480,
+      "outer": 1024,
+      "scroll": 480,
+      "center": 436
+    },
+    {
+      "tool": "meeting",
+      "tab": "regular",
+      "w": 390,
+      "h": 600,
+      "outer": 390,
+      "scroll": 600,
+      "center": 556
+    },
+    {
+      "tool": "meeting",
+      "tab": "risk",
+      "w": 390,
+      "h": 600,
+      "outer": 390,
+      "scroll": 600,
+      "center": 556
+    },
+    {
+      "tool": "meeting",
+      "tab": "qa",
+      "w": 390,
+      "h": 600,
+      "outer": 390,
+      "scroll": 600,
+      "center": 556
+    },
+    {
+      "tool": "risk",
+      "tab": "main",
+      "w": 390,
+      "h": 600,
+      "outer": 390,
+      "scroll": 600,
+      "center": 556
+    }
+  ],
+  "errors": []
+}

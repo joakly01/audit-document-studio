@@ -1,0 +1,10 @@
+{
+  "risks": 10000,
+  "preparingMs": 58,
+  "openMs": 113,
+  "mountedRows": 20,
+  "mountedInputs": 23,
+  "scrollBefore": 2102,
+  "scrollAfter": 2102,
+  "errors": []
+}

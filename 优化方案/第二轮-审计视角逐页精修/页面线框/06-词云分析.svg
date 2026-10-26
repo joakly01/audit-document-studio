@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img">
+<title>词云分析：逐页精修设计</title>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif}</style>
+<rect x="0" y="0" width="1600" height="1000" rx="0" fill="#f4f6fa"/>
+<text x="40" y="48" xml:space="preserve" font-size="29" fill="#263a53" font-weight="700">06 / 词云分析</text>
+<text x="40" y="84" xml:space="preserve" font-size="16" fill="#6b7b90">静态设计评审 · 保留现有业务流程 · 示例名称、内容及数量均为虚构</text>
+<rect x="1323" y="29" width="233" height="26" rx="4" fill="#edf4ff"/>
+<text x="1332" y="47" xml:space="preserve" font-size="13" fill="#215eb8">V0.2 · 最小改动</text>
+<rect x="40" y="126" width="1520" height="642" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="58" y="163" xml:space="preserve" font-size="22" fill="#263a53" font-weight="700">词云分析</text>
+<rect x="405" y="142" width="175" height="26" rx="4" fill="#edf4ff"/>
+<text x="414" y="160" xml:space="preserve" font-size="13" fill="#215eb8">查看结果</text>
+<text x="1365" y="162" xml:space="preserve" font-size="15" fill="#215eb8">任务中心   关闭 ×</text>
+<text x="58" y="207" xml:space="preserve" font-size="17" fill="#6b7b90">统计资料中的高频词；出现次数不代表风险程度。</text>
+<path d="M40 226 h1520" stroke="#dce3ed"/>
+<rect x="56" y="244" width="236" height="458" rx="6" fill="#f9fbfd" stroke="#dce3ed"/>
+<text x="72" y="276" xml:space="preserve" font-size="17" fill="#263a53" font-weight="700">本次资料 · 23份资料</text>
+<rect x="72" y="296" width="58" height="26" rx="4" fill="#edf4ff"/>
+<text x="81" y="314" xml:space="preserve" font-size="13" fill="#215eb8">全部</text>
+<rect x="139" y="296" width="58" height="26" rx="4" fill="#edf4ff"/>
+<text x="148" y="314" xml:space="preserve" font-size="13" fill="#215eb8">成功</text>
+<rect x="206" y="296" width="62" height="26" rx="4" fill="#edf4ff"/>
+<text x="215" y="314" xml:space="preserve" font-size="13" fill="#215eb8">失败</text>
+<rect x="72" y="339" width="204" height="32" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="83" y="361" xml:space="preserve" font-size="14" fill="#6b7b90">搜索本次资料</text>
+<text x="72" y="405" xml:space="preserve" font-size="15" fill="#263a53" font-weight="700">▾ 采购资料</text>
+<rect x="65" y="419" width="218" height="34" rx="3" fill="#edf4ff"/>
+<text x="84" y="442" xml:space="preserve" font-size="14" fill="#215eb8">采购合同.pdf</text>
+<text x="84" y="480" xml:space="preserve" font-size="14" fill="#263a53">补充协议.pdf</text>
+<text x="84" y="518" xml:space="preserve" font-size="14" fill="#263a53">项目说明.docx</text>
+<text x="84" y="556" xml:space="preserve" font-size="14" fill="#263a53">验收记录.pdf</text>
+<text x="72" y="610" xml:space="preserve" font-size="14" fill="#215eb8">查看本次资料范围</text>
+<rect x="72" y="650" width="204" height="34" rx="4" fill="#215eb8" stroke="#215eb8"/>
+<text x="84" y="673" xml:space="preserve" font-size="15" fill="white">查看原文</text>
+<rect x="308" y="244" width="344" height="458" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="326" y="274" xml:space="preserve" font-size="18" fill="#263a53" font-weight="700">词频</text>
+<rect x="325" y="307" width="310" height="36" rx="0" fill="#eef2f7"/>
+<text x="335" y="331" xml:space="preserve" font-size="14" fill="#6b7b90">词语</text>
+<text x="550" y="331" xml:space="preserve" font-size="14" fill="#6b7b90">频次</text>
+<text x="335" y="365" xml:space="preserve" font-size="14" fill="#263a53">项目</text>
+<text x="550" y="365" xml:space="preserve" font-size="14" fill="#263a53">128</text>
+<path d="M325 392 h310" stroke="#dce3ed"/>
+<rect x="325" y="392" width="310" height="49" rx="0" fill="#f8fafc"/>
+<text x="335" y="414" xml:space="preserve" font-size="14" fill="#263a53">采购</text>
+<text x="550" y="414" xml:space="preserve" font-size="14" fill="#263a53">96</text>
+<path d="M325 441 h310" stroke="#dce3ed"/>
+<text x="335" y="463" xml:space="preserve" font-size="14" fill="#263a53">验收</text>
+<text x="550" y="463" xml:space="preserve" font-size="14" fill="#263a53">62</text>
+<path d="M325 490 h310" stroke="#dce3ed"/>
+<rect x="325" y="490" width="310" height="49" rx="0" fill="#f8fafc"/>
+<text x="335" y="512" xml:space="preserve" font-size="14" fill="#263a53">预算</text>
+<text x="550" y="512" xml:space="preserve" font-size="14" fill="#263a53">48</text>
+<path d="M325 539 h310" stroke="#dce3ed"/>
+<text x="335" y="561" xml:space="preserve" font-size="14" fill="#263a53">合同</text>
+<text x="550" y="561" xml:space="preserve" font-size="14" fill="#263a53">35</text>
+<path d="M325 588 h310" stroke="#dce3ed"/>
+<text x="326" y="650" xml:space="preserve" font-size="14" fill="#6b7b90">筛选仅影响展示</text>
+<rect x="668" y="244" width="876" height="458" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="686" y="274" xml:space="preserve" font-size="18" fill="#263a53" font-weight="700">词云</text>
+<text x="1138" y="275" xml:space="preserve" font-size="15" fill="#215eb8">展示词数：50    用词设置</text>
+<text x="824" y="399" xml:space="preserve" font-size="45" fill="#215eb8" font-weight="700">采购</text>
+<text x="1070" y="450" xml:space="preserve" font-size="59" fill="#215eb8" font-weight="700">项目</text>
+<text x="779" y="504" xml:space="preserve" font-size="35" fill="#215eb8" font-weight="700">验收</text>
+<text x="1204" y="379" xml:space="preserve" font-size="31" fill="#215eb8" font-weight="700">预算</text>
+<text x="968" y="565" xml:space="preserve" font-size="37" fill="#215eb8" font-weight="700">合同</text>
+<text x="1264" y="544" xml:space="preserve" font-size="26" fill="#215eb8" font-weight="700">设备</text>
+<text x="798" y="600" xml:space="preserve" font-size="23" fill="#215eb8" font-weight="700">管理</text>
+<path d="M40 718 h1520" stroke="#dce3ed"/>
+<text x="58" y="749" xml:space="preserve" font-size="15" fill="#6b7b90">本次分析23份资料 · 展示前50个词 · 用词设置可查看</text>
+<text x="40" y="818" xml:space="preserve" font-size="17" fill="#263a53" font-weight="700">产品经理批注</text>
+<text x="40" y="852" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">01</text>
+<text x="80" y="852" xml:space="preserve" font-size="16" fill="#6b7b90">源码已经有词频表；完成后通过现有预览显隐露出词频+词云。</text>
+<text x="40" y="897" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">02</text>
+<text x="80" y="897" xml:space="preserve" font-size="16" fill="#6b7b90">把“分词数量”改成“展示词数”；停用词写入个人词库时明确影响后续。</text>
+<text x="40" y="942" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">03</text>
+<text x="80" y="942" xml:space="preserve" font-size="16" fill="#6b7b90">不新增未接通的来源段落下钻或导出按钮。</text>
+</svg>

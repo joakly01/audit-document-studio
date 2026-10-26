@@ -1,0 +1,56 @@
+/* Preserve the work area: high-frequency commands stay on one line; secondary actions overflow. */
+.lib-browser{overflow:visible}
+.lib-toolbar{gap:8px;flex-wrap:nowrap!important;min-height:56px;padding:9px 10px;flex-shrink:0}
+.lib-toolbar>.search{flex:1 1 180px!important;min-width:76px;max-width:none}
+.lib-toolbar .search input{padding-left:34px}
+.lib-toolbar>.btn,.lib-toolbar>.lib-dropdown,.lib-toolbar>.lib-scope-select{flex-shrink:0;margin:0}
+.lib-toolbar .btn{padding:5px 8px;min-height:36px;font-size:16px}
+.lib-toolbar>.lib-scope-select{width:116px;padding:5px 6px;font-size:16px}
+.lib-toolbar .lib-active-dot,.lib-overflow>summary.has-filter:after{display:inline-block;width:6px;height:6px;background:#3269db;border-radius:50%;flex-shrink:0}
+.lib-overflow>summary.has-filter:after{content:''}
+.lib-selection,.lib-selection.has-selection{flex-wrap:nowrap!important;height:42px;min-height:42px;gap:8px}
+.lib-selection>.row,.lib-selection.has-selection>.row{flex:1;min-width:0;flex-wrap:nowrap!important;overflow:hidden}
+.lib-selection .link{flex-shrink:0;font-size:14px}
+.lib-selection-detail{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.lib-selection>select{flex:0 0 116px;width:116px;max-width:116px;font-size:14px}
+.lib-files[data-toolbar-mode=medium] .lib-selection-detail,.lib-files[data-toolbar-mode=narrow] .lib-selection-detail{display:none}
+.lib-files[data-toolbar-mode=narrow] .v7-location-label{display:none}
+.lib-commandbar{flex-wrap:nowrap!important;min-height:40px;height:40px}
+.lib-commandbar>.row,.lib-top-actions{flex-wrap:nowrap!important}
+.lib-top-actions .btn{font-size:16px}
+.lib-path-row{flex-wrap:nowrap!important;min-height:42px;height:42px}
+.lib-path-row>.row:first-child{flex:1;min-width:0;flex-basis:auto}
+.lib-path-row>.row:last-child{flex:0 0 auto;margin:0}
+.lib-path-row>.row:empty{display:none}
+.lib-readonly-indicator{display:flex;align-items:center;color:#78899b;cursor:help;padding:4px}
+.lib-overflow-panel{width:264px;max-width:calc(100vw - 24px);padding:6px;max-height:calc(100dvh - 230px);overflow:auto;z-index:40;gap:0}
+.lib-menu-label{font-size:14px;line-height:1.5;color:#687b90;padding:7px 9px 5px;font-weight:400;white-space:nowrap}
+.lib-overflow-panel section+section,.lib-overflow-filters:not([hidden])+.lib-batch-actions{border-top:1px solid #e7edf4;margin-top:4px;padding-top:4px}
+.lib-batch-actions{display:block}
+.lib-overflow-panel .btn{display:flex;justify-content:flex-start;width:100%;border:0;background:transparent;box-shadow:none;border-radius:5px;font-weight:400;min-height:36px;font-size:16px;padding:6px 9px;gap:9px}
+.lib-overflow-panel .btn:hover:not(:disabled){background:#f0f5fd}
+.lib-overflow-panel .danger{color:#b34848}
+.lib-overflow-panel .btn:disabled{opacity:.55}
+.lib-overflow-panel label,.lib-filter label{display:flex;flex-direction:column;gap:5px;font-size:14px;color:#687b90}
+.lib-overflow-filter-fields{padding:3px 9px 9px;display:flex;flex-direction:column;gap:10px}
+.lib-overflow-filter-fields select,.lib-filter .lib-scope-field select{width:100%;max-width:none;font-size:16px}
+.lib-overflow-filter-fields .link{font-size:14px;text-align:left}
+.lib-main-filter .lib-filter{max-height:calc(100dvh - 230px);overflow:auto;z-index:40}
+.lib-toolbar [hidden],.lib-table [hidden],.lib-folders [hidden]{display:none!important}
+.lib-table .lib-row-actions>.row{gap:4px;justify-content:flex-start;flex-wrap:nowrap}
+.lib-table .lib-row-actions .iconbtn{width:30px;height:32px;padding:6px;color:#526b85;border:0;background:transparent;border-radius:4px;flex-shrink:0;min-height:0}
+.lib-table .lib-row-actions .iconbtn>.icon-sm{width:18px;height:18px;stroke-width:1.8}
+.lib-table .lib-row-actions .iconbtn:hover{background:#edf3fb;color:#245d9b}
+.lib-folders .dir-nav-line>.lib-tree-manage{opacity:1;width:25px;height:28px;padding:4px;margin-right:1px;border:0;border-radius:4px;background:transparent;color:#60768e;flex-shrink:0}
+.lib-tree-manage>.icon-sm{width:18px;height:18px;stroke-width:1.8}
+.lib-folders .dir-nav-line>.lib-tree-manage:hover{background:#e9f1fb;color:#245d9b}
+@media(max-width:760px){.lib-table .lib-actions,.lib-table .lib-row-actions{width:88px}.lib-table .lib-row-actions>.row{gap:2px}.lib-table .lib-row-actions .link{font-size:16px}.lib-table .lib-row-actions .lib-file-details{display:inline-flex!important}.lib-files{min-width:0}.lib-top-actions{width:auto!important;gap:0;justify-content:flex-end}.lib-commandbar>.row:first-child{gap:7px;min-width:0}.lib-commandbar .lib-total{padding-left:7px}.lib-toolbar>.search{flex-basis:120px!important}.lib-path-row{padding:6px 8px}.lib-path-row .v7-list-title{font-size:14px}.lib-overflow-panel{width:264px}}
+.lib-browser .lib-files{border-radius:0 9px 9px 0}.lib-browser .lib-folders{border-radius:9px 0 0 9px}.lib-path-row{border-top-right-radius:9px}.lib-storage{border-bottom-left-radius:9px}
+@media(max-width:760px){.lib-table .lib-row-actions .lib-folder-more{display:inline-flex!important}.lib-browser .lib-files{border-radius:9px}.lib-path-row{border-top-left-radius:9px}}
+.lib-dropdown>summary:focus-visible{outline:2px solid #7aa8ff;outline-offset:2px;border-radius:6px}
+/* Selection feedback shares the location row; list sorting is a secondary menu field. */
+.lib-header-selection{display:flex;align-items:center;gap:4px;flex-shrink:0;white-space:nowrap}
+.lib-header-selection>.link{font-size:14px;line-height:1.5}
+.lib-header-selection>.iconbtn{width:26px;height:28px;padding:5px;color:#60768e;flex-shrink:0}
+.folder-order-grip{width:24px;height:28px;opacity:.65}
+.folder-order-grip>.icon-sm{width:12px;height:16px}

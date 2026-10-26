@@ -1,0 +1,18 @@
+{
+  "previousRelease": "/var/www/audit-document-studio/releases/20261024T112634260762463Z-f8b342e3a350",
+  "package": "/home/2026/方案设计/审计/文档挖掘助手/优化方案/部署交付/audit-document-studio-20261024-v3",
+  "archive": "/home/2026/方案设计/审计/文档挖掘助手/优化方案/部署交付/文档挖掘助手-前端部署包-20261024-v3.zip",
+  "assetVersion": "20261024.80",
+  "distSha256": "818f81bc7fbf41ea1aba8e25c09fb64bf09123999050c15ed341e88dd1d7c5bd",
+  "archiveSha256": "e0f5c9db921cc1950f53304e0c3efc0758d4a4342c8e7a69282f8d09681c95b7",
+  "state": "deployed",
+  "currentRelease": "/var/www/audit-document-studio/releases/20261024T114551107043540Z-818f81bc7fbf",
+  "publicUrl": "http://43.128.232.108/#library",
+  "verifiedStaticFiles": 248,
+  "publicAssetsMatchPackage": true,
+  "checks": [
+    "四工具Step 3业务标题正确；无收起入口，旧隐藏状态恢复，原文页头已合并",
+    "44px单行原文页头、PDF翻页缩放及原件／解析切换正常"
+  ],
+  "errors": []
+}

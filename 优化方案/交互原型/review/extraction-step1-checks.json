@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "width": 1366,
+      "title": "Step 1添加资料",
+      "button": "添加",
+      "nested": false,
+      "font": "16px",
+      "stepFont": "14px",
+      "stepBackground": "rgba(0, 0, 0, 0)",
+      "buttonHeight": 34,
+      "intro": "点击“添加”选择文件，下方为已选资料。",
+      "picker": "opens and cancels without changing selection",
+      "headerHeight": 46,
+      "viewportHeight": 768
+    },
+    {
+      "width": 1024,
+      "title": "Step 1添加资料",
+      "button": "添加",
+      "nested": false,
+      "font": "16px",
+      "stepFont": "14px",
+      "stepBackground": "rgba(0, 0, 0, 0)",
+      "buttonHeight": 34,
+      "intro": "点击“添加”选择文件，下方为已选资料。",
+      "picker": "opens and cancels without changing selection",
+      "headerHeight": 40,
+      "viewportHeight": 480
+    },
+    {
+      "width": 390,
+      "title": "Step 1添加资料",
+      "button": "添加",
+      "nested": false,
+      "font": "16px",
+      "stepFont": "14px",
+      "stepBackground": "rgba(0, 0, 0, 0)",
+      "buttonHeight": 34,
+      "intro": "点击“添加”选择文件，下方为已选资料。",
+      "picker": "opens and cancels without changing selection",
+      "headerHeight": 40,
+      "viewportHeight": 600
+    }
+  ],
+  "errors": [],
+  "reference": {
+    "title": "Step 1 添加资料",
+    "button": "添加",
+    "nested": false,
+    "height": 46,
+    "font": "16px",
+    "stepFont": "14px",
+    "stepBackground": "rgba(0, 0, 0, 0)",
+    "buttonHeight": 34,
+    "intro": "点击“添加”选择文件，下方为已选资料。"
+  }
+}

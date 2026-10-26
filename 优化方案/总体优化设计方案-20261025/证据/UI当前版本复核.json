@@ -1,0 +1,1616 @@
+{
+  "date": "2026-10-25",
+  "basis": "local dist asset 20261024.80; no source changes; browser sample data",
+  "states": [
+    {
+      "headers": [
+        "Step 1添加资料",
+        "Step 2查看原文",
+        "Step 3设置提取字段"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始提取"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "ef-material-intro",
+          "text": "点击“添加”选择文件，下方为已选资料。",
+          "fg": [
+            89,
+            107,
+            128
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 5.469
+        }
+      ],
+      "tool": "extract",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1添加资料",
+        "Step 2查看原文",
+        "Step 3设置提取字段"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始提取"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "ef-material-intro",
+          "text": "点击“添加”选择文件，下方为已选资料。",
+          "fg": [
+            89,
+            107,
+            128
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 5.469
+        }
+      ],
+      "tool": "extract",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1添加资料"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始提取"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "ef-material-intro",
+          "text": "点击“添加”选择文件，下方为已选资料。",
+          "fg": [
+            89,
+            107,
+            128
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 5.469
+        }
+      ],
+      "tool": "extract",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置统计规则"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始统计"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "设置停用词、新词和展示词数。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        }
+      ],
+      "tool": "word",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置统计规则"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始统计"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "设置停用词、新词和展示词数。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        }
+      ],
+      "tool": "word",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置统计规则"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始统计"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "设置停用词、新词和展示词数。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        }
+      ],
+      "tool": "word",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置主题归纳提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始归纳"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "逐份摘录事项、单位、金额、日期和原文依据。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "按审计关注内容汇总同类事项，保留差异及来源。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "theme",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置主题归纳提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始归纳"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "逐份摘录事项、单位、金额、日期和原文依据。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "按审计关注内容汇总同类事项，保留差异及来源。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "theme",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置主题归纳提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始归纳"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "逐份摘录事项、单位、金额、日期和原文依据。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "按审计关注内容汇总同类事项，保留差异及来源。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "theme",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置事项提取提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "timeline",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置事项提取提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "timeline",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置事项提取提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "timeline",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置风险分析内容"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "选择提示词后，勾选本次要检查的风险点。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-rule-note",
+          "text": "在下方选择本次要检查的风险点。",
+          "fg": [
+            114,
+            136,
+            161
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.651
+        }
+      ],
+      "tool": "risk",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置风险分析内容"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "选择提示词后，勾选本次要检查的风险点。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-rule-note",
+          "text": "在下方选择本次要检查的风险点。",
+          "fg": [
+            114,
+            136,
+            161
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.651
+        }
+      ],
+      "tool": "risk",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置风险分析内容"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "选择提示词后，勾选本次要检查的风险点。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-rule-note",
+          "text": "在下方选择本次要检查的风险点。",
+          "fg": [
+            114,
+            136,
+            161
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.651
+        }
+      ],
+      "tool": "risk",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置会议分析提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "整理会议决策、金额、人员和落实要求。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "生成风险报告时使用，不随议题整理自动执行。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "meeting",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置会议分析提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "整理会议决策、金额、人员和落实要求。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "生成风险报告时使用，不随议题整理自动执行。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "meeting",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1 添加资料",
+        "Step 3 设置会议分析提示词"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-stage-help",
+          "text": "整理会议决策、金额、人员和落实要求。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "生成风险报告时使用，不随议题整理自动执行。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "meeting",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [
+        "Step 1 添加合同"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "选择合同类别，再设置检查规则。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        }
+      ],
+      "tool": "contract",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1 添加合同"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "选择合同类别，再设置检查规则。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        }
+      ],
+      "tool": "contract",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1 添加合同"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [],
+      "tool": "contract",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "选择检查环节，按需调整提示词和规则。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "bidding",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "选择检查环节，按需调整提示词和规则。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "bidding",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [],
+      "tool": "bidding",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [
+        "Step 1 添加合同",
+        "Step 2查看原文",
+        "Step 3 设置计费要求"
+      ],
+      "topActions": [
+        "分析记录",
+        "提取计费约定"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "选择费用类型，提取计费约定后填写基数计算费用。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "从合同中提取计费依据、费率及支付约定。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "依据提取到的约定和本次计费基数计算费用。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "prepaid",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1 添加合同",
+        "Step 3 设置计费要求"
+      ],
+      "topActions": [
+        "分析记录",
+        "提取计费约定"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "选择费用类型，提取计费约定后填写基数计算费用。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "从合同中提取计费依据、费率及支付约定。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "依据提取到的约定和本次计费基数计算费用。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "prepaid",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1 添加合同",
+        "Step 3 设置计费要求"
+      ],
+      "topActions": [
+        "分析记录",
+        "提取计费约定"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "bf-preparation-intro",
+          "text": "选择费用类型，提取计费约定后填写基数计算费用。",
+          "fg": [
+            113,
+            132,
+            157
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.825
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "从合同中提取计费依据、费率及支付约定。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        },
+        {
+          "selector": "pg-stage-help",
+          "text": "依据提取到的约定和本次计费基数计算费用。",
+          "fg": [
+            117,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.724
+        },
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "prepaid",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [
+        "Step 1 添加台账"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "engineering",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [
+        "Step 1 添加台账"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [],
+      "tool": "engineering",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [
+        "Step 1 添加台账"
+      ],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [],
+      "tool": "engineering",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "headers": [],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "association",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "headers": [],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [
+        {
+          "selector": "pg-source-path",
+          "text": "公共提示词 / 系统提示词",
+          "fg": [
+            116,
+            134,
+            155
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "font": "14px",
+          "contrast": 3.733
+        }
+      ],
+      "tool": "association",
+      "width": 1024,
+      "height": 480
+    },
+    {
+      "headers": [],
+      "topActions": [
+        "分析记录",
+        "开始分析"
+      ],
+      "collapse": false,
+      "overflow": false,
+      "colors": [],
+      "tool": "association",
+      "width": 390,
+      "height": 600
+    }
+  ],
+  "taskRowActions": [
+    {
+      "text": "查看结果",
+      "svg": 0
+    },
+    {
+      "text": "任务信息",
+      "svg": 0
+    },
+    {
+      "text": "导出数据",
+      "svg": 0
+    }
+  ],
+  "errors": []
+}

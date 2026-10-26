@@ -1,0 +1,2066 @@
+{
+  "date": "2026-10-19",
+  "checks": [
+    "资料管理/任务/提取模板及11工具，三种尺寸共42个准备状态：可见业务文字≥14px、主命令16px且≥36px、操作单行、无整页横向溢出",
+    "11工具22个结果状态；窄屏真实节点收纳、伸缩无重复、配置入口有效；更多方向键进入、Esc关闭并返回焦点",
+    "五组共用标签/辅助字/主按钮实际颜色对比度≥4.5，禁用与图表/上传原件不在该项认证范围"
+  ],
+  "states": [
+    {
+      "view": "library",
+      "tool": "extract",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "tasks",
+      "tool": "extract",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "templates",
+      "tool": "extract",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "extract",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始提取",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "word",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "theme",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "timeline",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "risk",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "meeting",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "contract",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "bidding",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "prepaid",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1089.96875,
+            "right": 1201.984375
+          },
+          {
+            "text": "提取计费约定",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1207.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "engineering",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "association",
+      "width": 1366,
+      "height": 768,
+      "outerWidth": 1366,
+      "small": [],
+      "command": {
+        "height": 56,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1121.96875,
+            "right": 1233.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 40,
+            "cy": 27.5,
+            "left": 1239.984375,
+            "right": 1352
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "library",
+      "tool": "association",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "tasks",
+      "tool": "association",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "templates",
+      "tool": "association",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "extract",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始提取",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "word",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "theme",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "timeline",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "risk",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "meeting",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "contract",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "bidding",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "prepaid",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 767.96875,
+            "right": 871.984375
+          },
+          {
+            "text": "提取计费约定",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 877.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "engineering",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "association",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 799.96875,
+            "right": 903.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 909.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "library",
+      "tool": "association",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "tasks",
+      "tool": "association",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "templates",
+      "tool": "association",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": null,
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "extract",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 186.96875,
+            "right": 291.984375
+          },
+          {
+            "text": "开始提取",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 297.984375,
+            "right": 380
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "word",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "theme",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "timeline",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "risk",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "meeting",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "contract",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "bidding",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "prepaid",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 164.96875,
+            "right": 265.984375
+          },
+          {
+            "text": "提取计费约定",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 271.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "engineering",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "association",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 196.96875,
+            "right": 297.984375
+          },
+          {
+            "text": "开始分析",
+            "font": 16,
+            "height": 36,
+            "cy": 26.5,
+            "left": 303.984375,
+            "right": 382
+          }
+        ],
+        "more": false
+      },
+      "stage": "preparation"
+    },
+    {
+      "view": "tool",
+      "tool": "extract",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 611.9375,
+            "right": 715.953125
+          },
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 721.953125,
+            "right": 825.96875
+          },
+          {
+            "text": "复制新建",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 831.96875,
+            "right": 935.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 941.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "extract",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 116.9375,
+            "right": 221.953125
+          },
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 227.953125,
+            "right": 323.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 329.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "word",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 603.9375,
+            "right": 709.953125
+          },
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 715.953125,
+            "right": 821.96875
+          },
+          {
+            "text": "复制新建",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 827.96875,
+            "right": 933.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 939.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "word",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 116.9375,
+            "right": 221.953125
+          },
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 227.953125,
+            "right": 323.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 329.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "theme",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 603.9375,
+            "right": 709.953125
+          },
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 715.953125,
+            "right": 821.96875
+          },
+          {
+            "text": "复制新建",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 827.96875,
+            "right": 933.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 939.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "theme",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 116.9375,
+            "right": 221.953125
+          },
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 227.953125,
+            "right": 323.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 329.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "timeline",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 603.9375,
+            "right": 709.953125
+          },
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 715.953125,
+            "right": 821.96875
+          },
+          {
+            "text": "复制新建",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 827.96875,
+            "right": 933.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 939.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "timeline",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 116.9375,
+            "right": 221.953125
+          },
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 227.953125,
+            "right": 323.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 329.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "risk",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 603.9375,
+            "right": 709.953125
+          },
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 715.953125,
+            "right": 821.96875
+          },
+          {
+            "text": "复制新建",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 827.96875,
+            "right": 933.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 939.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "risk",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 116.9375,
+            "right": 221.953125
+          },
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 227.953125,
+            "right": 323.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 329.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "meeting",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 603.9375,
+            "right": 709.953125
+          },
+          {
+            "text": "本次配置",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 715.953125,
+            "right": 821.96875
+          },
+          {
+            "text": "复制新建",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 827.96875,
+            "right": 933.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 40,
+            "cy": 24.5,
+            "left": 939.984375,
+            "right": 1014
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "meeting",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 227.953125,
+            "right": 323.984375
+          },
+          {
+            "text": "导出",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 329.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "contract",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "添加资料",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 602.953125,
+            "right": 710.96875
+          },
+          {
+            "text": "工具使用说明",
+            "font": 16,
+            "height": 36,
+            "cy": 24.5,
+            "left": 716.96875,
+            "right": 753.96875
+          },
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 759.96875,
+            "right": 867.984375
+          },
+          {
+            "text": "复制配置新建",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 873.984375,
+            "right": 1010
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "contract",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 163.953125,
+            "right": 259.984375
+          },
+          {
+            "text": "复制配置新建",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 265.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "bidding",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "添加资料",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 602.953125,
+            "right": 710.96875
+          },
+          {
+            "text": "工具使用说明",
+            "font": 16,
+            "height": 36,
+            "cy": 24.5,
+            "left": 716.96875,
+            "right": 753.96875
+          },
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 759.96875,
+            "right": 867.984375
+          },
+          {
+            "text": "复制配置新建",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 873.984375,
+            "right": 1010
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "bidding",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 163.953125,
+            "right": 259.984375
+          },
+          {
+            "text": "复制配置新建",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 265.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "prepaid",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "添加资料",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 516.9375,
+            "right": 624.953125
+          },
+          {
+            "text": "工具使用说明",
+            "font": 16,
+            "height": 36,
+            "cy": 24.5,
+            "left": 630.953125,
+            "right": 667.953125
+          },
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 673.953125,
+            "right": 781.96875
+          },
+          {
+            "text": "新建分析",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 787.96875,
+            "right": 895.984375
+          },
+          {
+            "text": "填写基数",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 901.984375,
+            "right": 1010
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "prepaid",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 167.96875,
+            "right": 264
+          },
+          {
+            "text": "填写基数",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 270,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "engineering",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "添加资料",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 602.953125,
+            "right": 710.96875
+          },
+          {
+            "text": "工具使用说明",
+            "font": 16,
+            "height": 36,
+            "cy": 24.5,
+            "left": 716.96875,
+            "right": 753.96875
+          },
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 759.96875,
+            "right": 867.984375
+          },
+          {
+            "text": "复制配置新建",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 873.984375,
+            "right": 1010
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "engineering",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 163.953125,
+            "right": 259.984375
+          },
+          {
+            "text": "复制配置新建",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 265.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "association",
+      "width": 1024,
+      "height": 480,
+      "outerWidth": 1024,
+      "small": [],
+      "command": {
+        "height": 50,
+        "buttons": [
+          {
+            "text": "添加资料",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 602.953125,
+            "right": 710.96875
+          },
+          {
+            "text": "工具使用说明",
+            "font": 16,
+            "height": 36,
+            "cy": 24.5,
+            "left": 716.96875,
+            "right": 753.96875
+          },
+          {
+            "text": "任务中心",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 759.96875,
+            "right": 867.984375
+          },
+          {
+            "text": "复制配置新建",
+            "font": 16,
+            "height": 38,
+            "cy": 24.5,
+            "left": 873.984375,
+            "right": 1010
+          }
+        ],
+        "more": false
+      },
+      "stage": "result"
+    },
+    {
+      "view": "tool",
+      "tool": "association",
+      "width": 390,
+      "height": 600,
+      "outerWidth": 390,
+      "small": [],
+      "command": {
+        "height": 54,
+        "buttons": [
+          {
+            "text": "更多",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 163.953125,
+            "right": 259.984375
+          },
+          {
+            "text": "复制配置新建",
+            "font": 16,
+            "height": 38,
+            "cy": 26.5,
+            "left": 265.984375,
+            "right": 380
+          }
+        ],
+        "more": true
+      },
+      "stage": "result"
+    }
+  ],
+  "colorPairs": [
+    {
+      "label": "解析完成",
+      "fg": "rgb(29, 115, 91)",
+      "bg": "rgb(234, 247, 242)",
+      "ratio": 5.220741338306806
+    },
+    {
+      "label": "需核验",
+      "fg": "rgb(138, 90, 22)",
+      "bg": "rgb(255, 245, 229)",
+      "ratio": 5.470042243262077
+    },
+    {
+      "label": "解析失败",
+      "fg": "rgb(163, 62, 62)",
+      "bg": "rgb(252, 238, 238)",
+      "ratio": 5.61036931924539
+    },
+    {
+      "label": "辅助说明",
+      "fg": "rgb(89, 107, 128)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "ratio": 5.469390980358053
+    },
+    {
+      "label": "开始分析",
+      "fg": "rgb(255, 255, 255)",
+      "bg": "rgb(50, 105, 219)",
+      "ratio": 5.024949261607591
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "浏览器本地交互，未验证正式后台回执/服务端鉴权",
+    "颜色检查为列出的共用组合，非全系统无障碍认证"
+  ]
+}

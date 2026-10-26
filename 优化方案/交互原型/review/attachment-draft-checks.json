@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "extract：历史关联独立复制、移除撤销/新增、草稿回访、提交新快照，原任务和资料库关联保持",
+    "contract：历史关联独立复制、移除撤销/新增、草稿回访、提交新快照，原任务和资料库关联保持"
+  ],
+  "records": [
+    {
+      "tool": "extract",
+      "originalTask": "T1792754937736",
+      "newTask": "T1792754942326"
+    },
+    {
+      "tool": "contract",
+      "originalTask": "T1792754945866",
+      "newTask": "T1792754950899"
+    }
+  ],
+  "errors": []
+}

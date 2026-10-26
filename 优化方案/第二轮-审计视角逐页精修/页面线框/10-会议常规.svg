@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img">
+<title>会议纪要分析：逐页精修设计</title>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif}</style>
+<rect x="0" y="0" width="1600" height="1000" rx="0" fill="#f4f6fa"/>
+<text x="40" y="48" xml:space="preserve" font-size="29" fill="#263a53" font-weight="700">10 / 会议纪要分析</text>
+<text x="40" y="84" xml:space="preserve" font-size="16" fill="#6b7b90">静态设计评审 · 保留现有业务流程 · 示例名称、内容及数量均为虚构</text>
+<rect x="1323" y="29" width="233" height="26" rx="4" fill="#edf4ff"/>
+<text x="1332" y="47" xml:space="preserve" font-size="13" fill="#215eb8">V0.2 · 最小改动</text>
+<rect x="40" y="126" width="1520" height="642" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="58" y="163" xml:space="preserve" font-size="22" fill="#263a53" font-weight="700">会议纪要分析</text>
+<rect x="405" y="142" width="175" height="26" rx="4" fill="#edf4ff"/>
+<text x="414" y="160" xml:space="preserve" font-size="13" fill="#215eb8">常规分析 · 结果</text>
+<text x="1365" y="162" xml:space="preserve" font-size="15" fill="#215eb8">任务中心   关闭 ×</text>
+<text x="58" y="207" xml:space="preserve" font-size="17" fill="#6b7b90">整理历次会议和同类议题，再查看风险线索或提问。</text>
+<path d="M40 226 h1520" stroke="#dce3ed"/>
+<rect x="56" y="244" width="236" height="458" rx="6" fill="#f9fbfd" stroke="#dce3ed"/>
+<text x="72" y="276" xml:space="preserve" font-size="17" fill="#263a53" font-weight="700">本次资料 · 3份资料</text>
+<rect x="72" y="296" width="58" height="26" rx="4" fill="#edf4ff"/>
+<text x="81" y="314" xml:space="preserve" font-size="13" fill="#215eb8">全部</text>
+<rect x="139" y="296" width="58" height="26" rx="4" fill="#edf4ff"/>
+<text x="148" y="314" xml:space="preserve" font-size="13" fill="#215eb8">成功</text>
+<rect x="206" y="296" width="62" height="26" rx="4" fill="#edf4ff"/>
+<text x="215" y="314" xml:space="preserve" font-size="13" fill="#215eb8">失败</text>
+<rect x="72" y="339" width="204" height="32" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="83" y="361" xml:space="preserve" font-size="14" fill="#6b7b90">搜索本次资料</text>
+<text x="72" y="405" xml:space="preserve" font-size="15" fill="#263a53" font-weight="700">▾ 会议纪要</text>
+<rect x="65" y="419" width="218" height="34" rx="3" fill="#edf4ff"/>
+<text x="84" y="442" xml:space="preserve" font-size="14" fill="#215eb8">会议纪要01.pdf</text>
+<text x="84" y="480" xml:space="preserve" font-size="14" fill="#263a53">会议纪要02.pdf</text>
+<text x="84" y="518" xml:space="preserve" font-size="14" fill="#263a53">会议纪要03.pdf</text>
+<text x="72" y="610" xml:space="preserve" font-size="14" fill="#215eb8">查看本次资料范围</text>
+<rect x="72" y="650" width="204" height="34" rx="4" fill="#215eb8" stroke="#215eb8"/>
+<text x="84" y="673" xml:space="preserve" font-size="15" fill="white">查看原文</text>
+<rect x="308" y="244" width="830" height="458" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="329" y="277" xml:space="preserve" font-size="17" fill="#215eb8" font-weight="700">常规分析     风险分析     深度问答</text>
+<rect x="326" y="301" width="367" height="381" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="344" y="335" xml:space="preserve" font-size="18" fill="#263a53" font-weight="700">会议时间轴</text>
+<text x="344" y="391" xml:space="preserve" font-size="16" fill="#263a53">01月05日  项目安排</text>
+<text x="344" y="421" xml:space="preserve" font-size="14" fill="#215eb8">查看本次会议议题 →</text>
+<text x="344" y="477" xml:space="preserve" font-size="16" fill="#263a53">02月18日  预算讨论</text>
+<text x="344" y="507" xml:space="preserve" font-size="14" fill="#215eb8">查看本次会议议题 →</text>
+<text x="344" y="563" xml:space="preserve" font-size="16" fill="#263a53">03月10日  进展汇报</text>
+<text x="344" y="593" xml:space="preserve" font-size="14" fill="#215eb8">查看本次会议议题 →</text>
+<rect x="709" y="301" width="410" height="155" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="727" y="335" xml:space="preserve" font-size="18" fill="#263a53" font-weight="700">同类议题</text>
+<rect x="727" y="359" width="260" height="26" rx="4" fill="#edf4ff"/>
+<text x="736" y="377" xml:space="preserve" font-size="13" fill="#215eb8">项目推进 · 3次会议</text>
+<text x="727" y="426" xml:space="preserve" font-size="16" fill="#263a53">预算安排 · 2次会议</text>
+<rect x="709" y="471" width="410" height="211" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="727" y="503" xml:space="preserve" font-size="18" fill="#263a53" font-weight="700">议题明细 · 项目推进</text>
+<text x="727" y="546" xml:space="preserve" font-size="15" fill="#263a53">01月05日：讨论工作安排。</text>
+<text x="727" y="579" xml:space="preserve" font-size="15" fill="#263a53">03月10日：汇报执行进展。</text>
+<text x="727" y="644" xml:space="preserve" font-size="15" fill="#215eb8">查看议题详情 / 来源</text>
+<rect x="1154" y="244" width="390" height="458" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="1172" y="274" xml:space="preserve" font-size="18" fill="#263a53" font-weight="700">查看结果</text>
+<text x="1172" y="311" xml:space="preserve" font-size="15" fill="#6b7b90">当前议题</text>
+<rect x="1172" y="323" width="354" height="36" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="1184" y="347" xml:space="preserve" font-size="15" fill="#263a53">项目推进</text>
+<text x="1172" y="394" xml:space="preserve" font-size="15" fill="#6b7b90">筛选</text>
+<rect x="1172" y="406" width="354" height="36" rx="6" fill="white" stroke="#dce3ed"/>
+<text x="1184" y="430" xml:space="preserve" font-size="15" fill="#263a53">人员 / 金额 / 关键词</text>
+<text x="1172" y="492" xml:space="preserve" font-size="15" fill="#215eb8">查看本次分析要求</text>
+<text x="1172" y="536" xml:space="preserve" font-size="15" fill="#215eb8">议题归类设置（高级）</text>
+<rect x="1172" y="641" width="165" height="34" rx="4" fill="white" stroke="#dce3ed"/>
+<text x="1184" y="664" xml:space="preserve" font-size="15" fill="#215eb8">导出结果</text>
+<path d="M40 718 h1520" stroke="#dce3ed"/>
+<text x="58" y="749" xml:space="preserve" font-size="15" fill="#6b7b90">当前查看：项目推进；右侧筛选只影响结果，修改模板需另行执行。</text>
+<text x="40" y="818" xml:space="preserve" font-size="17" fill="#263a53" font-weight="700">产品经理批注</text>
+<text x="40" y="852" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">01</text>
+<text x="80" y="852" xml:space="preserve" font-size="16" fill="#6b7b90">保留时间轴+议题组+明细三块成功态，准备态只显示一张操作引导。</text>
+<text x="40" y="897" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">02</text>
+<text x="80" y="897" xml:space="preserve" font-size="16" fill="#6b7b90">聚类改为业务能懂的“同类议题”；首次结果自动选择首个可用议题组。</text>
+<text x="40" y="942" xml:space="preserve" font-size="16" fill="#215eb8" font-weight="700">03</text>
+<text x="80" y="942" xml:space="preserve" font-size="16" fill="#6b7b90">常规分析模板与结果筛选分开，不让右侧同时挤满所有配置。</text>
+</svg>

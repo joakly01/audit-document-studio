@@ -1,0 +1,13 @@
+{
+  "previousRelease": "/var/www/audit-document-studio/releases/20261023T102349991750767Z-43f68b13ba31",
+  "package": "/home/2026/方案设计/审计/文档挖掘助手/优化方案/部署交付/audit-document-studio-20261024",
+  "assetVersion": "20261024.77",
+  "state": "deployed",
+  "currentRelease": "/var/www/audit-document-studio/releases/20261024T110303999559260Z-cff22d7b6f2e",
+  "publicUrl": "http://43.128.232.108/#library",
+  "verifiedStaticFiles": 248,
+  "publicIndexMatchesPackage": true,
+  "publicBiddingModuleMatchesPackage": true,
+  "biddingInteraction": "project list and create/cancel passed",
+  "errors": []
+}

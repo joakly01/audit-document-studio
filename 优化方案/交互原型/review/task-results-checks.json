@@ -1,0 +1,47 @@
+{
+  "checks": [
+    "extract: distinct results, read-only config, scope list and actual Excel",
+    "word: distinct results, read-only config, scope list and actual Excel",
+    "theme: distinct results, read-only config, scope list and actual Excel",
+    "timeline: distinct results, read-only config, scope list and actual Excel",
+    "risk: distinct results, read-only config, scope list and actual Excel",
+    "meeting: distinct results, read-only config, scope list and actual Excel",
+    "contract: distinct results, read-only config, scope list and actual Excel",
+    "bidding: distinct results, read-only config, scope list and actual Excel",
+    "prepaid: distinct results, read-only config, scope list and actual Excel",
+    "engineering: distinct results, read-only config, scope list and actual Excel",
+    "association: distinct results, read-only config, scope list and actual Excel",
+    "会议报告Word、词云图片及合同/费用报告真实下载；未生成的报告和问答禁用"
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "outer": 1440,
+      "height": 900,
+      "scroll": 900,
+      "table": 620
+    },
+    {
+      "width": 1366,
+      "outer": 1366,
+      "height": 768,
+      "scroll": 768,
+      "table": 488
+    },
+    {
+      "width": 1024,
+      "outer": 1024,
+      "height": 480,
+      "scroll": 480,
+      "table": 240
+    },
+    {
+      "width": 390,
+      "outer": 390,
+      "height": 600,
+      "scroll": 600,
+      "table": 304
+    }
+  ],
+  "errors": []
+}

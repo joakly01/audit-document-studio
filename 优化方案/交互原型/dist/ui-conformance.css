@@ -1,0 +1,110 @@
+/* Common UI acceptance baseline. Business scope, requests and task snapshots are unchanged. */
+:root{--muted:#596b80;--ui-caption:#596b80;--ui-success:#1d735b;--ui-warning:#8a5a16;--ui-error:#a33e3e}
+.tag.green{color:var(--ui-success);background:#eaf7f2}.tag.amber{color:var(--ui-warning);background:#fff5e5}.tag.red{color:var(--ui-error);background:#fceeee}
+.hint,.muted,.file-sub,.lib-table .file-sub,.lib-meta,.lib-total,.lib-pagination,.lib-storage,.v7-list-guide,.v7-location-label{color:var(--ui-caption)}
+.ew-file .fileicon{font-size:14px;width:40px;min-width:40px;height:36px;letter-spacing:-.5px}
+.work-heading h1,.ew-heading h1,.aw-heading h1{font-size:18px!important;line-height:1.4}
+.work-commandbar,.ew-commandbar{display:flex!important;flex-wrap:nowrap!important;align-items:center;gap:10px;min-height:56px;height:56px!important;overflow:visible}
+.work-commandbar .work-heading,.ew-commandbar .ew-heading,.aw-commandbar .aw-heading{flex:none;min-width:0;white-space:nowrap}
+.work-commandbar>.command-actions,.ew-commandbar>.ew-command-actions,.aw-commandbar>.aw-command-actions{display:flex;flex-wrap:nowrap!important;flex:none;min-width:0;gap:6px;margin-left:auto}
+.work-commandbar .btn,.ew-commandbar .btn,.aw-commandbar .btn{font-size:16px!important;min-height:36px!important}
+.ew-config .btn,.aw-config .btn{min-height:36px}.ew-pagination select,.aw-pagination select,.xt-pagination select,.lib-pagination select{min-height:36px;height:36px}
+.xt-search .btn{height:36px!important;min-height:36px!important;width:36px}.xt-search input{padding-right:42px}
+.uc-command-more{position:relative;flex:none}.uc-command-more[hidden]{display:none!important}.uc-command-more>summary{list-style:none;cursor:pointer}.uc-command-more>summary::-webkit-details-marker{display:none}.uc-command-more>summary:focus-visible{outline:3px solid #7aa8ff;outline-offset:2px}
+.uc-command-menu{position:fixed;width:230px;z-index:40;padding:6px;background:white;border:1px solid #dce3ed;border-radius:8px;box-shadow:0 8px 24px #1e30461f;overflow:auto}.uc-command-more:not([open]) .uc-command-menu{display:none}
+.uc-command-menu>.btn{display:flex;justify-content:flex-start;width:100%;padding:8px 10px;border:0;box-shadow:none;font-weight:400;min-height:40px!important;background:white}.uc-command-menu>.btn:hover{background:#eef4ff}.uc-menu-label{display:none}.uc-command-menu .uc-menu-label{display:inline}
+.uc-overflowing>.inline-steps,.uc-overflowing>.aw-steps,.uc-overflowing>.ew-steps,.uc-overflowing .ready-count,.uc-overflowing .aw-ready,.uc-overflowing .ew-ready,.uc-overflowing .command-actions>.tag,.uc-overflowing .aw-command-actions>.tag,.uc-overflowing .ew-command-actions>.tag{display:none}
+@media(max-height:600px) and (min-width:801px){.work-commandbar,.ew-commandbar{min-height:50px;height:50px!important}}
+@media(max-width:800px){.work-commandbar,.ew-commandbar{padding:7px 10px;min-height:54px;height:54px!important}.work-commandbar .mobile-menu{display:none}.work-heading .tool-symbol,.ew-heading .tool-symbol,.aw-heading .tool-symbol{display:none}.work-commandbar>.inline-steps,.aw-steps,.ew-steps,.ready-count,.aw-ready,.ew-ready{display:none}.work-commandbar .btn,.ew-commandbar .btn{padding:6px 8px}.work-commandbar .btn .icon,.ew-commandbar .btn .icon{display:inline-block;width:16px;height:16px}.work-commandbar .btn.primary .icon,.ew-commandbar .btn.primary .icon{display:none}.work-commandbar .uc-command-menu .icon,.ew-commandbar .uc-command-menu .icon{display:inline-block}.lib-pagination>.row select,.lib-pagination>.row .btn{min-height:36px}}
+
+/* Secondary text keeps contrast on white and lightly tinted panels. */
+.xt-category-head .btn,
+.xt-tree-expand,
+.xt-tree-name small,
+.xt-folder-more,
+.xt-page-location>.audit-location-label,
+.xt-search .btn,
+.xt-template-location,
+.xt-description-text,
+.xt-field-count,
+.xt-pagination,
+.xt-empty,
+.xt-editor-dialog .modalhead p,
+.xt-fields-dialog .modalhead p,
+.xt-editor-fields-head>span,
+.xt-editor-footer-note,
+.xt-fields-intro>p,
+.ew-steps,
+.ew-ready,
+.ew-space,
+.ew-folder small,
+.ew-file-name small,
+.ew-scope-note,
+.ew-scope-note span,
+.ew-tabs button,
+.ew-onboarding p,
+.ew-onboarding li span,
+.ew-directory,
+.ew-table-scroll th,
+.ew-path,
+.ew-pagination,
+.ew-empty-small,
+.ew-file-caption span,
+.ew-config-scope,
+.ew-rule>span,
+.ew-rule p,
+.ew-advanced summary,
+.ew-result-note,
+.ew-progress-head p,
+.ew-progress-meta,
+.ew-failed p,
+.ew-footer-note,
+.ew-review-rule,
+.ew-evidence label,
+.ew-inline-path,
+.aw-steps,
+.aw-ready,
+.aw-stage-preview,
+.aw-word-counts small,
+.aw-scope-tip,
+.aw-risk-select summary,
+.aw-stage-flow,
+.aw-tabs button,
+.aw-viewbar>span,
+.aw-footnote,
+.aw-table th,
+.aw-caption,
+.aw-no-result,
+.aw-progress-info,
+.aw-chart-caption,
+.aw-group-head small,
+.aw-risk-item blockquote,
+.aw-date-head span,
+.aw-time-excerpt,
+.aw-event-sections p,
+.aw-meeting-groups span:not(.aw-group-symbol),
+.aw-section-heading span,
+.aw-stage-loading p,
+.aw-report-jump>span,
+.aw-report p,
+.aw-report li,
+.aw-theme-section h2 span,
+.aw-theme-section small,
+.aw-theme-section p,
+.aw-qa-header>span,
+.aw-chat-welcome p,
+.aw-question-suggestions .btn,
+.aw-chat-answer p,
+.aw-chat-pending,
+.aw-prompt-bottom,
+.aw-lex-summary,
+.aw-lex-pagination,
+.aw-review-heading span,
+.aw-review-body p,
+.aw-review-meta dt{color:var(--ui-caption)}
+/* Reset generic document-details styling for command menus. */
+.uc-command-more{margin:0;padding:0;border:0;align-self:center}
+.work-commandbar>.command-actions,.ew-commandbar>.ew-command-actions,.aw-commandbar>.aw-command-actions{width:auto!important;align-items:center}
+.ew-config .btn,.aw-config .btn{min-height:36px!important}
+.modalfoot .btn{font-size:16px!important;min-height:36px}
+.modal input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),.modal select,.modal textarea{font-size:16px!important}

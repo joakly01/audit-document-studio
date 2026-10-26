@@ -1,0 +1,103 @@
+{
+  "checks": [
+    "contract：默认样本校验、页面提交、阶段提示词及执行参数快照、核心业务设置和结果来源入口",
+    "prepaid：默认样本校验、页面提交、阶段提示词及执行参数快照、核心业务设置和结果来源入口",
+    "bidding：默认样本校验、页面提交、阶段提示词及执行参数快照、核心业务设置和结果来源入口",
+    "engineering：默认样本校验、页面提交、阶段提示词及执行参数快照、核心业务设置和结果来源入口",
+    "association：默认样本校验、页面提交、阶段提示词及执行参数快照、核心业务设置和结果来源入口"
+  ],
+  "tools": [
+    {
+      "tool": "contract",
+      "taskId": "T1792765136135",
+      "initialStatus": "completed",
+      "status": "completed",
+      "sampleValidation": [],
+      "stageKeys": [
+        "compliance",
+        "information"
+      ],
+      "rows": 4,
+      "sourceOrDetailActions": 4,
+      "preservedFields": [
+        "contractRules",
+        "contractType",
+        "checks"
+      ],
+      "resultPreview": "分析结果已生成\n\n1 份资料 · 采购合同检查\n\n检查结果\n合同基础信息\n生成分析报告\n检查结果 4 条\n待核验 1 条\n资料不足 0 条\n“已提取”仅表示返回了内容，请继续核对判断依据。\n全部合同\n设备采购合同.pdf\n全部判断结果\n待核验\n资料不足\n符合\n其他 / 未说明\n重置\n检查事项 / 合同\t判断结果\t提取内容\t核验\n合同主体\n设备采购合同.pdf\n\t已提取\t\n双方约定：合同生效后支付30%预付款；设备交付且验收合格后支付60%；质保期满支付10%。\n\t查看依据\n付款条件\n设备采购合同.pdf\n\t已提取\t\n双方约定：合同生效后支付30%预付款；设备交付且验收合格后支付60%；质保期满支付10%。\n\t查看依据\n验收约定\n设备采购合同.pdf\n\t需关注\t\n双方约定：合同生效后支付30%预付款；设备交付且验收合格后支付60%；质保期满支付10%。\n\t查看依据\n违约责任\n设备采购合同.p"
+    },
+    {
+      "tool": "prepaid",
+      "taskId": "T1792765139486",
+      "initialStatus": "awaiting",
+      "status": "completed",
+      "sampleValidation": [],
+      "stageKeys": [
+        "agreement",
+        "calculation"
+      ],
+      "rows": 1,
+      "sourceOrDetailActions": 1,
+      "preservedFields": [
+        "feeType"
+      ],
+      "resultPreview": "分析结果已生成\n\n1 份资料 · 工程监理计费约定提取\n\n计费约定\n费用报告\n下载报告\n费用计算报告\n\n工程监理费 · 计费基数 1,000,000.00 元\n\n计算费用合计（元）\n15,000.00\n\n已计算 1 份；请结合合同履约、结算凭证及审批资料核验。\n\n合同 / 计算依据\t计算过程\t费用（元）\t核验\n园区监理服务合同.pdf\n费用按双方确认的计费基数的1.5%计取。\n\t1,000,000.00 元 × 1.5%\t15,000.00\t核对原文"
+    },
+    {
+      "tool": "bidding",
+      "taskId": "T1792765143436",
+      "initialStatus": "completed",
+      "status": "completed",
+      "sampleValidation": [],
+      "stageKeys": [
+        "tender",
+        "bid",
+        "joint"
+      ],
+      "rows": 2,
+      "sourceOrDetailActions": 4,
+      "preservedFields": [
+        "modes",
+        "projects",
+        "checks"
+      ],
+      "resultPreview": "分析结果已生成\n\n3 份资料 · 采购项目招投标检查\n\n检查结果\n分析资料\n分析报告\n全部结果 2\n待核验 2\n全部项目\n设备采购项目\n全部分析环节\n招投标联合分析\n全部风险等级\n高风险\n中风险\n低风险\n未发现风险\n风险等级未返回\n重置\n\n点击“查看证据”，对照来源原文核验。\n\n项目 / 涉及单位\t检查内容\t核验状态\t分析摘要\t操作\n设备采购项目\n青禾公司\n\t招投标响应对照\n招投标联合分析 · 招投标响应对照\n\t待核验\n风险等级未返回\n\t\n请按所选规则对照来源资料；此条是交互结果。\n\t\n查看详情\n查看证据\n\n设备采购项目\n远川公司\n\t招投标响应对照\n招投标联合分析 · 招投标响应对照\n\t待核验\n风险等级未返回\n\t\n请按所选规则对照来源资料；此条是交互结果。\n\t\n查看详情\n查看证据\n共 2 条\n每页\n20\n50\n100\n条\n上一页\n第 1 / 1 页\n下一页"
+    },
+    {
+      "tool": "engineering",
+      "taskId": "T1792765146430",
+      "initialStatus": "completed",
+      "status": "completed",
+      "sampleValidation": [],
+      "stageKeys": [
+        "duplicate",
+        "parent"
+      ],
+      "rows": 2,
+      "sourceOrDetailActions": 1,
+      "preservedFields": [
+        "engineering"
+      ],
+      "resultPreview": "分析结果已生成\n\n1 份资料 · 项目名称与投资一致性\n\n重复项目 1\n主子项目 1\n\n候选关系来自同一份台账内部比较。请结合项目编码、建设内容和立项依据核验。\n\n全部台账\n园区建设项目台账.xlsx\n全部匹配方式\n模型比较\n24位编码匹配\n重置\n来源台账\t项目记录一\t项目记录二\t匹配方式 / 分数\t核验\n园区建设项目台账.xlsx\t园区改造工程\t园区改造项目\t模型比较\n4.5 / 5 分\n\t原因与源行\n共 1 组候选\n每页\n20\n50\n100\n组\n上一页\n第 1 / 1 页\n下一页"
+    },
+    {
+      "tool": "association",
+      "taskId": "T1792765149413",
+      "initialStatus": "completed",
+      "status": "completed",
+      "sampleValidation": [],
+      "stageKeys": [
+        "compare"
+      ],
+      "rows": 3,
+      "sourceOrDetailActions": 3,
+      "preservedFields": [
+        "association",
+        "tableA",
+        "tableB"
+      ],
+      "resultPreview": "分析结果已生成\n\n2 份资料 · 项目名称与单位关联\n\n两表比较结果\n进一步筛选\n\n待查项目表 ↔ 对照项目表 · 关联候选需结合立项、资金等资料核验。\n\n全部结果 3\n关联候选 3\n重置\n导出保留当前筛选结果。\n待查项目表\t对照项目表\t比较结果\t核验\n园区改造工程\n建设单位：园区建设中心\n计划投资（万元）：860\n\t园区改造工程\n实施单位：园区建设中心\n安排资金（万元）：860\n\t关联候选\n评分 5 / 5\n项目名称和单位相同，作为关联候选。\n\t查看源行\n园区改造项目\n建设单位：园区建设中心\n计划投资（万元）：860\n\t设备购置项目\n实施单位：园区建设中心\n安排资金（万元）：128\n\t关联候选\n评分 4.2 / 5\n名称或资金用途存在关联，需结合立项材料确认，不能仅凭分数认定。\n\t查看源行\n园区配套设备购置\n建设单位：园区建设中心\n计划投资（万元）：128\n\t办公楼节能改造\n实施单位：园"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,30 @@
+/* Show project ownership before file operations; keep the rules workspace unchanged. */
+.ba-layout{grid-template-columns:420px minmax(0,1fr)}
+.bam-guide{flex:none;margin:0;padding:9px 12px;font-size:14px;line-height:1.65;color:#657a92;border-bottom:1px solid #edf1f7}
+.bam-project-count{display:flex;align-items:center;justify-content:space-between;padding:8px 12px 0;flex:none;font-size:14px;color:#4d647e}
+.bam-project-count small{font-size:14px;color:#7c8da2}.bam-project-count strong{color:var(--blue);font-variant-numeric:tabular-nums}
+.bam-materials .ba-material-scroll{padding:9px 10px 12px;background:#fafbfd;scrollbar-gutter:stable}
+.bam-project{border:1px solid #e1e8f2;border-radius:8px;background:#fff;margin-bottom:10px;overflow:clip}
+.bam-project.is-active{border-color:#b7cdf0;box-shadow:0 1px 3px #264d7a08}
+.bam-project-toggle{display:flex;align-items:center;gap:9px;min-height:66px;width:100%;padding:10px;border:0;background:#fff;text-align:left;color:#29465f;cursor:pointer}
+.bam-project.is-active .bam-project-toggle{background:#f2f7ff}
+.bam-project-toggle:hover{background:#f3f7fc}.bam-project-toggle:focus-visible,.bam-unit>summary:focus-visible{outline:2px solid #3270ce;outline-offset:-3px}
+.bam-project-index,.bam-unit-index{display:grid;place-items:center;width:24px;height:24px;flex:none;border-radius:6px;background:#edf2fa;color:#50739a;font-size:14px;font-variant-numeric:tabular-nums}
+.bam-project-title,.bam-unit-title{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}.bam-project-title b,.bam-unit-title b{font-size:16px;font-weight:600;overflow-wrap:anywhere;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bam-project-title small,.bam-unit-title small{font-size:14px;color:#72869d;line-height:1.5}.bam-project-toggle>.icon-sm,.bam-unit>summary>.icon-sm{flex:none;color:#6a86a8}
+.bam-project-body{padding:0 10px 10px}.bam-project-tools{display:flex;align-items:center;justify-content:space-between;min-height:35px;font-size:14px;border-bottom:1px solid #edf1f7;gap:6px}.bam-project-tools>div{display:flex;flex:none}.bam-project-tools .ba-icon{min-height:28px;height:28px;width:28px;min-width:28px;padding:4px}
+.bam-project-collapsed{padding:0 10px 8px;font-size:14px}.bam-section-head{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:12px 0 8px}.bam-section-head h3{font-size:16px;line-height:1.5;margin:0;font-weight:600}.bam-section-head strong,.bam-unit-title strong{color:var(--blue);font-variant-numeric:tabular-nums}.bam-section-head .btn{min-height:30px;padding:3px 7px;font-size:14px;white-space:nowrap}
+.bam-tender{padding:0 0 12px;border-bottom:1px solid #e9eef6}.bam-file-picker.btn{display:flex;align-items:center;justify-content:center;gap:5px;width:100%;min-height:34px;margin-top:7px;font-size:14px;white-space:normal}
+.bam-empty-note{margin:7px 0 0;color:#7a8da3;font-size:14px;line-height:1.6}
+.bam-unit{border:1px solid #e4eaf3;border-radius:6px;margin:8px 0 0;background:#fff;overflow:clip}.bam-unit>summary{display:flex;align-items:center;gap:8px;padding:9px 8px;cursor:pointer;list-style:none;background:#fafcff}.bam-unit>summary::-webkit-details-marker{display:none}.bam-unit>summary .bam-unit-title b{font-size:14px;font-weight:500}.bam-unit>summary>.icon-sm{transition:transform .15s}.bam-unit[open]>summary>.icon-sm{transform:rotate(90deg)}.bam-unit[open]>summary{border-bottom:1px solid #edf1f6}.bam-unit-index{width:21px;height:21px;font-size:14px;background:#f0f3f8}.bam-unit-body{padding:4px 8px 9px}.bam-unit-actions{display:flex;justify-content:flex-end;gap:12px;margin-bottom:3px;min-height:25px;align-items:center}.bam-unit-actions .link{font-size:14px;color:#6a7f97}.bam-unit-actions .link:hover{color:var(--blue)}.bam-unit-actions .link:last-child:hover{color:#c54b4b}
+.bam-materials .ba-file{padding:4px 0;align-items:flex-start}.bam-materials .ba-file>.icon-sm{margin-top:5px}.bam-materials .ba-file>.link{white-space:normal;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:#315c8c;line-height:1.6;padding-top:2px}.bam-materials .ba-file .ba-icon{min-height:28px;height:28px;width:26px;min-width:26px;padding:4px}
+.bam-empty-project{padding:25px 8px;text-align:center}.bam-empty-project h3{font-size:16px;color:#345574}.bam-empty-project p{font-size:14px;line-height:1.7;color:#788ba1}.bam-empty-project .btn{margin-top:8px}
+.bam-materials .ba-material-footer{font-size:14px;flex:none}.bam-entity-dialog .field{margin:0}.bam-entity-dialog input{width:100%;box-sizing:border-box}.bam-entity-dialog .error{min-height:20px;margin:6px 0 0;font-size:14px}
+@media(max-width:1200px){.ba-layout{grid-template-columns:340px minmax(0,1fr)}.bam-project-title b{font-size:16px}.bam-project-title small{font-size:14px}}
+@media(max-width:800px){.ba-layout{display:block}.bam-materials .ba-material-scroll{padding:9px 10px}.bam-guide{padding:7px 12px}.bam-project-toggle{min-height:62px}}
+@media(prefers-reduced-motion:reduce){.bam-unit>summary>.icon-sm{transition:none}}
+.bam-materials .bam-unit{padding:0}.bam-materials .bam-unit>summary::after{content:none!important}
+@media(max-height:600px){.ba-config>.bf-preparation-intro{padding:6px 12px}}
+
+.modal.bam-file-dialog .modalhead p{display:block;margin-top:5px;color:#667e98;font-size:14px;line-height:1.6;overflow-wrap:anywhere}
+.ba-layout>.bam-materials{max-height:none}

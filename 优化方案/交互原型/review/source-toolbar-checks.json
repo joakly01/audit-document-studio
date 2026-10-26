@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "tool": "extract",
+      "header": 44,
+      "tabsRight": 915,
+      "headerRight": 993,
+      "filenameWidth": 150.984375,
+      "pager": 39,
+      "panelWidth": 428,
+      "viewportWidth": 1366,
+      "viewportHeight": 768
+    },
+    {
+      "tool": "extract",
+      "header": 44,
+      "tabsRight": 620,
+      "headerRight": 699,
+      "filenameWidth": 30.984375,
+      "pager": 39,
+      "panelWidth": 310,
+      "viewportWidth": 1024,
+      "viewportHeight": 480
+    },
+    {
+      "tool": "extract",
+      "header": 44,
+      "tabsRight": 306,
+      "headerRight": 385,
+      "filenameWidth": 100.984375,
+      "pager": 39,
+      "panelWidth": 380,
+      "viewportWidth": 390,
+      "viewportHeight": 600
+    },
+    {
+      "tool": "meeting",
+      "header": 44,
+      "tabsRight": 992,
+      "headerRight": 1040,
+      "filenameWidth": 218.453125,
+      "pager": 39,
+      "panelWidth": 522,
+      "viewportWidth": 1366,
+      "viewportHeight": 768
+    },
+    {
+      "tool": "meeting",
+      "header": 44,
+      "tabsRight": 976,
+      "headerRight": 1024,
+      "filenameWidth": 360.390625,
+      "pager": 39,
+      "panelWidth": 614.40625,
+      "viewportWidth": 1024,
+      "viewportHeight": 480
+    },
+    {
+      "tool": "meeting",
+      "header": 44,
+      "tabsRight": 347,
+      "headerRight": 390,
+      "filenameWidth": 147.984375,
+      "pager": 39,
+      "panelWidth": 390,
+      "viewportWidth": 390,
+      "viewportHeight": 600
+    },
+    {
+      "tool": "risk",
+      "header": 44,
+      "tabsRight": 992,
+      "headerRight": 1040,
+      "filenameWidth": 218.453125,
+      "pager": 39,
+      "panelWidth": 522,
+      "viewportWidth": 1366,
+      "viewportHeight": 768
+    },
+    {
+      "tool": "risk",
+      "header": 44,
+      "tabsRight": 976,
+      "headerRight": 1024,
+      "filenameWidth": 360.390625,
+      "pager": 39,
+      "panelWidth": 614.40625,
+      "viewportWidth": 1024,
+      "viewportHeight": 480
+    },
+    {
+      "tool": "risk",
+      "header": 44,
+      "tabsRight": 347,
+      "headerRight": 390,
+      "filenameWidth": 147.984375,
+      "pager": 39,
+      "panelWidth": 390,
+      "viewportWidth": 390,
+      "viewportHeight": 600
+    }
+  ],
+  "errors": []
+}

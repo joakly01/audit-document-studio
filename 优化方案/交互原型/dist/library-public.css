@@ -1,0 +1,52 @@
+.public-folder-menu{width:min(420px,calc(100vw - 32px))!important}
+.public-folder-menu .modalhead h2{font-size:18px}
+.public-folder-actions{display:flex;flex-direction:column;gap:4px}
+.public-menu-group+.public-menu-group{border-top:1px solid #e6edf5;padding-top:5px;margin-top:3px}
+.public-menu-group .btn{width:100%;justify-content:flex-start;min-height:36px;font-size:16px;padding:7px 10px;gap:10px;font-weight:400}
+.public-menu-group .btn:hover{background:#f2f6fc}
+.public-binding-note{padding:10px 12px;background:#f4f8ff;border:1px solid #e2ebf7;border-radius:6px;font-size:14px;line-height:1.8;margin-top:14px;color:#5b7390}
+.public-binding-mark{display:flex;align-items:center;width:16px;flex:0 0 16px;color:#ab7c30;cursor:help}
+.public-binding-mark>.icon{width:15px;height:15px}
+.public-focus-empty{padding:8px;line-height:1.8}
+#public-grantee-query{margin-bottom:6px}
+
+/* Wider side columns, with the selected scope next to the table rather than above the tools. */
+.lib-workspace{grid-template-columns:minmax(0,1fr) 260px}
+.lib-workspace.tools-hidden{grid-template-columns:minmax(0,1fr)}
+.lib-folders{width:var(--library-folder-width,240px)}
+.audit-footer-summary{display:flex;align-items:center;gap:6px;min-width:0;white-space:nowrap}
+.audit-selection-inline{display:inline-flex;align-items:center;gap:12px;min-height:34px;padding:3px 7px;border:1px solid #d9e7fc;border-radius:5px;background:#f1f6ff;color:#5c728d;text-align:left;font-size:14px;white-space:nowrap}
+.audit-selection-inline:hover{background:#e9f1ff;border-color:#b8d0f3}
+.audit-selection-inline strong{font-size:18px;font-weight:650;font-variant-numeric:tabular-nums;color:#2863bc;margin:0 2px;line-height:1.4}
+.audit-selection-inline strong.green{color:#20806c}.audit-selection-inline strong.amber{color:#986b26}
+.audit-footer-summary>.iconbtn{width:28px;height:28px;padding:5px;flex-shrink:0}
+.audit-selection-empty{color:#74859a;font-size:14px;overflow:hidden;text-overflow:ellipsis}
+.lib-pagination{gap:8px;padding:7px 10px;align-items:center;min-height:48px}
+.lib-pagination>.row{gap:6px;flex-shrink:0}
+.lib-pagination>.row select{max-width:96px}
+@media(max-width:1280px){.lib-workspace{grid-template-columns:minmax(0,1fr) 240px}.lib-folders{width:min(var(--library-folder-width,240px),220px)}.audit-selection-empty{display:none}}
+@media(max-width:1050px){.lib-workspace{grid-template-columns:minmax(0,1fr) 210px}.lib-folders{width:min(var(--library-folder-width,240px),190px)}.audit-selection-inline{gap:6px;padding:3px 2px}}
+@media(max-width:760px){.lib-workspace{grid-template-columns:minmax(0,1fr)}.lib-tools{width:min(320px,94%)}.lib-folders{width:min(var(--library-folder-width,240px),230px)}.audit-footer-summary{max-width:100%}.lib-pagination{padding:6px 8px}.audit-selection-inline{gap:12px}.lib-pagination>.row{margin-left:auto}}
+
+/* Keep labels explicit: these counts describe file parsing, not tool-analysis tasks. */
+.lib-table .lib-name{width:240px}
+.lib-table .lib-col-owner{width:90px}
+@media(max-width:760px){.lib-table .lib-name{width:auto}}
+
+@media(max-width:540px){
+ .lib-pagination{gap:2px;padding:2px 8px;min-height:0}
+ .audit-selection-inline{min-height:28px;padding:0 4px;gap:9px;overflow:auto;scrollbar-width:thin}
+ .lib-pagination>.row{gap:4px;height:28px}
+ .lib-pagination>.row .btn,.lib-pagination>.row select{height:28px;min-height:28px;padding:2px 6px;font-size:14px}
+ .audit-footer-summary{overflow:hidden}
+}
+
+.audit-location-label{flex-shrink:0;font-size:16px;color:#657a94;line-height:1.6;white-space:nowrap}
+.library-v5 .lib-toolbar>.audit-current-path{gap:8px;min-width:100px}
+.audit-current-path .folder-crumbs{flex:1 1 auto}
+
+.lib-overflow-panel .audit-directory-menu-toggle{display:none}
+.folders-hidden .lib-overflow-panel .audit-directory-menu-toggle{display:flex}
+@media(max-width:760px){.lib-overflow-panel .audit-directory-menu-toggle{display:flex}}
+/* Compact long paths keep the space and current directory visible. */
+.audit-current-path .folder-crumbs{overflow:hidden;flex-wrap:nowrap}.audit-current-path .folder-crumbs>.link:first-child{flex:none}.audit-current-path .folder-crumbs>.audit-crumb-last{min-width:0;flex:0 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.audit-current-path .folder-crumbs>[data-action=audit-directory-path]{flex:none;font-weight:600;min-width:24px}.audit-directory-parents{display:flex;flex-direction:column;gap:5px}.audit-directory-parents .link{font-size:16px;min-height:36px;text-align:left;overflow-wrap:anywhere}

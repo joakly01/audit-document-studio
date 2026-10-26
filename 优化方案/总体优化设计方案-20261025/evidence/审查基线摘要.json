@@ -1,0 +1,16 @@
+{
+  "reviewDate": "2026-10-25",
+  "sourceCommit": "2e7b0b29450609b156674e413364ee0d150cda74",
+  "assetVersion": "20261024.80",
+  "sourceFiles": {
+    "前端代码/api/task.js": "4ea7de64b96f02db954482708d90044a44dad101273b69602c413c0da7224f94",
+    "前端代码/api/fileManager.js": "20bbfcc904d70690655047dd814cd4f3798d2002687f568222948c4015860d41",
+    "前端代码/api/template.js": "f2f3eec7534fcf75b10de1a2bad458a2067ce5e1e78b1d5d5707780b131e591c",
+    "前端代码/api/IcssPlatform/promptManagement.js": "66cf7ea19ecdb3d8fef4807835ccf99476161ff72495ffae2d23c65cfdad5d58",
+    "优化方案/交互原型/dist/index.html": "14e460574b57bfa68544f720bd58959161352e3e9f6df41de6fdfb85324443f5",
+    "优化方案/交互原型/dist/config-schema.js": "71c3d4ae37429c962cedb42b02b5f1b8718f44ebe2ccfe855b1fd4fbe240a6b9",
+    "优化方案/交互原型/dist/result-actions.js": "400f7474a2634b76b672e3b947f75e9de501d447acf9d713b87ea75283d9026b",
+    "优化方案/交互原型/dist/tool-preparation.js": "cd3afe3bb99226b51f395abd61a40320e50a01f2997879c8a60403c23b8cd2cd",
+    "优化方案/交互原型/dist/business-flow.js": "6c24aa46a2d79638e6174b96a04255d2513b626d5f7690a0dcef2ca323c2aeae"
+  }
+}

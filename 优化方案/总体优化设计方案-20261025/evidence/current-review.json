@@ -1,0 +1,497 @@
+{
+  "date": "2026-10-25",
+  "assetVersion": "20261024.80",
+  "scope": "Local static prototype; no business backend or AI quality tested",
+  "views": [
+    {
+      "tool": "extract",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "信息提取",
+        "Step 1添加资料",
+        "Step 2查看原文",
+        "Step 3设置提取字段"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "extract",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "信息提取",
+        "Step 1添加资料",
+        "Step 2查看原文",
+        "Step 3设置提取字段"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "extract",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "信息提取",
+        "Step 1添加资料"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "word",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "词云分析",
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置统计规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "word",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "词云分析",
+        "Step 1 添加资料",
+        "Step 3 设置统计规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "word",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "词云分析",
+        "Step 1 添加资料",
+        "Step 3 设置统计规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "theme",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "主题归纳",
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置主题归纳提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "theme",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "主题归纳",
+        "Step 1 添加资料",
+        "Step 3 设置主题归纳提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "theme",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "主题归纳",
+        "Step 1 添加资料",
+        "Step 3 设置主题归纳提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "timeline",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "时间轴分析",
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置事项提取提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "timeline",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "时间轴分析",
+        "Step 1 添加资料",
+        "Step 3 设置事项提取提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "timeline",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "时间轴分析",
+        "Step 1 添加资料",
+        "Step 3 设置事项提取提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "risk",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "风险点分析",
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置风险分析内容"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "risk",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "风险点分析",
+        "Step 1 添加资料",
+        "Step 3 设置风险分析内容"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "risk",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "风险点分析",
+        "Step 1 添加资料",
+        "Step 3 设置风险分析内容"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "meeting",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "会议纪要分析",
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 设置会议分析提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "meeting",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "会议纪要分析",
+        "Step 1 添加资料",
+        "Step 3 设置会议分析提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "meeting",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "会议纪要分析",
+        "Step 1 添加资料",
+        "Step 3 设置会议分析提示词"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "contract",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "合同分析",
+        "Step 1 添加合同",
+        "Step 2 设置检查规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "contract",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "合同分析",
+        "Step 1 添加合同",
+        "Step 2 设置检查规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "contract",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "合同分析",
+        "Step 1 添加合同"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "bidding",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "招投标分析",
+        "Step 1 添加项目资料",
+        "Step 2 设置检查内容"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "bidding",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "招投标分析",
+        "Step 1 添加项目资料",
+        "Step 2 设置检查内容"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "bidding",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "招投标分析",
+        "Step 1 添加项目资料"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "prepaid",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "待摊费用",
+        "Step 1 添加合同",
+        "Step 2查看原文",
+        "Step 3 设置计费要求"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "prepaid",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "待摊费用",
+        "Step 1 添加合同",
+        "Step 3 设置计费要求"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "prepaid",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "待摊费用",
+        "Step 1 添加合同",
+        "Step 3 设置计费要求"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "engineering",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "工程项目一致性",
+        "Step 1 添加台账",
+        "Step 2 设置比较规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "engineering",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "工程项目一致性",
+        "Step 1 添加台账",
+        "Step 2 设置比较规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "engineering",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "工程项目一致性",
+        "Step 1 添加台账"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "association",
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "viewport": 1440,
+      "headings": [
+        "两表项目关联度",
+        "Step 1 选择对照表",
+        "Step 2 设置关联规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "association",
+      "width": 1024,
+      "height": 480,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "headings": [
+        "两表项目关联度",
+        "Step 1 选择对照表",
+        "Step 2 设置关联规则"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    },
+    {
+      "tool": "association",
+      "width": 390,
+      "height": 600,
+      "bodyWidth": 390,
+      "viewport": 390,
+      "headings": [
+        "两表项目关联度",
+        "Step 1 选择对照表"
+      ],
+      "collapse": 0,
+      "importExport": 0
+    }
+  ],
+  "errors": [],
+  "assertions": [
+    "信息提取：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "词云分析：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "主题归纳：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "时间轴分析：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "风险点分析：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "会议纪要分析：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "合同分析：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "招投标分析：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "待摊费用：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "工程项目一致性：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "两表项目关联度：三个尺寸页面无横向溢出，无收起原文和工具设置导入导出入口",
+    "信息提取：打开历史结果不改快照，无资料清单，保留再次分析",
+    "词云分析：打开历史结果不改快照，无资料清单，保留再次分析",
+    "主题归纳：打开历史结果不改快照，无资料清单，保留再次分析",
+    "时间轴分析：打开历史结果不改快照，无资料清单，保留再次分析",
+    "风险点分析：打开历史结果不改快照，无资料清单，保留再次分析",
+    "会议纪要分析：打开历史结果不改快照，无资料清单，保留再次分析",
+    "合同分析：打开历史结果不改快照，无资料清单，保留再次分析",
+    "招投标分析：打开历史结果不改快照，无资料清单，保留再次分析",
+    "待摊费用：无已完成演示记录，本次未执行新任务；结果流程引用既有专项回归",
+    "工程项目一致性：打开历史结果不改快照，无资料清单，保留再次分析",
+    "两表项目关联度：打开历史结果不改快照，无资料清单，保留再次分析"
+  ]
+}

@@ -1,0 +1,20 @@
+# Local credentials and machine files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.openai/
+**/.openai/
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+*.pyc
+.DS_Store
+# Repeated deployment archives and expanded releases
+优化方案/部署交付/
+*.zip
+*.zip.sha256
+*.tar.gz
+优化方案/Git交付/

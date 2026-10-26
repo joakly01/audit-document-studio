@@ -1,0 +1,21 @@
+{
+  "previousRelease": "/var/www/audit-document-studio/releases/20261024T110303999559260Z-cff22d7b6f2e",
+  "package": "/home/2026/方案设计/审计/文档挖掘助手/优化方案/部署交付/audit-document-studio-20261024-v2",
+  "archive": "/home/2026/方案设计/审计/文档挖掘助手/优化方案/部署交付/文档挖掘助手-前端部署包-20261024-v2.zip",
+  "assetVersion": "20261024.79",
+  "distSha256": "f8b342e3a35023dd6fc33b9a51967971c5079ad9247f1f6120ceb37f2ad649ff",
+  "archiveSha256": "fecce42d05ba68ca5f0cd97fc1f8d38b410e87abbad1770b4e1ede2d48572309",
+  "state": "deployed",
+  "currentRelease": "/var/www/audit-document-studio/releases/20261024T112634260762463Z-f8b342e3a350",
+  "publicUrl": "http://43.128.232.108/#library",
+  "verifiedStaticFiles": 248,
+  "publicAssetsMatchPackage": true,
+  "checks": [
+    "会议准备页不再显示时间轴演示按钮",
+    "11工具不再显示设置导入导出或空菜单",
+    "风险点启动按钮为开始分析",
+    "结果页显示再次分析，结果导出可用",
+    "会议结果中的时间轴保留"
+  ],
+  "errors": []
+}

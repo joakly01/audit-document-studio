@@ -1,0 +1,94 @@
+{
+  "checks": [
+    "三个空间及OSS各有六类状态，另有空正文/缺原件失败；状态稳定，未启动远程任务或提升权限；上传/识别中不重复解析",
+    "资料列表四类解析状态、底栏1已解析/7未完成一致；上传记录六状态均可筛选，进度与失败原因可见",
+    "实际字节支持失败重试恢复与积压重入队；空正文仍失败、原件缺失单独提示；刷新不重造或重置已处理状态",
+    "已选清单表格化；勾选独立于主列表；全选有半选态；跨空间/只读可批量移除；确认可取消，移除不删除或改写资料",
+    "搜索文件/位置、结果内全选、跨搜索保留待移除勾选；预览返回保留；重新打开不沿用上次待移除勾选，主表同步取消",
+    "四种屏幕下表格独立滚动、表头及移除固定、确认/关闭按钮可见，正文16px辅助14px，无整页溢出",
+    "清空确认可取消；移除最后一项自动关闭；单行移除同样只取消选择"
+  ],
+  "states": {
+    "project": [
+      "uploading",
+      "pending",
+      "processing",
+      "done",
+      "failed",
+      "stuck"
+    ],
+    "personal": [
+      "uploading",
+      "pending",
+      "processing",
+      "done",
+      "failed",
+      "stuck",
+      "failed",
+      "failed"
+    ],
+    "public": [
+      "uploading",
+      "pending",
+      "processing",
+      "done",
+      "failed",
+      "stuck"
+    ],
+    "oss": [
+      "uploading",
+      "pending",
+      "processing",
+      "done",
+      "failed",
+      "stuck"
+    ]
+  },
+  "layouts": [
+    {
+      "w": 1440,
+      "h": 900,
+      "top": 36.703125,
+      "bottom": 863.28125,
+      "left": 160,
+      "right": 1280,
+      "footer": 863.28125,
+      "table": 557.390625,
+      "overflow": 0
+    },
+    {
+      "w": 1366,
+      "h": 768,
+      "top": 16,
+      "bottom": 752,
+      "left": 123,
+      "right": 1243,
+      "footer": 752,
+      "table": 466.8125,
+      "overflow": 0
+    },
+    {
+      "w": 1024,
+      "h": 480,
+      "top": 16,
+      "bottom": 464,
+      "left": 16,
+      "right": 1008,
+      "footer": 464,
+      "table": 194.8125,
+      "overflow": 0
+    },
+    {
+      "w": 390,
+      "h": 600,
+      "top": 10,
+      "bottom": 590,
+      "left": 14,
+      "right": 376,
+      "footer": 590,
+      "table": 219.828125,
+      "overflow": 0
+    }
+  ],
+  "errors": []
+}

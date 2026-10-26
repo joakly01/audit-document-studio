@@ -1,0 +1,120 @@
+{
+  "checks": [
+    "统一资料选择、文件夹/上传入口、逐项移出与撤销、查找不改变分析范围",
+    "词库增改、导入冲突逐行覆盖、提交前选词；真实词频/文件范围、原文定位、历史词表快照与下次停用；四种明细和PNG导出",
+    "独立环节提示词、跨页签草稿、放弃确认、系统原件保留与个人提示词副本，不保存整个工作区配置",
+    "会议/议题/清单视图、人员和金额筛选、全部议题导出与来源返回；七部分报告、独立风险要求、Word/Excel报告；问答发送/来源/保存/清空",
+    "风险点层级、检查说明、全选与有效性校验；两种遍历顺序、按风险点/文件归组、状态筛选与原文证据",
+    "时间轴真实事项日期、未知/无效日期、日期范围校验、整体/单条展开、列表视图与导出",
+    "两阶段主题归纳、仅重试失败归纳；共享部分失败重试、停止只读、任务中心和历史回看",
+    "五工具1366/1024×480/390布局、核心区域和提示词弹窗操作区、全部图标有明确注册"
+  ],
+  "layouts": [
+    {
+      "tool": "word",
+      "width": 1366,
+      "scroll": 1366,
+      "center": 712,
+      "header": 55
+    },
+    {
+      "tool": "meeting",
+      "width": 1366,
+      "scroll": 1366,
+      "center": 724,
+      "header": 43
+    },
+    {
+      "tool": "risk",
+      "width": 1366,
+      "scroll": 1366,
+      "center": 712,
+      "header": 55
+    },
+    {
+      "tool": "timeline",
+      "width": 1366,
+      "scroll": 1366,
+      "center": 712,
+      "header": 55
+    },
+    {
+      "tool": "theme",
+      "width": 1366,
+      "scroll": 1366,
+      "center": 712,
+      "header": 55
+    },
+    {
+      "tool": "word",
+      "width": 1024,
+      "scroll": 1024,
+      "center": 430,
+      "header": 49
+    },
+    {
+      "tool": "meeting",
+      "width": 1024,
+      "scroll": 1024,
+      "center": 436,
+      "header": 43
+    },
+    {
+      "tool": "risk",
+      "width": 1024,
+      "scroll": 1024,
+      "center": 430,
+      "header": 49
+    },
+    {
+      "tool": "timeline",
+      "width": 1024,
+      "scroll": 1024,
+      "center": 430,
+      "header": 49
+    },
+    {
+      "tool": "theme",
+      "width": 1024,
+      "scroll": 1024,
+      "center": 430,
+      "header": 49
+    },
+    {
+      "tool": "word",
+      "width": 390,
+      "scroll": 390,
+      "center": 1102,
+      "header": 53
+    },
+    {
+      "tool": "meeting",
+      "width": 390,
+      "scroll": 390,
+      "center": 556,
+      "header": 43
+    },
+    {
+      "tool": "risk",
+      "width": 390,
+      "scroll": 390,
+      "center": 546,
+      "header": 53
+    },
+    {
+      "tool": "timeline",
+      "width": 390,
+      "scroll": 390,
+      "center": 2086,
+      "header": 53
+    },
+    {
+      "tool": "theme",
+      "width": 390,
+      "scroll": 390,
+      "center": 883,
+      "header": 53
+    }
+  ],
+  "errors": []
+}

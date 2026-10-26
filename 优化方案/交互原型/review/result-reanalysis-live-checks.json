@@ -1,0 +1,20 @@
+{
+  "assetVersion": "20261023.65",
+  "checks": [
+    "timeline per-stage prompt selection",
+    "theme per-stage prompt selection",
+    "meeting per-stage prompt selection",
+    "risk per-stage prompt selection",
+    "contract per-stage prompt selection",
+    "prepaid per-stage prompt selection",
+    "bidding per-stage prompt selection",
+    "engineering per-stage prompt selection",
+    "association per-stage prompt selection",
+    "1366 all eleven result toolbars",
+    "1024 all eleven result toolbars",
+    "390 all eleven result toolbars",
+    "editable reanalysis does not execute or change original task",
+    "task center three text actions retained"
+  ],
+  "errors": []
+}

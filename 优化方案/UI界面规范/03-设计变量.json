@@ -1,0 +1,354 @@
+{
+  "metadata": {
+    "name": "审计文档挖掘助手 UI 设计变量",
+    "version": "1.3",
+    "date": "2026-10-19",
+    "unit": "CSS px unless otherwise stated",
+    "kind": "规范交付；按现有工程映射使用",
+    "appliedToRuntime": false,
+    "statusColorAdoption": "共用标签及新工作区已应用；实际测量见本轮验收记录"
+  },
+  "font": {
+    "family": [
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC",
+      "Arial",
+      "sans-serif"
+    ],
+    "size": {
+      "page": 22,
+      "section": 18,
+      "body": 16,
+      "caption": 14,
+      "minimumBusinessText": 14,
+      "tool": 18,
+      "dialog": 20,
+      "compactSection": 16
+    },
+    "weight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "headingAllowedMaximum": 650
+    },
+    "lineHeight": {
+      "heading": 1.4,
+      "control": 1.5,
+      "body": 1.6,
+      "document": 1.9
+    }
+  },
+  "color": {
+    "page": "#F4F6F9",
+    "surface": "#FFFFFF",
+    "text": "#1E3046",
+    "textSecondary": "#596B80",
+    "tableHeaderText": "#52657B",
+    "tableHeaderBackground": "#F5F7FA",
+    "primary": "#3269DB",
+    "primaryHover": "#2458C2",
+    "primarySoft": "#EEF4FF",
+    "border": "#DCE3ED",
+    "divider": "#E6EBF1",
+    "navigation": "#172C40",
+    "dangerAction": "#B34848",
+    "focus": "#7AA8FF",
+    "icon": "#526B85",
+    "status": {
+      "success": {
+        "text": "#1D735B",
+        "background": "#EAF7F2",
+        "adoption": "applied-common-tags"
+      },
+      "warning": {
+        "text": "#8A5A16",
+        "background": "#FFF5E5",
+        "adoption": "applied-common-tags"
+      },
+      "error": {
+        "text": "#A33E3E",
+        "background": "#FCEEEE",
+        "adoption": "applied-common-tags"
+      }
+    }
+  },
+  "spacing": {
+    "scale": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "controlGap": 8,
+    "compactIconGap": 4,
+    "contentGap": 12,
+    "fieldGap": 16
+  },
+  "radius": {
+    "lightAction": 4,
+    "control": 8,
+    "panel": 9,
+    "dialog": 10
+  },
+  "size": {
+    "controlMinHeight": 36,
+    "independentTargetMinimum": 24,
+    "inlineActionWidth": 30,
+    "inlineActionHeight": 32,
+    "treeActionWidth": 25,
+    "treeActionHeight": 28,
+    "icon": 18,
+    "iconAuxiliary": 16,
+    "dataPageHeading": 0,
+    "dataLocationBar": 0,
+    "dataToolbarMeasured": 58,
+    "dataSelectionBar": 0,
+    "toolCommandBarDesktop": 56,
+    "dataTableRowMinBaseline": 60,
+    "resultTableRowSuggested": 44,
+    "overflowMenuWidth": 264,
+    "toolCommandBarLowHeight": 50,
+    "toolCommandBarMobile": 54,
+    "toolAndCaptionMinimum": 14
+  },
+  "responsive": {
+    "measure": "资料区实际可用宽度，而不是整窗宽度",
+    "wideMinimum": 900,
+    "mediumMinimum": 720,
+    "wide": [
+      "location",
+      "nameSearch",
+      "scope",
+      "filter",
+      "upload",
+      "more"
+    ],
+    "medium": [
+      "location",
+      "nameSearch",
+      "filter",
+      "upload",
+      "more"
+    ],
+    "narrow": [
+      "location",
+      "nameSearch",
+      "upload",
+      "more"
+    ],
+    "mediumMoveToFilter": [
+      "scope"
+    ],
+    "narrowMoveToMore": [
+      "scope",
+      "status",
+      "type",
+      "resetFilter"
+    ],
+    "preserve": [
+      "query",
+      "scope",
+      "filters",
+      "selection",
+      "folder",
+      "task"
+    ],
+    "textSearchPlacement": "more-first",
+    "toolCommand": "single-line; move existing secondary controls to more"
+  },
+  "motion": {
+    "defaultDurationMs": 160,
+    "allowedDurationMs": [
+      120,
+      180
+    ],
+    "maximumPanelDurationMs": 200,
+    "respectReducedMotion": true
+  },
+  "layer": {
+    "base": 0,
+    "sticky": 10,
+    "navigation": 20,
+    "dropdown": 40,
+    "dialog": 100,
+    "toast": 200
+  },
+  "accessibility": {
+    "normalTextContrastMinimum": 4.5,
+    "targetSizePolicy": "至少可容纳24×24 CSS px；主要按钮至少36px高",
+    "focusVisible": true,
+    "stateCannotUseColorAlone": true,
+    "scope": "设计验收要求，不是全系统WCAG认证声明"
+  },
+  "existingCssMapping": {
+    "--font-body": "font.size.body",
+    "--font-caption": "font.size.caption",
+    "--font-section": "font.size.section",
+    "--font-page": "font.size.page",
+    "--blue": "color.primary",
+    "--muted": "color.textSecondary",
+    "--bg": "color.page",
+    "--ink": "color.text",
+    "--paper": "color.surface"
+  },
+  "contrastChecks": {
+    "method": "WCAG sRGB relative luminance; opaque color pairs only; unrounded ratio used for pass/fail",
+    "fullApplicationAudit": false,
+    "pairs": [
+      {
+        "name": "正文",
+        "foreground": "#1E3046",
+        "background": "#FFFFFF",
+        "ratio": 13.406330884776763,
+        "passesNormalText": true,
+        "kind": "规范值"
+      },
+      {
+        "name": "辅助文字",
+        "foreground": "#596B80",
+        "background": "#FFFFFF",
+        "ratio": 5.469390980358053,
+        "passesNormalText": true,
+        "kind": "规范值"
+      },
+      {
+        "name": "表头",
+        "foreground": "#52657B",
+        "background": "#F5F7FA",
+        "ratio": 5.5806676763555725,
+        "passesNormalText": true,
+        "kind": "规范值"
+      },
+      {
+        "name": "主按钮",
+        "foreground": "#FFFFFF",
+        "background": "#3269DB",
+        "ratio": 5.024949261607591,
+        "passesNormalText": true,
+        "kind": "规范值"
+      },
+      {
+        "name": "success",
+        "foreground": "#1D735B",
+        "background": "#EAF7F2",
+        "ratio": 5.220741338306806,
+        "passesNormalText": true,
+        "kind": "规范值"
+      },
+      {
+        "name": "warning",
+        "foreground": "#8A5A16",
+        "background": "#FFF5E5",
+        "ratio": 5.470042243262077,
+        "passesNormalText": true,
+        "kind": "规范值"
+      },
+      {
+        "name": "error",
+        "foreground": "#A33E3E",
+        "background": "#FCEEEE",
+        "ratio": 5.61036931924539,
+        "passesNormalText": true,
+        "kind": "规范值"
+      }
+    ]
+  },
+  "spaceOrder": [
+    "公共空间",
+    "项目空间",
+    "个人空间"
+  ],
+  "selection": {
+    "summaryPlacement": "existingPaginationBar",
+    "listSortPlacement": "removed",
+    "separateSelectionRow": false,
+    "pageCheckboxLabel": "本页",
+    "allPagesScope": "current-directory-and-filters"
+  },
+  "icon": {
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "defaultFamily": "outline",
+    "strokeWidth": 1.65,
+    "displaySize": 18,
+    "more": {
+      "family": "solid-dots",
+      "count": 3,
+      "radius": 1.8,
+      "fill": "currentColor",
+      "stroke": "none"
+    },
+    "grip": {
+      "family": "solid-dots",
+      "count": 6,
+      "radius": 1.4,
+      "fill": "currentColor",
+      "stroke": "none"
+    },
+    "registry": "07-图标注册表.json"
+  },
+  "workspace": {
+    "standaloneLibraryTitleRow": false,
+    "locationRowHeight": 0,
+    "uploadPlacement": "merged-command-bar",
+    "tableScroll": "independent",
+    "minimumHeight": 0,
+    "mobileTools": "on-demand-side-panel",
+    "textSearchPlacement": "more-menu-first",
+    "responsiveCommandWidth": {
+      "scopeVisible": 900,
+      "filterVisible": 720
+    },
+    "globalBreadcrumb": false,
+    "locationPrefix": "当前位置",
+    "locationLockIcon": false,
+    "libraryTaskCenter": false,
+    "uploadLabel": "上传",
+    "directoryFooterCreate": false,
+    "createFolderPlacement": "authorized-directory-or-space-menu",
+    "spaceOrder": [
+      "公共空间",
+      "项目空间",
+      "个人空间"
+    ]
+  },
+  "extractionTemplateChoice": {
+    "defaultTemplate": null,
+    "defaultFields": [],
+    "saveAsPlacement": "template-section-secondary",
+    "addFieldStyle": "outlined-plus-button",
+    "preserveEditedDrafts": true
+  },
+  "taskCenter": {
+    "layout": "compact-filters-internal-scroll-table",
+    "resultNavigation": "business-tool-specific",
+    "taskInformation": "separate-dialog",
+    "unknownProgress": "pending-update",
+    "mergeSelection": "same-tool-cross-page",
+    "mergeFields": "union",
+    "analysisCompletionMeaning": "AI-results-returned-not-audit-confirmation"
+  },
+  "analysisPreparation": {
+    "steps": [
+      "添加资料",
+      "核对原文",
+      "业务配置"
+    ],
+    "sidebarWidth": 352,
+    "sidebarWidthCompact": 310,
+    "equalSidebars": true,
+    "documentRowMinHeight": 42,
+    "searchChangesScope": false,
+    "previewChangesScope": false,
+    "defaultEntry": "editable-draft",
+    "historyEntry": "explicit-task-route",
+    "preserveToolSpecificFlow": true
+  }
+}

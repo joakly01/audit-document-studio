@@ -1,0 +1,197 @@
+{
+  "checks": [
+    "theme：三尺寸Step与页签统一，提示词选择编辑、原文/解析切换可用，资料和配置不变",
+    "meeting：三尺寸Step与页签统一，提示词选择编辑、原文/解析切换可用，资料和配置不变",
+    "timeline：三尺寸Step与页签统一，提示词选择编辑、原文/解析切换可用，资料和配置不变",
+    "信息提取：Step2和窄屏页签均查看原文，原文件/解析切换与字段配置保持",
+    "既有demo结果来源操作无旧原文动作文案；打开仍保留核验意见和已核对，任务数据不变"
+  ],
+  "layouts": [
+    {
+      "tool": "theme",
+      "width": 1366,
+      "height": 768,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "分别选择资料要点和主题归纳提示词。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    },
+    {
+      "tool": "theme",
+      "width": 1024,
+      "height": 480,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "分别选择资料要点和主题归纳提示词。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    },
+    {
+      "tool": "theme",
+      "width": 390,
+      "height": 600,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "分别选择资料要点和主题归纳提示词。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    },
+    {
+      "tool": "meeting",
+      "width": 1366,
+      "height": 768,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "选择会议分析提示词，按需调整议题聚类。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    },
+    {
+      "tool": "meeting",
+      "width": 1024,
+      "height": 480,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "选择会议分析提示词，按需调整议题聚类。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    },
+    {
+      "tool": "meeting",
+      "width": 390,
+      "height": 600,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "选择会议分析提示词，按需调整议题聚类。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    },
+    {
+      "tool": "timeline",
+      "width": 1366,
+      "height": 768,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "选择事项提取提示词，明确提取哪些日期和事项。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    },
+    {
+      "tool": "timeline",
+      "width": 1024,
+      "height": 480,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "选择事项提取提示词，明确提取哪些日期和事项。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    },
+    {
+      "tool": "timeline",
+      "width": 390,
+      "height": 600,
+      "headers": [
+        "Step 1 添加资料",
+        "Step 2查看原文",
+        "Step 3 选择提示词"
+      ],
+      "intro": "选择事项提取提示词，明确提取哪些日期和事项。",
+      "configTab": "选择提示词",
+      "previewTab": "查看原文"
+    }
+  ],
+  "resultActions": [
+    {
+      "tool": "theme",
+      "actions": [
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        },
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        },
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        }
+      ],
+      "reviewHeading": "核验意见",
+      "reviewStatus": "已核对"
+    },
+    {
+      "tool": "timeline",
+      "actions": [
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        },
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        },
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        }
+      ],
+      "reviewHeading": "核验意见",
+      "reviewStatus": "已核对"
+    },
+    {
+      "tool": "meeting",
+      "actions": [
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        },
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        },
+        {
+          "action": "aw-review",
+          "label": "查看原文",
+          "title": ""
+        }
+      ],
+      "reviewHeading": "核验意见",
+      "reviewStatus": "已核对"
+    }
+  ],
+  "errors": []
+}

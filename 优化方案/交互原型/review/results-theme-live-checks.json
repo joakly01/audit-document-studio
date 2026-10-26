@@ -1,0 +1,11 @@
+{
+  "url": "http://43.128.232.108",
+  "checks": [
+    "extract: result header export only",
+    "word: result header export only",
+    "theme: result header export only",
+    "theme preparation business language",
+    "historical config reload retained"
+  ],
+  "errors": []
+}

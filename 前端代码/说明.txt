@@ -1,0 +1,28 @@
+来源：agent 项目前端 agent-web/src
+对应菜单：文档资料挖掘（路由 file-manager-code，入口 views/file-manager-code/Index.vue）
+
+本包按源码相对路径存放，便于对照原项目。
+
+页面
+- views/file-manager-code/          文档资料挖掘主界面与工具箱分析页
+- views/document-mining/            风险点排查、预付费用
+- views/word-cloud-analysis/        词云分析
+- views/DemoAudit/meeting-minutes-analysis/  会议纪要
+- views/DemoAudit/timeline-analysis/ 时间线分析
+- views/DemoAudit/bidding-analysis/  招投标分析
+- views/ocr-task-center/            任务中心
+- views/ComingSoon/                 未上线功能占位页
+- views/DemoAudit/contract-analysis-assistant-vue/components/OcrPosition/  预览定位
+
+公共组件
+- components/FilePreview.vue
+- components/common/FileSelectDialog.vue
+
+接口与工具
+- api/fileManager.js、task.js、dict.js、template.js、org.js、projectSpace.js、wordCloud.js、IcssPlatform/promptManagement.js
+- utils 下上传缓存、Excel/Word/Markdown 导出、合同与工程项目结果解析
+- composables/useScheduleTaskProgress.js、useTaskPolling.js
+- stores/home.js
+- mock/oss-folder-tree/oss_folder_tree_demo.json
+
+这是源码摘录，不是可单独运行的前端工程。登录、请求封装的其余文件、样式和路由仍在原 agent-web 项目里。

@@ -1,0 +1,654 @@
+{
+  "version": "1.3",
+  "date": "2026-10-19",
+  "source": "从当前前端 I() 图标渲染器导出；不是另起一套图标",
+  "icons": [
+    {
+      "id": "grid",
+      "label": "资料管理",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/grid.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "folder",
+      "label": "文件夹",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/folder.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "tasks",
+      "label": "任务中心",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/tasks.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "scan",
+      "label": "信息提取",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/scan.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "cloud",
+      "label": "词云分析",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/cloud.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "layers",
+      "label": "主题归纳",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/layers.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "clock",
+      "label": "时间 / 记录（通用）",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/clock.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "shield",
+      "label": "风险点分析",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/shield.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "message",
+      "label": "会议纪要分析",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/message.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "filecheck",
+      "label": "合同分析",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/filecheck.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "briefcase",
+      "label": "招投标分析",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/briefcase.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "calculator",
+      "label": "待摊费用",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/calculator.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "building",
+      "label": "工程项目一致性",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/building.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "link",
+      "label": "关联 / 引用",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/link.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "search",
+      "label": "名称搜索",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/search.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "plus",
+      "label": "添加",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/plus.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "arrow",
+      "label": "向前 / 继续",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/arrow.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "back",
+      "label": "返回 / 上一项",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/back.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "chevron",
+      "label": "展开 / 下一项",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/chevron.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "down",
+      "label": "下拉 / 收起",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/down.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "check",
+      "label": "确认 / 完成",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/check.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "close",
+      "label": "关闭 / 取消选择",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/close.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "upload",
+      "label": "上传资料",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/upload.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "download",
+      "label": "下载",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/download.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "file",
+      "label": "文件 / 原文",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/file.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "eye",
+      "label": "预览",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/eye.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "settings",
+      "label": "参数设置",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/settings.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "help",
+      "label": "操作指引",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/help.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "expand",
+      "label": "宽屏展开",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/expand.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "trash",
+      "label": "删除",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/trash.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "play",
+      "label": "执行分析",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/play.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "book",
+      "label": "模板 / 阅读",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/book.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "spark",
+      "label": "智能处理",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/spark.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "refresh",
+      "label": "刷新",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/refresh.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "pause",
+      "label": "暂停 / 停止",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/pause.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "logout",
+      "label": "退出",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/logout.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "menu",
+      "label": "主菜单",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/menu.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "bell",
+      "label": "通知",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/bell.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "edit",
+      "label": "编辑 / 重命名",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/edit.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "more",
+      "label": "更多操作",
+      "family": "solid-dots",
+      "category": "通用操作",
+      "asset": "assets/icons/more.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": "只表示操作集合，不代表具体动作"
+    },
+    {
+      "id": "filter",
+      "label": "筛选",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/filter.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "lock",
+      "label": "只读 / 受限",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/lock.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "users",
+      "label": "成员 / 审计小组",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/users.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "folderPlus",
+      "label": "新建文件夹",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/folderPlus.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "folderTree",
+      "label": "目录显隐",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/folderTree.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "focusPath",
+      "label": "聚焦目录",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/focusPath.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "toolbox",
+      "label": "分析工具区",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/toolbox.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "paperclip",
+      "label": "附件关联",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/paperclip.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "accessKey",
+      "label": "权限与访问",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/accessKey.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "fileSearch",
+      "label": "正文检索",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/fileSearch.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "uploadHistory",
+      "label": "上传记录",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/uploadHistory.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "timeline",
+      "label": "时间轴分析",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/timeline.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "tableCompare",
+      "label": "两表项目关联度",
+      "family": "outline",
+      "category": "工具",
+      "asset": "assets/icons/tableCompare.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "grip",
+      "label": "同级拖动排序",
+      "family": "solid-dots",
+      "category": "通用操作",
+      "asset": "assets/icons/grip.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": "只表示同级排序，不能表达移动到子目录"
+    },
+    {
+      "id": "folderManage",
+      "label": "文件夹管理（已退出主列表）",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/folderManage.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": "主列表不再使用；保留既有登记以供历史对照"
+    },
+    {
+      "id": "fileMove",
+      "label": "移动所选文件",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/fileMove.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "fileParse",
+      "label": "重新解析",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/fileParse.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": ""
+    },
+    {
+      "id": "copy",
+      "label": "复制为个人模板",
+      "family": "outline",
+      "category": "通用操作",
+      "asset": "assets/icons/copy.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": "两个叠放矩形；复制内容而非附件关联。"
+    },
+    {
+      "id": "list",
+      "label": "清单 / 词频",
+      "family": "outline",
+      "category": "结果视图",
+      "asset": "assets/icons/list.svg",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.65,
+      "note": "用于结构化明细/词频，区别于原文件图标；与现有menu（导航菜单）语义分开。"
+    }
+  ],
+  "tools": [
+    {
+      "id": "extract",
+      "name": "信息提取",
+      "icon": "scan"
+    },
+    {
+      "id": "word",
+      "name": "词云分析",
+      "icon": "cloud"
+    },
+    {
+      "id": "theme",
+      "name": "主题归纳",
+      "icon": "layers"
+    },
+    {
+      "id": "timeline",
+      "name": "时间轴分析",
+      "icon": "timeline"
+    },
+    {
+      "id": "risk",
+      "name": "风险点分析",
+      "icon": "shield"
+    },
+    {
+      "id": "meeting",
+      "name": "会议纪要分析",
+      "icon": "message"
+    },
+    {
+      "id": "contract",
+      "name": "合同分析",
+      "icon": "filecheck"
+    },
+    {
+      "id": "bidding",
+      "name": "招投标分析",
+      "icon": "briefcase"
+    },
+    {
+      "id": "prepaid",
+      "name": "待摊费用",
+      "icon": "calculator"
+    },
+    {
+      "id": "engineering",
+      "name": "工程项目一致性",
+      "icon": "building"
+    },
+    {
+      "id": "association",
+      "name": "两表项目关联度",
+      "icon": "tableCompare"
+    }
+  ]
+}
