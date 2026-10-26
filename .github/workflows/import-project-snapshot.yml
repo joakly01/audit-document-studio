@@ -11,4 +11,60 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - run: echo 'Snapshot import is being prepared.'
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore verified snapshot from this repository
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROJECT_BUNDLE_SHA256: "165e48d1ca35ad2f280fbd0d8f425655a9a5ffebf2c2c20c2773f6851c817001"
+          PROJECT_TREE_SHA: "f075b95ea22eba2c4bfed9f3ccc194ba87d707b3"
+          CHUNK_SHAS: '["45eb24191bc963c6326d7ffca5878939e4311b7a", "97952e1bfa25672c08738905bc6268beed9d3060", "751628e0c59e6ebcd9d2419e47851b78f707097a", "ff1e6405a91769ec2ef6e03cf3150dee698aefc0", "214f04a436baba0a4666dfb554c3751f63ad2ec3", "5b1d506bbbfcb62ce676ff5a9129d32d7ee0a4e6", "9376a5604a90fa195303cf227e48b5565eeb669a", "bee0726e818cf941a42db68a347d31708ca27b1e", "3dbff4c73431d854c628479f58586adf85eddb18", "178cc69b16caeb338199575cedc0b81beb3d6aa2", "2fcd73277534e9727d5d7223c8f1ffb3ce72b2eb", "2c117d13445b563a8d4a53767428aea59214522d", "262bcccb0d355ffc170ff14b8d1d5e669cfe3701", "51b97d25494a1f4940008bcd7f61e7fd592818f0", "3e16a1d74874d298cb592f42e08f46f8535a96d6", "d3047272253371cc981e133f512d78be38ea3e99", "4ccc8b50a9036ff1c391c5547bfe2fe86072a8e8", "c1126c57e279e6928f352201e5f2662f758ce269", "e8a4665418203f09d6967f4f5e228215ebbe8680", "224d5a4cc92ab719b296bfd7494420092d578074", "ca0eb22dca5556bd7f76d140a0d9d238f3aba39b", "77a1e0319e56bae0f01fef316b3bddbbf46c2c37", "5a2f242ebaac72380391fe077b457130122e4321", "5b0344e5d375e68b38015d801ff985baf9c5df91", "996d4a1ba21d0f0eb4184b46ae3d20a5791e87c1", "a4893e8a465ac18159d5a7dc3e00c7fa6e5a5b55", "0a96a1cc8dfb3c763cf39f4e7f38a7c2a87b62f9", "bb271e2885c94110925e0c26e2f130ce04af84a8", "b210de272e797d27b2af04add44dbdebe2064d95", "eb54644d8bc7eb45a7e70974ddd92557ef84a7f7", "629d32e4cd7a72b2ef4cd953ce7ea593e9811cde"]'
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, json, urllib.request, base64, hashlib, time
+          shas = json.loads(os.environ['CHUNK_SHAS'])
+          url = 'https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY'] + '/git/blobs/'
+          headers = {'Authorization': 'Bearer ' + os.environ['GITHUB_TOKEN'], 'Accept': 'application/vnd.github+json', 'User-Agent': 'audit-document-studio-import', 'X-GitHub-Api-Version': '2022-11-28'}
+          bundle = os.path.join(os.environ['RUNNER_TEMP'], 'project.bundle')
+          digest = hashlib.sha256()
+          with open(bundle, 'wb') as output:
+              for index, sha in enumerate(shas, 1):
+                  for attempt in range(4):
+                      try:
+                          request = urllib.request.Request(url + sha, headers=headers)
+                          with urllib.request.urlopen(request, timeout=90) as response:
+                              item = json.load(response)
+                          data = base64.b64decode(item['content'])
+                          actual = hashlib.sha1(b'blob ' + str(len(data)).encode() + bytes([0]) + data).hexdigest()
+                          if actual != sha:
+                              raise ValueError('Snapshot chunk checksum mismatch')
+                          break
+                      except Exception:
+                          if attempt == 3:
+                              raise
+                          time.sleep(2 * (attempt + 1))
+                  output.write(data)
+                  digest.update(data)
+                  print('Verified snapshot chunk', index, 'of', len(shas), flush=True)
+          if digest.hexdigest() != os.environ['PROJECT_BUNDLE_SHA256']:
+              raise ValueError('Complete snapshot checksum mismatch')
+          PY
+          git bundle verify "$RUNNER_TEMP/project.bundle"
+          git fetch "$RUNNER_TEMP/project.bundle" refs/heads/main:refs/remotes/verified-import/main
+          imported_commit="$(git rev-parse refs/remotes/verified-import/main)"
+          imported_tree="$(git rev-parse 'refs/remotes/verified-import/main^{tree}')"
+          test "$imported_tree" = "$PROJECT_TREE_SHA"
+          cp .github/workflows/import-project-snapshot.yml "$RUNNER_TEMP/import-project-snapshot.yml"
+          git read-tree --reset -u "$imported_tree"
+          mkdir -p .github/workflows
+          cp "$RUNNER_TEMP/import-project-snapshot.yml" .github/workflows/import-project-snapshot.yml
+          git add .github/workflows/import-project-snapshot.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          final_tree="$(git write-tree)"
+          commit="$(git commit-tree "$final_tree" -p "$GITHUB_SHA" -p "$imported_commit" -m 'Import complete audit document studio project')"
+          git push origin "$commit:refs/heads/main"
+          printf 'Imported complete project commit: %s\n' "$commit"
