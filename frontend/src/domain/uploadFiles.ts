@@ -1,0 +1,4 @@
+export function uploadPath(path:string,name:string){return (path||name).replace(/\\/g,'/').replace(/^\.\//,'')}
+export function uploadFileIssue(path:string,size:number){if(path.startsWith('/')||path.split('/').some(part=>part==='..'||!part))return '文件路径无效';if(size===0)return '空文件无法上传';if(size>100*1024*1024)return '单文件不能超过 100 MB';return ''}
+export function duplicateUploadPaths(paths:string[]){const seen=new Set<string>(),duplicates=new Set<string>();for(const path of paths){if(seen.has(path))duplicates.add(path);seen.add(path)}return duplicates}
+export function summarizeUploadTypes(entries:{path:string;size:number}[]){const types=new Map<string,{extension:string;count:number;size:number}>();for(const entry of entries){const extension=entry.path.split('.').pop()?.toLowerCase()||'无扩展名';const item=types.get(extension)||{extension,count:0,size:0};item.count++;item.size+=entry.size;types.set(extension,item)}return [...types.values()].sort((a,b)=>b.count-a.count)}

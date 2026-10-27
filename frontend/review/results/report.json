@@ -1,0 +1,24 @@
+{
+  "report": [
+    "extract: rendered and task info opened",
+    "word: draft topN=100 rendered correctly",
+    "word: rendered and task info opened",
+    "theme: rendered and task info opened",
+    "timeline: rendered and task info opened",
+    "meeting: rendered and task info opened",
+    "risk: rendered and task info opened",
+    "bidding: rendered and task info opened",
+    "contract: rendered and task info opened",
+    "prepaid: rendered and task info opened",
+    "engineering: rendered and task info opened",
+    "association: rendered and task info opened",
+    "meeting: no-match and unsafe-regex validation passed",
+    "risk: filtering, JSON download and immutable-snapshot reanalysis passed",
+    "history: view-result navigation passed",
+    "contract: report generation and truthful .txt demonstration download passed",
+    "word: selected term added to a new task draft, historical task unchanged",
+    "history: Excel export action produces a workbook",
+    "word: nonstandard saved topN=37 appears as current option"
+  ],
+  "errors": []
+}

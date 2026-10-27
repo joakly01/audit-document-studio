@@ -1,0 +1,65 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "route": "library",
+      "passed": true
+    },
+    {
+      "route": "tool/extract",
+      "passed": true
+    },
+    {
+      "route": "tool/word",
+      "passed": true
+    },
+    {
+      "route": "tool/theme",
+      "passed": true
+    },
+    {
+      "route": "tool/timeline",
+      "passed": true
+    },
+    {
+      "route": "tool/meeting",
+      "passed": true
+    },
+    {
+      "route": "tool/risk",
+      "passed": true
+    },
+    {
+      "route": "tool/prepaid",
+      "passed": true
+    },
+    {
+      "route": "tool/bidding",
+      "passed": true
+    },
+    {
+      "route": "tool/contract",
+      "passed": true
+    },
+    {
+      "route": "tool/engineering",
+      "passed": true
+    },
+    {
+      "route": "tool/association",
+      "passed": true
+    },
+    {
+      "route": "templates",
+      "passed": true
+    },
+    {
+      "route": "prompts",
+      "passed": true
+    },
+    {
+      "route": "tasks",
+      "passed": true
+    }
+  ]
+}

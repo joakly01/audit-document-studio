@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "name": "跨页、仅保留本页、全部页、取消范围",
+      "passed": true
+    },
+    {
+      "name": "中文合成Enter不触发查询",
+      "passed": true
+    },
+    {
+      "name": "演示文本与原文件缺失状态",
+      "passed": true
+    },
+    {
+      "name": "附件确认保存与取消保留",
+      "passed": true
+    },
+    {
+      "name": "文件夹上传路径、名称、类型、完成",
+      "passed": true
+    },
+    {
+      "name": "Picker跨页、不可选状态、取消与确认",
+      "passed": true
+    },
+    {
+      "name": "390px文档无横向溢出",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "gaps": [
+    "演示服务无真实原文件URL，PDF/DOCX/Excel渲染需真实文件及CORS端到端验收。",
+    "composition为合成事件，真实中文输入法需人工补验。"
+  ]
+}
