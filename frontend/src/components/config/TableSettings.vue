@@ -3,6 +3,7 @@ import {ref,watch} from 'vue'
 import {service} from '@/services/service'
 import {ElMessageBox} from 'element-plus'
 import {ruleUsesField} from '@/domain/configuration'
+import {createId} from '@/domain/ids'
 import HardRulesEditor from './HardRulesEditor.vue'
 import EngineeringMappings from './EngineeringMappings.vue'
 import type {ToolDraft,Material} from '@/domain/types'
@@ -14,7 +15,7 @@ watch(()=>props.draft.tool==='association'?[props.draft.config.table1,props.draf
  if(props.draft.tool==='engineering')props.draft.config.fieldMappings[file.id] ||= {}
  }
 },{immediate:true,deep:false})
-function addMapping(){const rows=(props.draft.config.mappingRows||=[]);const key='F'+(Math.max(0,...rows.map((r:any,i:number)=>Number((r.key||'F'+(i+1)).slice(1))))+1);rows.push({id:crypto.randomUUID(),key,left:'',right:'',weight:rows.length?0:1,rule:'',compare_type:'similarity',threshold:0.8})}
+function addMapping(){const rows=(props.draft.config.mappingRows||=[]);const key='F'+(Math.max(0,...rows.map((r:any,i:number)=>Number((r.key||'F'+(i+1)).slice(1))))+1);rows.push({id:createId(),key,left:'',right:'',weight:rows.length?0:1,rule:'',compare_type:'similarity',threshold:0.8})}
 async function removeMapping(i:number){const c=props.draft.config,key=c.mappingRows[i].key||'F'+(i+1),affected=c.hardRules.filter((r:any)=>ruleUsesField(r,key));if(affected.length){try{await ElMessageBox.confirm('移除这组字段对应时，将同时移除引用它的 '+affected.length+' 条判断规则。','移除字段对应',{confirmButtonText:'移除',cancelButtonText:'取消'})}catch{return}}c.hardRules=c.hardRules.filter((r:any)=>!ruleUsesField(r,key));c.mappingRows.splice(i,1)}
 </script>
 <template>

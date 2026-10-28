@@ -1,0 +1,2427 @@
+{
+  "phase": "before",
+  "base": "http://43.128.232.108/demo",
+  "checks": [
+    {
+      "name": "1366×768 信息提取",
+      "passed": true
+    },
+    {
+      "name": "1366×768 词云分析",
+      "passed": true
+    },
+    {
+      "name": "1366×768 主题归纳",
+      "passed": true
+    },
+    {
+      "name": "1366×768 时间轴分析",
+      "passed": true
+    },
+    {
+      "name": "1366×768 会议纪要分析",
+      "passed": true
+    },
+    {
+      "name": "1366×768 风险点分析",
+      "passed": true
+    },
+    {
+      "name": "1366×768 招投标分析",
+      "passed": true
+    },
+    {
+      "name": "1366×768 合同分析",
+      "passed": true
+    },
+    {
+      "name": "1366×768 待摊费用",
+      "passed": true
+    },
+    {
+      "name": "1366×768 工程项目一致性",
+      "passed": true
+    },
+    {
+      "name": "1366×768 两表项目关联度",
+      "passed": true
+    },
+    {
+      "name": "1366×768 资料管理",
+      "passed": true
+    },
+    {
+      "name": "1366×768 提取模板",
+      "passed": true
+    },
+    {
+      "name": "1366×768 提示词库",
+      "passed": true
+    },
+    {
+      "name": "1366×768 任务中心",
+      "passed": true
+    },
+    {
+      "name": "1366×768 提示词编辑窗口",
+      "passed": true
+    },
+    {
+      "name": "1366×768 添加资料窗口",
+      "passed": true
+    },
+    {
+      "name": "1024×480 信息提取",
+      "passed": true
+    },
+    {
+      "name": "1024×480 词云分析",
+      "passed": true
+    },
+    {
+      "name": "1024×480 主题归纳",
+      "passed": true
+    },
+    {
+      "name": "1024×480 时间轴分析",
+      "passed": true
+    },
+    {
+      "name": "1024×480 会议纪要分析",
+      "passed": true
+    },
+    {
+      "name": "1024×480 风险点分析",
+      "passed": true
+    },
+    {
+      "name": "1024×480 招投标分析",
+      "passed": true
+    },
+    {
+      "name": "1024×480 合同分析",
+      "passed": true
+    },
+    {
+      "name": "1024×480 待摊费用",
+      "passed": true
+    },
+    {
+      "name": "1024×480 工程项目一致性",
+      "passed": true
+    },
+    {
+      "name": "1024×480 两表项目关联度",
+      "passed": true
+    },
+    {
+      "name": "1024×480 资料管理",
+      "passed": true
+    },
+    {
+      "name": "1024×480 提取模板",
+      "passed": true
+    },
+    {
+      "name": "1024×480 提示词库",
+      "passed": true
+    },
+    {
+      "name": "1024×480 任务中心",
+      "passed": true
+    },
+    {
+      "name": "1024×480 提示词编辑窗口",
+      "passed": true
+    },
+    {
+      "name": "1024×480 添加资料窗口",
+      "passed": true
+    }
+  ],
+  "metrics": [
+    {
+      "key": "tool/extract",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 346,
+        "y": 149.1875,
+        "width": 674,
+        "height": 46,
+        "top": 149.1875,
+        "right": 1020,
+        "bottom": 195.1875,
+        "left": 346
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 1034,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 1034
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "附件与文本处理",
+          "font": "13px",
+          "cls": "el-collapse-item__title"
+        }
+      ]
+    },
+    {
+      "key": "tool/word",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 346,
+        "y": 149.1875,
+        "width": 674,
+        "height": 46,
+        "top": 149.1875,
+        "right": 1020,
+        "bottom": 195.1875,
+        "left": 346
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 1034,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 1034
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/theme",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 346,
+        "y": 149.1875,
+        "width": 674,
+        "height": 46,
+        "top": 149.1875,
+        "right": 1020,
+        "bottom": 195.1875,
+        "left": 346
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 1034,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 1034
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/timeline",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 346,
+        "y": 149.1875,
+        "width": 674,
+        "height": 46,
+        "top": 149.1875,
+        "right": 1020,
+        "bottom": 195.1875,
+        "left": 346
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 1034,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 1034
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/meeting",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 346,
+        "y": 149.1875,
+        "width": 674,
+        "height": 46,
+        "top": 149.1875,
+        "right": 1020,
+        "bottom": 195.1875,
+        "left": 346
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 1034,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 1034
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/risk",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 346,
+        "y": 149.1875,
+        "width": 674,
+        "height": 46,
+        "top": 149.1875,
+        "right": 1020,
+        "bottom": 195.1875,
+        "left": 346
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 1034,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 1034
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/bidding",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": null,
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 360,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 372,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 384,
+        "y": 147.1875,
+        "width": 970,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 384
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "查看检查要点",
+          "font": "13px",
+          "cls": "el-collapse-item__title"
+        }
+      ]
+    },
+    {
+      "key": "tool/contract",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": null,
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 360,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 372,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 384,
+        "y": 147.1875,
+        "width": 970,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 384
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/prepaid",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 346,
+        "y": 149.1875,
+        "width": 674,
+        "height": 46,
+        "top": 149.1875,
+        "right": 1020,
+        "bottom": 195.1875,
+        "left": 346
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 1034,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 1034
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/engineering",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": null,
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 360,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 372,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 384,
+        "y": 147.1875,
+        "width": 970,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 384
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/association",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1366,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "top": 135.1875,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "sourceHeader": null,
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 360,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 372,
+        "bottom": 756,
+        "left": 12
+      },
+      "right": {
+        "x": 384,
+        "y": 147.1875,
+        "width": 970,
+        "height": 608.8125,
+        "top": 147.1875,
+        "right": 1354,
+        "bottom": 756,
+        "left": 384
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "字段评分与高级设置",
+          "font": "13px",
+          "cls": "el-collapse-item__title"
+        }
+      ]
+    },
+    {
+      "key": "library",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": null,
+      "workspace": null,
+      "sourceHeader": null,
+      "left": null,
+      "right": null,
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "虚构示例资料/合同与会议",
+          "font": "12px",
+          "cls": "library-file-path"
+        },
+        {
+          "text": "解析完成",
+          "font": "13px",
+          "cls": "parse-badge parsed"
+        },
+        {
+          "text": "虚构示例资料/合同与会议",
+          "font": "12px",
+          "cls": "library-file-path"
+        },
+        {
+          "text": "解析完成",
+          "font": "13px",
+          "cls": "parse-badge parsed"
+        },
+        {
+          "text": "虚构示例资料",
+          "font": "12px",
+          "cls": "library-file-path"
+        },
+        {
+          "text": "解析完成",
+          "font": "13px",
+          "cls": "parse-badge parsed"
+        },
+        {
+          "text": "虚构示例资料",
+          "font": "12px",
+          "cls": "library-file-path"
+        },
+        {
+          "text": "解析完成",
+          "font": "13px",
+          "cls": "parse-badge parsed"
+        },
+        {
+          "text": "虚构示例资料",
+          "font": "12px",
+          "cls": "library-file-path"
+        },
+        {
+          "text": "解析完成",
+          "font": "13px",
+          "cls": "parse-badge parsed"
+        },
+        {
+          "text": "虚构示例资料",
+          "font": "12px",
+          "cls": "library-file-path"
+        }
+      ]
+    },
+    {
+      "key": "templates",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 61,
+        "top": 56,
+        "right": 1366,
+        "bottom": 117,
+        "left": 0
+      },
+      "workspace": null,
+      "sourceHeader": null,
+      "left": null,
+      "right": null,
+      "primaryFont": "14px",
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "prompts",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 61,
+        "top": 56,
+        "right": 1366,
+        "bottom": 117,
+        "left": 0
+      },
+      "workspace": null,
+      "sourceHeader": null,
+      "left": null,
+      "right": null,
+      "primaryFont": "14px",
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tasks",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "top": 0,
+        "right": 1366,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": null,
+      "workspace": null,
+      "sourceHeader": null,
+      "left": null,
+      "right": null,
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        }
+      ]
+    },
+    {
+      "name": "prompt",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "rect": {
+        "x": 123,
+        "y": 115.1875,
+        "width": 1120,
+        "height": 706.59375,
+        "top": 115.1875,
+        "right": 1243,
+        "bottom": 821.78125,
+        "left": 123
+      },
+      "body": {
+        "x": 143,
+        "y": 177.78125,
+        "width": 1080,
+        "height": 572,
+        "top": 177.78125,
+        "right": 1223,
+        "bottom": 749.78125,
+        "left": 143
+      },
+      "footer": {
+        "x": 143,
+        "y": 749.78125,
+        "width": 1080,
+        "height": 52,
+        "top": 749.78125,
+        "right": 1223,
+        "bottom": 801.78125,
+        "left": 143
+      },
+      "textarea": {
+        "x": 143,
+        "y": 221.78125,
+        "width": 1080,
+        "height": 528,
+        "top": 221.78125,
+        "right": 1223,
+        "bottom": 749.78125,
+        "left": 143
+      }
+    },
+    {
+      "name": "picker",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "rect": {
+        "x": 103,
+        "y": 38.390625,
+        "width": 1160,
+        "height": 672.1875,
+        "top": 38.390625,
+        "right": 1263,
+        "bottom": 710.578125,
+        "left": 103
+      },
+      "body": {
+        "x": 123,
+        "y": 100.984375,
+        "width": 1120,
+        "height": 537.59375,
+        "top": 100.984375,
+        "right": 1243,
+        "bottom": 638.578125,
+        "left": 123
+      },
+      "footer": {
+        "x": 123,
+        "y": 638.578125,
+        "width": 1120,
+        "height": 52,
+        "top": 638.578125,
+        "right": 1243,
+        "bottom": 690.578125,
+        "left": 123
+      }
+    },
+    {
+      "key": "tool/extract",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 316,
+        "y": 149.1875,
+        "width": 392,
+        "height": 46,
+        "top": 149.1875,
+        "right": 708,
+        "bottom": 195.1875,
+        "left": 316
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 302,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 722,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 722
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "查看原文",
+          "font": "13px",
+          "cls": "source-title"
+        },
+        {
+          "text": "附件与文本处理",
+          "font": "13px",
+          "cls": "el-collapse-item__title"
+        }
+      ]
+    },
+    {
+      "key": "tool/word",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 316,
+        "y": 149.1875,
+        "width": 392,
+        "height": 46,
+        "top": 149.1875,
+        "right": 708,
+        "bottom": 195.1875,
+        "left": 316
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 302,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 722,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 722
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "查看原文",
+          "font": "13px",
+          "cls": "source-title"
+        }
+      ]
+    },
+    {
+      "key": "tool/theme",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 316,
+        "y": 149.1875,
+        "width": 392,
+        "height": 46,
+        "top": 149.1875,
+        "right": 708,
+        "bottom": 195.1875,
+        "left": 316
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 302,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 722,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 722
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "查看原文",
+          "font": "13px",
+          "cls": "source-title"
+        }
+      ]
+    },
+    {
+      "key": "tool/timeline",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 316,
+        "y": 149.1875,
+        "width": 392,
+        "height": 46,
+        "top": 149.1875,
+        "right": 708,
+        "bottom": 195.1875,
+        "left": 316
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 302,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 722,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 722
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "查看原文",
+          "font": "13px",
+          "cls": "source-title"
+        }
+      ]
+    },
+    {
+      "key": "tool/meeting",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 316,
+        "y": 149.1875,
+        "width": 392,
+        "height": 46,
+        "top": 149.1875,
+        "right": 708,
+        "bottom": 195.1875,
+        "left": 316
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 302,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 722,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 722
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "查看原文",
+          "font": "13px",
+          "cls": "source-title"
+        }
+      ]
+    },
+    {
+      "key": "tool/risk",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 316,
+        "y": 149.1875,
+        "width": 392,
+        "height": 46,
+        "top": 149.1875,
+        "right": 708,
+        "bottom": 195.1875,
+        "left": 316
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 302,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 722,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 722
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "查看原文",
+          "font": "13px",
+          "cls": "source-title"
+        }
+      ]
+    },
+    {
+      "key": "tool/bidding",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": null,
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 344,
+        "y": 147.1875,
+        "width": 668,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 344
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/contract",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": null,
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 344,
+        "y": 147.1875,
+        "width": 668,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 344
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/prepaid",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": {
+        "x": 316,
+        "y": 149.1875,
+        "width": 392,
+        "height": 46,
+        "top": 149.1875,
+        "right": 708,
+        "bottom": 195.1875,
+        "left": 316
+      },
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 302,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 722,
+        "y": 147.1875,
+        "width": 290,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 722
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "查看原文",
+          "font": "13px",
+          "cls": "source-title"
+        }
+      ]
+    },
+    {
+      "key": "tool/engineering",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": null,
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 344,
+        "y": 147.1875,
+        "width": 668,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 344
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tool/association",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 79.1875,
+        "top": 56,
+        "right": 1024,
+        "bottom": 135.1875,
+        "left": 0
+      },
+      "workspace": {
+        "x": 0,
+        "y": 135.1875,
+        "width": 1024,
+        "height": 344.8125,
+        "top": 135.1875,
+        "right": 1024,
+        "bottom": 480,
+        "left": 0
+      },
+      "sourceHeader": null,
+      "left": {
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 332,
+        "bottom": 468,
+        "left": 12
+      },
+      "right": {
+        "x": 344,
+        "y": 147.1875,
+        "width": 668,
+        "height": 320.8125,
+        "top": 147.1875,
+        "right": 1012,
+        "bottom": 468,
+        "left": 344
+      },
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "library",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": null,
+      "workspace": null,
+      "sourceHeader": null,
+      "left": null,
+      "right": null,
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "虚构示例资料/合同与会议",
+          "font": "12px",
+          "cls": "library-file-path"
+        },
+        {
+          "text": "解析完成",
+          "font": "13px",
+          "cls": "parse-badge parsed"
+        },
+        {
+          "text": "虚构示例资料/合同与会议",
+          "font": "12px",
+          "cls": "library-file-path"
+        },
+        {
+          "text": "解析完成",
+          "font": "13px",
+          "cls": "parse-badge parsed"
+        },
+        {
+          "text": "解析完成",
+          "font": "13px",
+          "cls": "parse-badge parsed"
+        },
+        {
+          "text": "通用分析",
+          "font": "13px",
+          "cls": ""
+        },
+        {
+          "text": "专题分析",
+          "font": "13px",
+          "cls": ""
+        }
+      ]
+    },
+    {
+      "key": "templates",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 61,
+        "top": 56,
+        "right": 1024,
+        "bottom": 117,
+        "left": 0
+      },
+      "workspace": null,
+      "sourceHeader": null,
+      "left": null,
+      "right": null,
+      "primaryFont": "14px",
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "prompts",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 61,
+        "top": 56,
+        "right": 1024,
+        "bottom": 117,
+        "left": 0
+      },
+      "workspace": null,
+      "sourceHeader": null,
+      "left": null,
+      "right": null,
+      "primaryFont": "14px",
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        }
+      ]
+    },
+    {
+      "key": "tasks",
+      "viewport": {
+        "width": 1024,
+        "height": 480
+      },
+      "navigation": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 56,
+        "top": 0,
+        "right": 1024,
+        "bottom": 56,
+        "left": 0
+      },
+      "heading": null,
+      "workspace": null,
+      "sourceHeader": null,
+      "left": null,
+      "right": null,
+      "primaryFont": null,
+      "inputFont": "14px",
+      "horizontalOverflow": false,
+      "small": [
+        {
+          "text": "演示数据",
+          "font": "12px",
+          "cls": "demo-badge"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        },
+        {
+          "text": "分析完成",
+          "font": "12px",
+          "cls": "el-tag__content"
+        }
+      ]
+    },
+    {
+      "name": "prompt",
+      "size": {
+        "width": 1024,
+        "height": 480
+      },
+      "rect": {
+        "x": 14,
+        "y": 72,
+        "width": 996,
+        "height": 418.59375,
+        "top": 72,
+        "right": 1010,
+        "bottom": 490.59375,
+        "left": 14
+      },
+      "body": {
+        "x": 34,
+        "y": 134.59375,
+        "width": 956,
+        "height": 284,
+        "top": 134.59375,
+        "right": 990,
+        "bottom": 418.59375,
+        "left": 34
+      },
+      "footer": {
+        "x": 34,
+        "y": 418.59375,
+        "width": 956,
+        "height": 52,
+        "top": 418.59375,
+        "right": 990,
+        "bottom": 470.59375,
+        "left": 34
+      },
+      "textarea": {
+        "x": 34,
+        "y": 178.59375,
+        "width": 956,
+        "height": 240,
+        "top": 178.59375,
+        "right": 990,
+        "bottom": 418.59375,
+        "left": 34
+      }
+    },
+    {
+      "name": "picker",
+      "size": {
+        "width": 1024,
+        "height": 480
+      },
+      "rect": {
+        "x": 14,
+        "y": 24,
+        "width": 996,
+        "height": 470.59375,
+        "top": 24,
+        "right": 1010,
+        "bottom": 494.59375,
+        "left": 14
+      },
+      "body": {
+        "x": 34,
+        "y": 86.59375,
+        "width": 956,
+        "height": 336,
+        "top": 86.59375,
+        "right": 990,
+        "bottom": 422.59375,
+        "left": 34
+      },
+      "footer": {
+        "x": 34,
+        "y": 422.59375,
+        "width": 956,
+        "height": 52,
+        "top": 422.59375,
+        "right": 990,
+        "bottom": 474.59375,
+        "left": 34
+      }
+    }
+  ],
+  "errors": []
+}

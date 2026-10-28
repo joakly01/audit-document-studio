@@ -1,0 +1,370 @@
+{
+  "report": [
+    {
+      "route": "tool/extract",
+      "geometry": [
+        {
+          "class": "app-nav",
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 768
+        },
+        {
+          "class": "page-heading",
+          "x": 192,
+          "y": 0,
+          "width": 1174,
+          "height": 56
+        },
+        {
+          "class": "workspace three show-materials extract-workspace",
+          "x": 192,
+          "y": 56,
+          "width": 1174,
+          "height": 712
+        },
+        {
+          "class": "materials panel selected-panel",
+          "x": 192,
+          "y": 56,
+          "width": 368,
+          "height": 712
+        },
+        {
+          "class": "source panel",
+          "x": 566,
+          "y": 56,
+          "width": 426,
+          "height": 712
+        },
+        {
+          "class": "source-head",
+          "x": 566,
+          "y": 56,
+          "width": 426,
+          "height": 44
+        },
+        {
+          "class": "configuration panel",
+          "x": 998,
+          "y": 56,
+          "width": 368,
+          "height": 712
+        }
+      ],
+      "buttonFont": "16px",
+      "overflow": false
+    },
+    {
+      "route": "tool/theme",
+      "geometry": [
+        {
+          "class": "app-nav",
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 768
+        },
+        {
+          "class": "page-heading",
+          "x": 192,
+          "y": 0,
+          "width": 1174,
+          "height": 56
+        },
+        {
+          "class": "workspace three show-materials theme-workspace",
+          "x": 192,
+          "y": 56,
+          "width": 1174,
+          "height": 712
+        },
+        {
+          "class": "materials panel selected-panel",
+          "x": 192,
+          "y": 56,
+          "width": 320,
+          "height": 712
+        },
+        {
+          "class": "source panel",
+          "x": 518,
+          "y": 56,
+          "width": 522,
+          "height": 712
+        },
+        {
+          "class": "source-head",
+          "x": 518,
+          "y": 56,
+          "width": 522,
+          "height": 44
+        },
+        {
+          "class": "configuration panel",
+          "x": 1046,
+          "y": 56,
+          "width": 320,
+          "height": 712
+        }
+      ],
+      "buttonFont": "16px",
+      "overflow": false
+    },
+    {
+      "route": "tool/bidding",
+      "geometry": [
+        {
+          "class": "app-nav",
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 768
+        },
+        {
+          "class": "page-heading",
+          "x": 192,
+          "y": 0,
+          "width": 1174,
+          "height": 56
+        },
+        {
+          "class": "workspace two show-materials bidding-workspace",
+          "x": 192,
+          "y": 56,
+          "width": 1174,
+          "height": 712
+        },
+        {
+          "class": "materials panel selected-panel",
+          "x": 192,
+          "y": 56,
+          "width": 420,
+          "height": 712
+        },
+        {
+          "class": "configuration panel",
+          "x": 618,
+          "y": 56,
+          "width": 748,
+          "height": 712
+        }
+      ],
+      "buttonFont": "16px",
+      "overflow": false
+    },
+    {
+      "route": "library",
+      "geometry": [
+        {
+          "class": "app-nav",
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 768
+        }
+      ],
+      "buttonFont": "16px",
+      "overflow": false
+    },
+    {
+      "route": "templates",
+      "geometry": [
+        {
+          "class": "app-nav",
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 768
+        },
+        {
+          "class": "page-heading",
+          "x": 192,
+          "y": 0,
+          "width": 1174,
+          "height": 56
+        }
+      ],
+      "buttonFont": "16px",
+      "overflow": false
+    },
+    {
+      "route": "tasks",
+      "geometry": [
+        {
+          "class": "app-nav",
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 768
+        }
+      ],
+      "buttonFont": "16px",
+      "overflow": false
+    },
+    {
+      "dialog": "prompt",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "rect": {
+        "x": 0,
+        "y": -17.748661041259766,
+        "width": 1366,
+        "height": 768,
+        "top": -17.748661041259766,
+        "right": 1366,
+        "bottom": 750.2513389587402,
+        "left": 0
+      },
+      "editor": {
+        "x": 143,
+        "y": 98.8450927734375,
+        "width": 1080,
+        "height": 565.40625,
+        "top": 98.8450927734375,
+        "right": 1223,
+        "bottom": 664.2513427734375,
+        "left": 143
+      }
+    },
+    {
+      "dialog": "picker",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "rect": {
+        "x": 0,
+        "y": -13.073918342590332,
+        "width": 1366,
+        "height": 768,
+        "top": -13.073918342590332,
+        "right": 1366,
+        "bottom": 754.9260816574097,
+        "left": 0
+      },
+      "footer": {
+        "x": 123,
+        "y": 668.9260864257812,
+        "width": 1120,
+        "height": 52,
+        "top": 668.9260864257812,
+        "right": 1243,
+        "bottom": 720.9260864257812,
+        "left": 123
+      }
+    },
+    {
+      "dialog": "prompt",
+      "size": {
+        "width": 1024,
+        "height": 480
+      },
+      "rect": {
+        "x": 0,
+        "y": -20,
+        "width": 1024,
+        "height": 480,
+        "top": -20,
+        "right": 1024,
+        "bottom": 460,
+        "left": 0
+      },
+      "editor": {
+        "x": 34,
+        "y": 96.59375,
+        "width": 956,
+        "height": 277.40625,
+        "top": 96.59375,
+        "right": 990,
+        "bottom": 374,
+        "left": 34
+      }
+    },
+    {
+      "dialog": "picker",
+      "size": {
+        "width": 1024,
+        "height": 480
+      },
+      "rect": {
+        "x": 0,
+        "y": -17.747325897216797,
+        "width": 1024,
+        "height": 480,
+        "top": -17.747325897216797,
+        "right": 1024,
+        "bottom": 462.2526741027832,
+        "left": 0
+      },
+      "footer": {
+        "x": 34,
+        "y": 376.252685546875,
+        "width": 956,
+        "height": 52,
+        "top": 376.252685546875,
+        "right": 990,
+        "bottom": 428.252685546875,
+        "left": 34
+      }
+    },
+    {
+      "dialog": "prompt",
+      "size": {
+        "width": 390,
+        "height": 600
+      },
+      "rect": {
+        "x": 0,
+        "y": -20,
+        "width": 390,
+        "height": 600,
+        "top": -20,
+        "right": 390,
+        "bottom": 580,
+        "left": 0
+      },
+      "editor": {
+        "x": 28,
+        "y": 90.59375,
+        "width": 334,
+        "height": 363.40625,
+        "top": 90.59375,
+        "right": 362,
+        "bottom": 454,
+        "left": 28
+      }
+    },
+    {
+      "dialog": "picker",
+      "size": {
+        "width": 390,
+        "height": 600
+      },
+      "rect": {
+        "x": 0,
+        "y": -17.74821662902832,
+        "width": 390,
+        "height": 600,
+        "top": -17.74821662902832,
+        "right": 390,
+        "bottom": 582.2517833709717,
+        "left": 0
+      },
+      "footer": {
+        "x": 28,
+        "y": 502.25177001953125,
+        "width": 334,
+        "height": 52,
+        "top": 502.25177001953125,
+        "right": 362,
+        "bottom": 554.2517700195312,
+        "left": 28
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "生产模式DOCX真实字节渲染，原文件和解析文本并排展现",
+    "XLSX保留表头、解析121行并翻页",
+    "窄窗口改为页签，恢复宽屏后仍同时显示原文件与解析文本"
+  ],
+  "errors": [
+    "Error: expect(locator).toContainText(expected) failed\n\nLocator: getByRole('dialog', { name: '资料预览' }).locator('.sheet-controls .el-select')\nExpected substring: \"核验明细\"\nReceived string:    \"项目台账\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" getByRole('dialog', { name: '资料预览' }).locator('.sheet-controls .el-select') with timeout 5000ms\n  - waiting for getByRole('dialog', { name: '资料预览' }).locator('.sheet-controls .el-select')\n    14 × locator resolved to <div class=\"el-select\" data-v-7c14cba4=\"\">…</div>\n       - unexpected value \"项目台账\"\n"
+  ],
+  "note": "请求使用本地响应夹具；不等同于真实后端、生产权限或CORS联调。"
+}

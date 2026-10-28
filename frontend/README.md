@@ -31,7 +31,7 @@ npm run build
 
 生产构建默认 API 模式。只有显式运行 `npm run build -- --mode demo` 才生成演示版。
 
-本地已通过 89 项单元/接口契约测试与 60 个浏览器检查项，详见实施记录。浏览器回归需同时启动演示开发服务（5173）和生产预览（4173），再运行 `npm run test:browser`。默认 Chrome 路径为 `/opt/google/chrome/chrome`，其他环境可通过 `CHROME_PATH` 指定本机浏览器。
+本地已通过 92 项单元/接口契约测试；业务回归与 UI 还原检查结果见实施记录和 UI 核对报告。浏览器回归需同时启动演示开发服务（5173）和生产预览（4173），再运行 `npm run test:browser`。默认 Chrome 路径为 `/opt/google/chrome/chrome`，其他环境可通过 `CHROME_PATH` 指定本机浏览器。
 
 ```bash
 # 完成生产构建后，在另一个终端启动
@@ -54,6 +54,8 @@ Dockerfile 与 Nginx 示例在工程中提供；尚未验证容器构建。Nginx
 
 ## 交接文档
 
+- [当前服务器部署与访问地址](docs/DEPLOYMENT.md)
+- [UI 还原核对与截图对照](docs/UI-RESTORATION.md)
 - [工程与交互约束](docs/ARCHITECTURE.md)
 - [API 对接与原源码依据](docs/API-CONTRACT.md)
 - [资料管理与预览](docs/LIBRARY.md)

@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import {Delete,Plus} from '@element-plus/icons-vue'
 import type {ExtractionField} from '@/domain/types'
+import {createId} from '@/domain/ids'
 const props=defineProps<{modelValue:ExtractionField[]}>();const emit=defineEmits<{'update:modelValue':[ExtractionField[]]}>()
 function update(i:number,key:'name'|'description',value:string){emit('update:modelValue',props.modelValue.map((f,j)=>j===i?{...f,[key]:value}:f))}
-function add(){emit('update:modelValue',[...props.modelValue,{id:crypto.randomUUID(),name:'',description:''}])}
+function add(){emit('update:modelValue',[...props.modelValue,{id:createId(),name:'',description:''}])}
 </script>
 <template>
  <div class="fields-heading"><h3>提取字段 <span class="number">{{modelValue.length}}</span></h3><el-button :icon="Plus" @click="add">添加字段</el-button></div>

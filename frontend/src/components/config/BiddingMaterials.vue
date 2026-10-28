@@ -4,16 +4,18 @@ import {Delete,Plus,Document} from '@element-plus/icons-vue'
 import {ElMessageBox} from 'element-plus'
 import MaterialPicker from '@/components/MaterialPicker.vue'
 import type {JsonObject,Material} from '@/domain/types'
+import {createId} from '@/domain/ids'
 const props=defineProps<{config:JsonObject}>();const emit=defineEmits<{preview:[Material]}>()
 const opened=ref(false),active=ref(''),target=ref<{project:any;company?:any}|null>(null),selection=ref<Material[]>([])
-function project(){const p={id:crypto.randomUUID(),name:'',biddingFiles:[],companies:[]};props.config.projects.push(p);active.value=p.id}
-function company(p:any){p.companies.push({id:crypto.randomUUID(),name:'',files:[]})}
+function project(){const p={id:createId(),name:'',biddingFiles:[],companies:[]};props.config.projects.push(p);active.value=p.id}
+defineExpose({addProject:project})
+function company(p:any){p.companies.push({id:createId(),name:'',files:[]})}
 function choose(p:any,c?:any){target.value={project:p,company:c};selection.value=c?c.files:p.biddingFiles;opened.value=true}
 function confirm(files:Material[]){if(!target.value)return;if(target.value.company)target.value.company.files=files;else target.value.project.biddingFiles=files}
 async function remove(p:any){try{await ElMessageBox.confirm(`移除「${p.name||'未命名项目'}」及本次选择的项目资料？资料库文件仍会保留。`,'移除项目',{confirmButtonText:'移除',cancelButtonText:'取消'});props.config.projects=props.config.projects.filter((v:any)=>v.id!==p.id)}catch{}}
 </script>
 <template>
- <div class="bidding-intro"><p class="help">按项目添加招标文件，再按单位添加投标文件。</p><el-button :icon="Plus" @click="project">添加项目</el-button></div>
+ <div class="bidding-materials"><div class="bidding-intro"><p class="help">按项目添加招标文件，再按单位添加投标文件。</p></div>
  <div v-if="!config.projects.length" class="empty-state">添加项目后，选择本次要检查的文件。</div>
  <el-collapse v-model="active" accordion class="project-list">
   <el-collapse-item v-for="(p,i) in config.projects" :key="p.id" :name="p.id"><template #title><strong>{{p.name||'项目 '+(Number(i)+1)}}</strong><span class="project-count">{{p.biddingFiles.length}} 份招标 · {{p.companies.length}} 家投标单位</span></template>
@@ -28,7 +30,8 @@ async function remove(p:any){try{await ElMessageBox.confirm(`移除「${p.name||
   </el-collapse-item>
  </el-collapse>
  <MaterialPicker v-model="opened" :selected="selection" :multiple="!!target?.company" :title="target?.company?'添加投标文件':'添加招标文件'" @confirm="confirm"/>
+ </div>
 </template>
 <style scoped>
-.bidding-intro{padding:14px}.bidding-intro .help{margin-top:0}.project-list{border-top:0}.project-list :deep(.el-collapse-item__header){height:auto;min-height:52px;padding:10px 14px;line-height:1.6;align-items:start;flex-wrap:wrap}.project-list :deep(.el-collapse-item__content){padding-bottom:0}.project-count{font-size:12px;color:#596b80;margin-left:8px}.project-editor{padding:8px 14px 16px}.project-editor .toolbar{flex-wrap:nowrap}.role-heading{display:flex;justify-content:space-between;align-items:center;margin-top:14px}.role-heading h3{font-size:14px}.role-empty{background:#f5f7fa;color:#596b80;padding:10px;border-radius:6px;font-size:13px}.role-file{display:flex;align-items:center;gap:4px;margin:4px 0;min-width:0}.file-link{border:0;background:none;color:#245ec5;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;padding:5px 0;min-width:0;flex:1}.file-link .el-icon{margin-right:5px}.company{margin:8px 0 12px;background:#f8fafc;border:1px solid #e6ebf1;border-radius:7px;padding:10px}.company-add{width:100%;margin-top:8px}
+.project-list :deep(.el-collapse-item__header strong){font-size:16px}.bidding-intro{padding:14px}.bidding-intro .help{margin-top:0}.project-list{border-top:0}.project-list :deep(.el-collapse-item__header){height:auto;min-height:52px;padding:10px 14px;line-height:1.6;align-items:start;flex-wrap:wrap}.project-list :deep(.el-collapse-item__content){padding-bottom:0}.project-count{font-size:14px;color:#596b80;margin-left:8px}.project-editor{padding:8px 14px 16px}.project-editor .toolbar{flex-wrap:nowrap}.role-heading{display:flex;justify-content:space-between;align-items:center;margin-top:14px}.role-heading h3{font-size:16px}.role-empty{background:#f5f7fa;color:#596b80;padding:10px;border-radius:6px;font-size:14px}.role-file{display:flex;align-items:center;gap:4px;margin:4px 0;min-width:0}.file-link{border:0;background:none;color:#245ec5;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:16px;padding:5px 0;min-width:0;flex:1}.file-link .el-icon{margin-right:5px}.company{margin:8px 0 12px;background:#f8fafc;border:1px solid #e6ebf1;border-radius:7px;padding:10px}.company-add{width:100%;margin-top:8px}
 </style>

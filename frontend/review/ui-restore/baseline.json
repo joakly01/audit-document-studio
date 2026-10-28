@@ -1,0 +1,857 @@
+[
+  {
+    "kind": "reference",
+    "route": "tool/extract",
+    "title": "文档挖掘助手 · 审计工作台",
+    "links": [
+      {
+        "text": "资料管理",
+        "href": null
+      },
+      {
+        "text": "任务中心",
+        "href": null
+      },
+      {
+        "text": "提取模板",
+        "href": null
+      },
+      {
+        "text": "信息提取",
+        "href": null
+      },
+      {
+        "text": "词云分析",
+        "href": null
+      },
+      {
+        "text": "主题归纳",
+        "href": null
+      },
+      {
+        "text": "时间轴分析",
+        "href": null
+      },
+      {
+        "text": "风险点分析",
+        "href": null
+      },
+      {
+        "text": "会议纪要分析",
+        "href": null
+      },
+      {
+        "text": "合同分析",
+        "href": null
+      },
+      {
+        "text": "招投标分析",
+        "href": null
+      },
+      {
+        "text": "待摊费用",
+        "href": null
+      },
+      {
+        "text": "工程项目一致性",
+        "href": null
+      },
+      {
+        "text": "两表项目关联度",
+        "href": null
+      },
+      {
+        "text": "使用说明",
+        "href": null
+      }
+    ],
+    "geometry": [
+      {
+        "class": "sidebar",
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 768,
+        "font": "16px"
+      },
+      {
+        "class": "ew-commandbar",
+        "x": 192,
+        "y": 0,
+        "width": 1174,
+        "height": 56,
+        "font": "16px"
+      },
+      {
+        "class": "ew-panel-head ef-preview-head tl-reader-toolbar",
+        "x": 565,
+        "y": 61,
+        "width": 428,
+        "height": 44,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "reference",
+    "route": "tool/theme",
+    "title": "文档挖掘助手 · 审计工作台",
+    "links": [
+      {
+        "text": "资料管理",
+        "href": null
+      },
+      {
+        "text": "任务中心进行中",
+        "href": null
+      },
+      {
+        "text": "提取模板",
+        "href": null
+      },
+      {
+        "text": "信息提取",
+        "href": null
+      },
+      {
+        "text": "词云分析",
+        "href": null
+      },
+      {
+        "text": "主题归纳",
+        "href": null
+      },
+      {
+        "text": "时间轴分析",
+        "href": null
+      },
+      {
+        "text": "风险点分析",
+        "href": null
+      },
+      {
+        "text": "会议纪要分析",
+        "href": null
+      },
+      {
+        "text": "合同分析",
+        "href": null
+      },
+      {
+        "text": "招投标分析",
+        "href": null
+      },
+      {
+        "text": "待摊费用",
+        "href": null
+      },
+      {
+        "text": "工程项目一致性",
+        "href": null
+      },
+      {
+        "text": "两表项目关联度",
+        "href": null
+      },
+      {
+        "text": "使用说明",
+        "href": null
+      }
+    ],
+    "geometry": [
+      {
+        "class": "sidebar",
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 768,
+        "font": "16px"
+      },
+      {
+        "class": "aw-commandbar tw-commandbar work-commandbar",
+        "x": 192,
+        "y": 0,
+        "width": 1174,
+        "height": 56,
+        "font": "16px"
+      },
+      {
+        "class": "tl-grid",
+        "x": 192,
+        "y": 56,
+        "width": 1174,
+        "height": 712,
+        "font": "16px"
+      },
+      {
+        "class": "ew-panel-head tw-panel-head tl-reader-toolbar",
+        "x": 518,
+        "y": 56,
+        "width": 522,
+        "height": 44,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "reference",
+    "route": "tool/bidding",
+    "title": "文档挖掘助手 · 审计工作台",
+    "links": [
+      {
+        "text": "资料管理",
+        "href": null
+      },
+      {
+        "text": "任务中心进行中",
+        "href": null
+      },
+      {
+        "text": "提取模板",
+        "href": null
+      },
+      {
+        "text": "信息提取",
+        "href": null
+      },
+      {
+        "text": "词云分析",
+        "href": null
+      },
+      {
+        "text": "主题归纳",
+        "href": null
+      },
+      {
+        "text": "时间轴分析",
+        "href": null
+      },
+      {
+        "text": "风险点分析",
+        "href": null
+      },
+      {
+        "text": "会议纪要分析",
+        "href": null
+      },
+      {
+        "text": "合同分析",
+        "href": null
+      },
+      {
+        "text": "招投标分析",
+        "href": null
+      },
+      {
+        "text": "待摊费用",
+        "href": null
+      },
+      {
+        "text": "工程项目一致性",
+        "href": null
+      },
+      {
+        "text": "两表项目关联度",
+        "href": null
+      },
+      {
+        "text": "使用说明",
+        "href": null
+      }
+    ],
+    "geometry": [
+      {
+        "class": "sidebar",
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 768,
+        "font": "16px"
+      },
+      {
+        "class": "aw-commandbar tw-commandbar work-commandbar",
+        "x": 192,
+        "y": 0,
+        "width": 1174,
+        "height": 56,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "reference",
+    "route": "library",
+    "title": "文档挖掘助手 · 审计工作台",
+    "links": [
+      {
+        "text": "资料管理",
+        "href": null
+      },
+      {
+        "text": "任务中心进行中",
+        "href": null
+      },
+      {
+        "text": "提取模板",
+        "href": null
+      },
+      {
+        "text": "信息提取",
+        "href": null
+      },
+      {
+        "text": "词云分析",
+        "href": null
+      },
+      {
+        "text": "主题归纳",
+        "href": null
+      },
+      {
+        "text": "时间轴分析",
+        "href": null
+      },
+      {
+        "text": "风险点分析",
+        "href": null
+      },
+      {
+        "text": "会议纪要分析",
+        "href": null
+      },
+      {
+        "text": "合同分析",
+        "href": null
+      },
+      {
+        "text": "招投标分析",
+        "href": null
+      },
+      {
+        "text": "待摊费用",
+        "href": null
+      },
+      {
+        "text": "工程项目一致性",
+        "href": null
+      },
+      {
+        "text": "两表项目关联度",
+        "href": null
+      },
+      {
+        "text": "使用说明",
+        "href": null
+      }
+    ],
+    "geometry": [
+      {
+        "class": "sidebar",
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 768,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "reference",
+    "route": "templates",
+    "title": "文档挖掘助手 · 审计工作台",
+    "links": [
+      {
+        "text": "资料管理",
+        "href": null
+      },
+      {
+        "text": "任务中心进行中",
+        "href": null
+      },
+      {
+        "text": "提取模板",
+        "href": null
+      },
+      {
+        "text": "信息提取",
+        "href": null
+      },
+      {
+        "text": "词云分析",
+        "href": null
+      },
+      {
+        "text": "主题归纳",
+        "href": null
+      },
+      {
+        "text": "时间轴分析",
+        "href": null
+      },
+      {
+        "text": "风险点分析",
+        "href": null
+      },
+      {
+        "text": "会议纪要分析",
+        "href": null
+      },
+      {
+        "text": "合同分析",
+        "href": null
+      },
+      {
+        "text": "招投标分析",
+        "href": null
+      },
+      {
+        "text": "待摊费用",
+        "href": null
+      },
+      {
+        "text": "工程项目一致性",
+        "href": null
+      },
+      {
+        "text": "两表项目关联度",
+        "href": null
+      },
+      {
+        "text": "使用说明",
+        "href": null
+      }
+    ],
+    "geometry": [
+      {
+        "class": "sidebar",
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 768,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "reference",
+    "route": "tasks",
+    "title": "文档挖掘助手 · 审计工作台",
+    "links": [
+      {
+        "text": "资料管理",
+        "href": null
+      },
+      {
+        "text": "任务中心进行中",
+        "href": null
+      },
+      {
+        "text": "提取模板",
+        "href": null
+      },
+      {
+        "text": "信息提取",
+        "href": null
+      },
+      {
+        "text": "词云分析",
+        "href": null
+      },
+      {
+        "text": "主题归纳",
+        "href": null
+      },
+      {
+        "text": "时间轴分析",
+        "href": null
+      },
+      {
+        "text": "风险点分析",
+        "href": null
+      },
+      {
+        "text": "会议纪要分析",
+        "href": null
+      },
+      {
+        "text": "合同分析",
+        "href": null
+      },
+      {
+        "text": "招投标分析",
+        "href": null
+      },
+      {
+        "text": "待摊费用",
+        "href": null
+      },
+      {
+        "text": "工程项目一致性",
+        "href": null
+      },
+      {
+        "text": "两表项目关联度",
+        "href": null
+      },
+      {
+        "text": "使用说明",
+        "href": null
+      }
+    ],
+    "geometry": [
+      {
+        "class": "sidebar",
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 768,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "before",
+    "route": "/tool/extract",
+    "title": "文档挖掘助手",
+    "links": [
+      {
+        "text": "文文档挖掘助手",
+        "href": "#/library"
+      },
+      {
+        "text": "资料管理",
+        "href": "#/library"
+      },
+      {
+        "text": "提取模板",
+        "href": "#/templates"
+      },
+      {
+        "text": "提示词库",
+        "href": "#/prompts"
+      },
+      {
+        "text": "任务中心",
+        "href": "#/tasks"
+      }
+    ],
+    "geometry": [
+      {
+        "class": "app-nav",
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "before",
+    "route": "/tool/theme",
+    "title": "文档挖掘助手",
+    "links": [
+      {
+        "text": "文文档挖掘助手",
+        "href": "#/library"
+      },
+      {
+        "text": "资料管理",
+        "href": "#/library"
+      },
+      {
+        "text": "提取模板",
+        "href": "#/templates"
+      },
+      {
+        "text": "提示词库",
+        "href": "#/prompts"
+      },
+      {
+        "text": "任务中心",
+        "href": "#/tasks"
+      }
+    ],
+    "geometry": [
+      {
+        "class": "app-nav",
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "font": "16px"
+      },
+      {
+        "class": "page-heading",
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "font": "16px"
+      },
+      {
+        "class": "workspace three show-materials",
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "font": "16px"
+      },
+      {
+        "class": "materials panel selected-panel",
+        "x": 12,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "font": "16px"
+      },
+      {
+        "class": "source panel",
+        "x": 344,
+        "y": 147.1875,
+        "width": 678,
+        "height": 608.8125,
+        "font": "16px"
+      },
+      {
+        "class": "source-head",
+        "x": 346,
+        "y": 149.1875,
+        "width": 674,
+        "height": 46,
+        "font": "16px"
+      },
+      {
+        "class": "configuration panel",
+        "x": 1034,
+        "y": 147.1875,
+        "width": 320,
+        "height": 608.8125,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "before",
+    "route": "/tool/bidding",
+    "title": "文档挖掘助手",
+    "links": [
+      {
+        "text": "文文档挖掘助手",
+        "href": "#/library"
+      },
+      {
+        "text": "资料管理",
+        "href": "#/library"
+      },
+      {
+        "text": "提取模板",
+        "href": "#/templates"
+      },
+      {
+        "text": "提示词库",
+        "href": "#/prompts"
+      },
+      {
+        "text": "任务中心",
+        "href": "#/tasks"
+      }
+    ],
+    "geometry": [
+      {
+        "class": "app-nav",
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "font": "16px"
+      },
+      {
+        "class": "page-heading",
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 79.1875,
+        "font": "16px"
+      },
+      {
+        "class": "workspace two show-materials",
+        "x": 0,
+        "y": 135.1875,
+        "width": 1366,
+        "height": 632.8125,
+        "font": "16px"
+      },
+      {
+        "class": "materials panel selected-panel",
+        "x": 12,
+        "y": 147.1875,
+        "width": 360,
+        "height": 608.8125,
+        "font": "16px"
+      },
+      {
+        "class": "configuration panel",
+        "x": 384,
+        "y": 147.1875,
+        "width": 970,
+        "height": 608.8125,
+        "font": "16px"
+      }
+    ],
+    "small": [
+      {
+        "class": "el-radio-button is-active",
+        "text": "招标文件分析",
+        "font": "0px"
+      },
+      {
+        "class": "el-radio-button__original-radio",
+        "text": "",
+        "font": "0px"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "kind": "before",
+    "route": "/library",
+    "title": "文档挖掘助手",
+    "links": [
+      {
+        "text": "文文档挖掘助手",
+        "href": "#/library"
+      },
+      {
+        "text": "资料管理",
+        "href": "#/library"
+      },
+      {
+        "text": "提取模板",
+        "href": "#/templates"
+      },
+      {
+        "text": "提示词库",
+        "href": "#/prompts"
+      },
+      {
+        "text": "任务中心",
+        "href": "#/tasks"
+      }
+    ],
+    "geometry": [
+      {
+        "class": "app-nav",
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "before",
+    "route": "/templates",
+    "title": "文档挖掘助手",
+    "links": [
+      {
+        "text": "文文档挖掘助手",
+        "href": "#/library"
+      },
+      {
+        "text": "资料管理",
+        "href": "#/library"
+      },
+      {
+        "text": "提取模板",
+        "href": "#/templates"
+      },
+      {
+        "text": "提示词库",
+        "href": "#/prompts"
+      },
+      {
+        "text": "任务中心",
+        "href": "#/tasks"
+      }
+    ],
+    "geometry": [
+      {
+        "class": "app-nav",
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "font": "16px"
+      },
+      {
+        "class": "page-heading",
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 61,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  },
+  {
+    "kind": "before",
+    "route": "/tasks",
+    "title": "文档挖掘助手",
+    "links": [
+      {
+        "text": "文文档挖掘助手",
+        "href": "#/library"
+      },
+      {
+        "text": "资料管理",
+        "href": "#/library"
+      },
+      {
+        "text": "提取模板",
+        "href": "#/templates"
+      },
+      {
+        "text": "提示词库",
+        "href": "#/prompts"
+      },
+      {
+        "text": "任务中心",
+        "href": "#/tasks"
+      }
+    ],
+    "geometry": [
+      {
+        "class": "app-nav",
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 56,
+        "font": "16px"
+      }
+    ],
+    "small": [],
+    "overflow": false
+  }
+]

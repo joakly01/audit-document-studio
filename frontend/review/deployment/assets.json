@@ -1,0 +1,327 @@
+{
+  "url": "http://43.128.232.108",
+  "verifiedAt": "2026-10-28T02:36:48.140782+00:00",
+  "release": "/var/www/audit-document-studio/releases/vue-20261028T023610-TMZ5wP",
+  "previous": "/var/www/audit-document-studio/releases/vue-20261028T022010-7LHGOu",
+  "version": {
+    "builtAt": "2026-10-28T02:36:10.235888+00:00",
+    "sourceCommit": "c78a1ae2f9e701b57e28bb1bcdc56e099db024e7",
+    "sourceDigest": "c04a9e48c0ba7cea4f679823589e8a5b8468b86588c3386cebe976de80fa1a11",
+    "sourceModified": true,
+    "primaryMode": "api",
+    "demoPath": "/demo/"
+  },
+  "filesVerified": 62,
+  "files": [
+    {
+      "path": "assets/AttachmentDialog-CuAwc9Gd.js",
+      "sha256": "e5c7fa0d0e11b40649b2bb25ae7602149568925e6ca19c5c8b81121b7b60d0d9",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/AttachmentDialog-DYyIFm8-.css",
+      "sha256": "9cd4147d5672cf5cdca51b98e92e72f735d77907ffd640f570de4a6414ef0fec",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/FieldEditor-CrQNcuE-.js",
+      "sha256": "6717b457c98bb5e4dd34f6b6dc34f803edbd650deada8f28356db0d446e84c80",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/FieldEditor-CyXrRL2k.css",
+      "sha256": "71b62fcf8187008098ab55a4aff16341d13b91bfc1d64fcedc38cb662aab7f34",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/LibraryPage-CMLchial.js",
+      "sha256": "a135201078b212c3f838e34f0d271bc3d2fae3711f67f3a7559442f2411752af",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/LibraryPage-D_QX33Xw.css",
+      "sha256": "ab1f3c0a7c10244320e2767cbfbf4b6e2d6dde8bbe450944c5bc8ecb73b55bbc",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/PromptsPage-CMeRCKwy.css",
+      "sha256": "ae7483e3d3ad6b4ce2474cdf83137e8312963e1dd290b4118fe7fab8865c25b6",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/PromptsPage-Cie9Jjyv.js",
+      "sha256": "20cff82017436f7df5f093ee8507c99441150cdf69d83a2f1f21de230e37ec88",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/ResultPage-CYY0d1Vx.css",
+      "sha256": "d1127fde97747715fa79b72c22c1448af9c1b570d00657abc59c94db303d6894",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/ResultPage-ONmqGCa-.js",
+      "sha256": "bae841e8ac450c70e6d7f8aa3c2ed8221afa745b643baee025678223714fd5d7",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/SourcePreview-CpXNGbdE.js",
+      "sha256": "a81759c490089548b0c90dba0db022142c4e6f5cfa84b6d096075c20626e8b7d",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/SourcePreview-CzMvhK_h.css",
+      "sha256": "718648e9fdf094e85eab959dcc11f97de7063a6895aa23bf6b8374ad0850847c",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/TasksPage-BokcHAiC.js",
+      "sha256": "43443cb7a20a045aa9237e32b4e7d1611b0f2509a684fe038070e19926a583b1",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/TasksPage-CbM1123r.css",
+      "sha256": "8df842547becf92b9a1cef8ff007ef0273458126c3747569c6e5cf5876e85c8a",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/TemplatesPage-CHkt8szT.js",
+      "sha256": "c829bbebc50959dea514137099d0f61d236239bb77be7b4083ddcf0c9783956e",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/TemplatesPage-DdYEgrX7.css",
+      "sha256": "ea21b320d0fc32ca65d44250fe5d01d9bf390b6e5a0054bbcb4b3244106ca6ac",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/ToolGlyph-CgIPCFbb.css",
+      "sha256": "7577cdb3182fd29f3c2dc580a5bb8288115d441a755ae13d21792ea6dfd44b50",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/ToolGlyph-DQBv2_aI.js",
+      "sha256": "1f775866c9db5705d96bbfb411b2fb0768f5c43a4224557b9fe7be16c423d923",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/ToolWorkspace-B2hx_4K2.css",
+      "sha256": "9168229de98117046b6be0588951399d0f217d38ac613e4a1560f22c82f5dba1",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/ToolWorkspace-BuRzR9Ar.js",
+      "sha256": "089962335a6ab330777cf45f0233aaa6a5e244f528c03fe94717e55ec408695b",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/docx-preview-DujxHttA.js",
+      "sha256": "aa9aa7bdfa8b785e0027afd825314c2790faf4348bcdd0dae42f2e8c37af8537",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/download-BdGTOR_i.css",
+      "sha256": "32bbb88579a7c3259285ea76da195988d9e69b9a687727d76b502d083e3c08ef",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/download-CLS352hR.js",
+      "sha256": "e6c6c4d19f8b378c456d718f0b000cb7df1e1585961a18f73874e96ff97e5e19",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/index-BdKt8pW9.css",
+      "sha256": "d0e102e67e4d1a4115f94c8fa9e8886e5322023a421dcde67ffa4003b8f907a0",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/index-EzqB9K9F.js",
+      "sha256": "785de8f2f43f32bd910c2668a909d84c0d02628f6ff074cfa7be0eba8da4a601",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/prompts-ENtNjD3l.js",
+      "sha256": "995b2c946fca5de6b31defbd01f32c94408ebb6bf731ef27943ddb20310e6ec0",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/ui-AwhecfH_.js",
+      "sha256": "e40cd45f2fae4929f072c3f73151ea63b7fdb5791bb7362d9e2b44b762e63408",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/validation-BCx7s3e8.js",
+      "sha256": "576823dbe771d6c308ca9098ed934c5a147b263160f834a6b944f1b1f1993bf3",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/vue-BoDnYgZM.js",
+      "sha256": "9e8a1bca199ef947a1c7b684a8cd5ae46c5adf3dc0c0b0fdb8bc3ccabb584abb",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "assets/xlsx-YQ4lDkt_.js",
+      "sha256": "641458ad92d6b9c702268ddafc2acc96ebbd06f7bc0e851ee5384e32837ae630",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/AttachmentDialog-DYyIFm8-.css",
+      "sha256": "9cd4147d5672cf5cdca51b98e92e72f735d77907ffd640f570de4a6414ef0fec",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/AttachmentDialog-Dk9ty6Xp.js",
+      "sha256": "17c9bd20ff6d9db442d88f919720d294d5966db0feacdb68c6b6937644c21aa4",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/FieldEditor-BdnAHf5M.js",
+      "sha256": "f95b706e9ae5ee0974a53b3b3e796fae910cea83afb10f9e91a7e45d4f813e71",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/FieldEditor-CyXrRL2k.css",
+      "sha256": "71b62fcf8187008098ab55a4aff16341d13b91bfc1d64fcedc38cb662aab7f34",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/LibraryPage-CQKbhWK1.js",
+      "sha256": "81d9acc90fc6c700e6a5acc0e69ba755f4b049419b44833d0fb63e38f6099136",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/LibraryPage-D_QX33Xw.css",
+      "sha256": "ab1f3c0a7c10244320e2767cbfbf4b6e2d6dde8bbe450944c5bc8ecb73b55bbc",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/PromptsPage-CMeRCKwy.css",
+      "sha256": "ae7483e3d3ad6b4ce2474cdf83137e8312963e1dd290b4118fe7fab8865c25b6",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/PromptsPage-DoadAMf3.js",
+      "sha256": "a883a41ad8b24f51dce6bb9e736b7fa737786bf824b9d1448befa7c9e91e87d5",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/ResultPage-B11QLPqW.js",
+      "sha256": "d328f977b42314f7ae604bd869136a0be5c53ecfc33af3d24fdefbab29ad6652",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/ResultPage-CYY0d1Vx.css",
+      "sha256": "d1127fde97747715fa79b72c22c1448af9c1b570d00657abc59c94db303d6894",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/SourcePreview-BdvNhVkj.js",
+      "sha256": "f6a17e69db11248320f0fb355d81e0a1c432e7490e39afb92cf2e56de586e044",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/SourcePreview-CzMvhK_h.css",
+      "sha256": "718648e9fdf094e85eab959dcc11f97de7063a6895aa23bf6b8374ad0850847c",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/TasksPage-CbM1123r.css",
+      "sha256": "8df842547becf92b9a1cef8ff007ef0273458126c3747569c6e5cf5876e85c8a",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/TasksPage-DKEm9dFq.js",
+      "sha256": "51d31f7cb540d877469eaa7d787cab2cdb8ba7428f436fa5a03e030dc3924894",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/TemplatesPage-DdYEgrX7.css",
+      "sha256": "ea21b320d0fc32ca65d44250fe5d01d9bf390b6e5a0054bbcb4b3244106ca6ac",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/TemplatesPage-yAo1aFha.js",
+      "sha256": "900b5d810035af072ef3643e6f4de029f38d31fbc137bdfdfa187eb75511eac5",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/ToolGlyph-CXqJYpMU.js",
+      "sha256": "42b3b90f1d136c1249a7a5e1c42d4beba8475d10b2d9cae5fb825fc91cf8a092",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/ToolGlyph-CgIPCFbb.css",
+      "sha256": "7577cdb3182fd29f3c2dc580a5bb8288115d441a755ae13d21792ea6dfd44b50",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/ToolWorkspace-B2hx_4K2.css",
+      "sha256": "9168229de98117046b6be0588951399d0f217d38ac613e4a1560f22c82f5dba1",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/ToolWorkspace-BJJRjmbW.js",
+      "sha256": "e1721a8312c4b68812b6b5d66a55febb37884f80aa08477c5d9f4e798d760332",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/docx-preview-DujxHttA.js",
+      "sha256": "aa9aa7bdfa8b785e0027afd825314c2790faf4348bcdd0dae42f2e8c37af8537",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/download-BdGTOR_i.css",
+      "sha256": "32bbb88579a7c3259285ea76da195988d9e69b9a687727d76b502d083e3c08ef",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/download-Dr1lUnMy.js",
+      "sha256": "69510084f9bbd6f192db56f33fdc95d475db6e66fb3dc1e77a9d782bb5636a1b",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/index-9LxWe7kQ.js",
+      "sha256": "eb9cc2f006d27edac1501c5808f13914e8026565c86bc45e41526fe84d807616",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/index-BdKt8pW9.css",
+      "sha256": "d0e102e67e4d1a4115f94c8fa9e8886e5322023a421dcde67ffa4003b8f907a0",
+      "contentType": "text/css"
+    },
+    {
+      "path": "demo/assets/prompts-BScaAZDN.js",
+      "sha256": "5394677892ae5e27bf07e165b7a734e900a4555abb5ad2ab6ca81f70f93663e6",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/ui-AwhecfH_.js",
+      "sha256": "e40cd45f2fae4929f072c3f73151ea63b7fdb5791bb7362d9e2b44b762e63408",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/validation-DGNZEwcr.js",
+      "sha256": "b7b0e06d4fdeaca25e7891cff6a7ce604278a1756d1c383776390845fa565323",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/vue-BoDnYgZM.js",
+      "sha256": "9e8a1bca199ef947a1c7b684a8cd5ae46c5adf3dc0c0b0fdb8bc3ccabb584abb",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/assets/xlsx-YQ4lDkt_.js",
+      "sha256": "641458ad92d6b9c702268ddafc2acc96ebbd06f7bc0e851ee5384e32837ae630",
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "demo/index.html",
+      "sha256": "f49c4d640384158f3e6b18601684452295c7d2069dbb498f7e88285fc4094549",
+      "contentType": "text/html"
+    },
+    {
+      "path": "index.html",
+      "sha256": "a64a925364241bb71e7fc5518559be8a4a96edd5cd5f91c4826a816c89b49b82",
+      "contentType": "text/html"
+    }
+  ]
+}
