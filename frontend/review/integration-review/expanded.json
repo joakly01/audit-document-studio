@@ -1,0 +1,36 @@
+{
+  "base": "http://localhost:5174",
+  "checks": [
+    {
+      "name": "文件夹上传只建立一次层级，文件写入最终子目录",
+      "passed": true
+    },
+    {
+      "name": "切换目录加载失败不显示上一个目录的文件",
+      "passed": true
+    },
+    {
+      "name": "切换空间加载失败不保留原空间目录",
+      "passed": true
+    },
+    {
+      "name": "选择全部页期间切换目录，旧范围响应不能改变新选择",
+      "passed": true
+    },
+    {
+      "name": "关闭附件确认后，旧响应不修改已选资料的附件",
+      "passed": true
+    },
+    {
+      "name": "资料管理全选期间切换目录不会加入旧目录资料",
+      "passed": true
+    },
+    {
+      "name": "文件列表可翻到第二页，刷新不重置页码",
+      "passed": false,
+      "error": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('.library-table')\nExpected substring: \"资料21.pdf\"\nReceived string:    \"本页文件名称解析状态大小更新时间操作资料1.pdf解析完成200 B—资料2.pdf解析完成200 B—资料3.pdf解析完成200 B—资料4.pdf解析完成200 B—资料5.pdf解析完成200 B—资料6.pdf解析完成200 B—资料7.pdf解析完成200 B—资料8.pdf解析完成200 B—资料9.pdf解析完成200 B—资料10.pdf解析完成200 B—资料11.pdf解析完成200 B—资料12.pdf解析完成200 B—资料13.pdf解析完成200 B—资料14.pdf解析完成200 B—资料15.pdf解析完成200 B—资料16.pdf解析完成200 B—资料17.pdf解析完成200 B—资料18.pdf解析完成200 B—资料19.pdf解析完成200 B—资料20.pdf解析完成200 B—\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('.library-table') with timeout 5000ms\n  - waiting for locator('.library-table')\n    - locator resolved to <div data-prefix=\"el\" data-v-1135f660=\"\" loading-number=\"1\" class=\"el-table--fit el-table--scrollable-x el-table--enable-row-transition el-table el-table--layout-fixed library-table is-scrolling-left\">…</div>\n    12 × unexpected value \"本页文件名称解析状态大小更新时间操作资料1.pdf解析完成200 B—资料2.pdf解析完成200 B—资料3.pdf解析完成200 B—资料4.pdf解析完成200 B—资料5.pdf解析完成200 B—资料6.pdf解析完成200 B—资料7.pdf解析完成200 B—资料8.pdf解析完成200 B—资料9.pdf解析完成200 B—资料10.pdf解析完成200 B—资料11.pdf解析完成200 B—资料12.pdf解析完成200 B—资料13.pdf解析完成200 B—资料14.pdf解析完成200 B—资料15.pdf解析完成200 B—资料16.pdf解析完成200 B—资料17.pdf解析完成200 B—资料18.pdf解析完成200 B—资料19.pdf解析完成200 B—资料20.pdf解析完成200 B—\"\n       - locator resolved to <div data-prefix=\"el\" data-v-1135f660=\"\" class=\"el-table--fit el-table--scrollable-x el-table--enable-row-transition el-table el-table--layout-fixed library-table is-scrolling-left\">…</div>\n    - unexpected value \"本页文件名称解析状态大小更新时间操作资料1.pdf解析完成200 B—资料2.pdf解析完成200 B—资料3.pdf解析完成200 B—资料4.pdf解析完成200 B—资料5.pdf解析完成200 B—资料6.pdf解析完成200 B—资料7.pdf解析完成200 B—资料8.pdf解析完成200 B—资料9.pdf解析完成200 B—资料10.pdf解析完成200 B—资料11.pdf解析完成200 B—资料12.pdf解析完成200 B—资料13.pdf解析完成200 B—资料14.pdf解析完成200 B—资料15.pdf解析完成200 B—资料16.pdf解析完成200 B—资料17.pdf解析完成200 B—资料18.pdf解析完成200 B—资料19.pdf解析完成200 B—资料20.pdf解析完成200 B—\"\n"
+    }
+  ],
+  "errors": [],
+  "note": "真实页面和 API adapter，HTTP 响应使用夹具；不等同真实服务联调。"
+}

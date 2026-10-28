@@ -1,0 +1,50 @@
+{
+  "base": "http://localhost:5174",
+  "checks": [
+    {
+      "name": "文件夹上传只建立一次层级，文件写入最终子目录",
+      "passed": true
+    },
+    {
+      "name": "切换目录加载失败不显示上一个目录的文件",
+      "passed": true
+    },
+    {
+      "name": "切换空间加载失败不保留原空间目录",
+      "passed": true
+    },
+    {
+      "name": "选择全部页期间切换目录，旧范围响应不能改变新选择",
+      "passed": true
+    },
+    {
+      "name": "关闭附件确认后，旧响应不修改已选资料的附件",
+      "passed": true
+    },
+    {
+      "name": "资料管理全选期间切换目录不会加入旧目录资料",
+      "passed": true
+    },
+    {
+      "name": "文件列表可翻到第二页，刷新不重置页码",
+      "passed": true
+    },
+    {
+      "name": "附件加载中切换工具，不会在新工具重新打开旧弹窗",
+      "passed": false,
+      "error": "Error: expect(locator).not.toBeVisible() failed\n\nLocator:  getByRole('dialog', { name: '关联附件' })\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n  - Expect \"not toBeVisible\" getByRole('dialog', { name: '关联附件' }) with timeout 5000ms\n  - waiting for getByRole('dialog', { name: '关联附件' })\n    14 × locator resolved to <div role=\"dialog\" aria-modal=\"true\" aria-label=\"关联附件\" class=\"el-overlay-dialog\" aria-describedby=\"el-id-6272-58\">…</div>\n       - unexpected value \"visible\"\n"
+    },
+    {
+      "name": "附件保存中切换工具，成功结果只回写原工具资料",
+      "passed": false,
+      "error": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByRole('button', { name: '关联附件 甲资料.pdf', exact: true }).locator('sup')\nExpected: \"1\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" getByRole('button', { name: '关联附件 甲资料.pdf', exact: true }).locator('sup') with timeout 5000ms\n  - waiting for getByRole('button', { name: '关联附件 甲资料.pdf', exact: true }).locator('sup')\n"
+    },
+    {
+      "name": "提交任务后切换工具，不会被旧任务响应强制跳转",
+      "passed": false,
+      "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: '词云分析', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <a aria-label=\"词云分析\" data-v-23477886=\"\" href=\"#/tool/word\" class=\"navigation-link el-tooltip__trigger el-tooltip__trigger\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"dialog\" aria-modal=\"true\" aria-label=\"确认信息提取\" class=\"el-overlay-dialog\" aria-describedby=\"el-id-1827-28\">…</div> from <main class=\"app-main\">…</main> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"dialog\" aria-modal=\"true\" aria-label=\"确认信息提取\" class=\"el-overlay-dialog\" aria-describedby=\"el-id-1827-28\">…</div> from <main class=\"app-main\">…</main> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    9 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"dialog\" aria-modal=\"true\" aria-label=\"确认信息提取\" class=\"el-overlay-dialog\" aria-describedby=\"el-id-1827-28\">…</div> from <main class=\"app-main\">…</main> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+    }
+  ],
+  "errors": [],
+  "note": "真实页面和 API adapter，HTTP 响应使用夹具；不等同真实服务联调。"
+}

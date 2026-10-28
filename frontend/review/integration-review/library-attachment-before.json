@@ -1,0 +1,17 @@
+{
+  "base": "http://localhost:5174",
+  "checks": [
+    {
+      "name": "资料库附件旧请求返回，不重开已取消的窗口",
+      "passed": false,
+      "error": "Error: expect(locator).not.toBeVisible() failed\n\nLocator:  getByRole('dialog', { name: '关联附件' })\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n  - Expect \"not toBeVisible\" getByRole('dialog', { name: '关联附件' }) with timeout 5000ms\n  - waiting for getByRole('dialog', { name: '关联附件' })\n    14 × locator resolved to <div role=\"dialog\" aria-modal=\"true\" aria-label=\"关联附件\" class=\"el-overlay-dialog\" aria-describedby=\"el-id-7287-56\">…</div>\n       - unexpected value \"visible\"\n"
+    },
+    {
+      "name": "资料库附件保存期间禁止重复编辑同一文件",
+      "passed": false,
+      "error": "Error: expect(locator).toBeDisabled() failed\n\nLocator:  getByRole('button', { name: '关联 甲资料.pdf 的附件', exact: true })\nExpected: disabled\nReceived: enabled\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeDisabled\" getByRole('button', { name: '关联 甲资料.pdf 的附件', exact: true }) with timeout 5000ms\n  - waiting for getByRole('button', { name: '关联 甲资料.pdf 的附件', exact: true })\n    14 × locator resolved to <button title=\"关联附件\" type=\"button\" data-v-1135f660=\"\" aria-disabled=\"false\" class=\"el-button is-text\" aria-label=\"关联 甲资料.pdf 的附件\">…</button>\n       - unexpected value \"enabled\"\n"
+    }
+  ],
+  "errors": [],
+  "note": "真实页面和 API adapter，HTTP 响应使用夹具；不等同真实服务联调。"
+}

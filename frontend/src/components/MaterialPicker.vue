@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import { ElMessage } from 'element-plus'
 import { Search, Document } from '@element-plus/icons-vue'
 import { service } from '@/services/service'
@@ -12,25 +12,28 @@ const emit=defineEmits<{'update:modelValue':[boolean];confirm:[Material[]]}>()
 const browser=useFileBrowser()
 const {query,folders,files,total,loading,error,folderLoading,folderError,currentPath}=browser
 const chosen=ref<Material[]>([]),resolving=ref(false),confirming=ref(false),composition=ref(false),changedNotice=ref('')
-let dialogVersion=0
+let dialogVersion=0,scopeRequest:AbortController|undefined
+function cancelScope(){scopeRequest?.abort();scopeRequest=undefined;resolving.value=false}
+watch(()=>JSON.stringify(query),cancelScope,{flush:'sync'})
+onBeforeUnmount(()=>{dialogVersion++;cancelScope()})
 const selectedIds=computed(()=>new Set(chosen.value.map(f=>f.id)))
 const availablePage=computed(()=>files.value.filter(eligible))
 const pageChecked=computed(()=>availablePage.value.length>0&&availablePage.value.every(f=>selectedIds.value.has(f.id)))
 const pagePartial=computed(()=>!pageChecked.value&&availablePage.value.some(f=>selectedIds.value.has(f.id)))
 function eligible(file:Material){return isMaterialSelectable(file,props.parsedOnly,props.extensions)}
 function reason(file:Material){if(file.canAnalyze===false)return '无分析权限';if(props.parsedOnly&&file.parseStatus!=='parsed')return {unparsed:'未解析',parsing:'解析中',failed:'解析失败',parsed:'解析完成'}[file.parseStatus];return props.extensions.length?`仅支持 ${props.extensions.join('、')}`:''}
-function toggle(file:Material,checked:boolean){if(!eligible(file))return;if(checked)chosen.value=mergeSelection(chosen.value,[file],props.multiple);else chosen.value=chosen.value.filter(f=>f.id!==file.id);changedNotice.value=''}
-function togglePage(checked:boolean){chosen.value=togglePageSelection(chosen.value,availablePage.value,checked);changedNotice.value=''}
-async function removeScope(){const version=dialogVersion;resolving.value=true;try{const scope=await service.resolveSelection({...query,page:1});if(version!==dialogVersion)return;const ids=new Set(scope.map(file=>file.id));chosen.value=chosen.value.filter(file=>!ids.has(file.id));changedNotice.value=''}catch(e){ElMessage.error(messageOf(e))}finally{resolving.value=false}}
-function onlyPage(){chosen.value=availablePage.value.slice();changedNotice.value=''}
-function clearSelection(){chosen.value=[];changedNotice.value=''}
-async function allPages(){const version=dialogVersion;resolving.value=true;changedNotice.value='';try{const selection=await service.resolveSelection({...query,page:1,parseStatus:props.parsedOnly?'parsed':undefined,extensions:props.extensions});if(version!==dialogVersion)return;const available=selection.filter(eligible);chosen.value=mergeSelection(chosen.value,available);ElMessage.success(`本范围已选择 ${available.length} 份资料`)}catch(e){ElMessage.error(messageOf(e))}finally{resolving.value=false}}
-async function confirm(){const version=dialogVersion;confirming.value=true;try{const current=chosen.value.length?await service.getMaterials(chosen.value.map(f=>f.id)):[];if(version!==dialogVersion)return;const checked=reconcileSelection(chosen.value,current,props.parsedOnly,props.extensions);if(checked.removed.length){chosen.value=checked.files;changedNotice.value=`${checked.removed.length} 份资料的状态或权限已变化，已取消选择。请核对后再次确认。`;return}emit('confirm',checked.files);emit('update:modelValue',false)}catch(e){ElMessage.error(messageOf(e))}finally{confirming.value=false}}
-watch(()=>props.modelValue,async open=>{dialogVersion++;if(open){chosen.value=[...props.selected];changedNotice.value='';query.extensions=props.extensions;await browser.initialize()}},{immediate:true})
+function toggle(file:Material,checked:boolean){if(confirming.value||!eligible(file))return;cancelScope();if(checked)chosen.value=mergeSelection(chosen.value,[file],props.multiple);else chosen.value=chosen.value.filter(f=>f.id!==file.id);changedNotice.value=''}
+function togglePage(checked:boolean){if(confirming.value)return;cancelScope();chosen.value=togglePageSelection(chosen.value,availablePage.value,checked);changedNotice.value=''}
+async function removeScope(){cancelScope();const active=scopeRequest=new AbortController();resolving.value=true;try{const scope=await service.resolveSelection({...query,page:1},active.signal);if(active!==scopeRequest)return;const ids=new Set(scope.map(file=>file.id));chosen.value=chosen.value.filter(file=>!ids.has(file.id));changedNotice.value=''}catch(e){if(active===scopeRequest)ElMessage.error(messageOf(e))}finally{if(active===scopeRequest){scopeRequest=undefined;resolving.value=false}}}
+function onlyPage(){if(confirming.value)return;cancelScope();chosen.value=availablePage.value.slice();changedNotice.value=''}
+function clearSelection(){if(confirming.value)return;cancelScope();chosen.value=[];changedNotice.value=''}
+async function allPages(){cancelScope();const active=scopeRequest=new AbortController();resolving.value=true;changedNotice.value='';try{const selection=await service.resolveSelection({...query,page:1,parseStatus:props.parsedOnly?'parsed':undefined,extensions:props.extensions},active.signal);if(active!==scopeRequest)return;const available=selection.filter(eligible);chosen.value=mergeSelection(chosen.value,available);ElMessage.success(`本范围已选择 ${available.length} 份资料`)}catch(e){if(active===scopeRequest)ElMessage.error(messageOf(e))}finally{if(active===scopeRequest){scopeRequest=undefined;resolving.value=false}}}
+async function confirm(){if(confirming.value||resolving.value)return;const version=dialogVersion;confirming.value=true;try{const current=chosen.value.length?await service.getMaterials(chosen.value.map(f=>f.id)):[];if(version!==dialogVersion)return;const checked=reconcileSelection(chosen.value,current,props.parsedOnly,props.extensions);if(checked.removed.length){chosen.value=checked.files;changedNotice.value=`${checked.removed.length} 份资料的状态或权限已变化，已取消选择。请核对后再次确认。`;return}emit('confirm',checked.files);emit('update:modelValue',false)}catch(e){if(version===dialogVersion)ElMessage.error(messageOf(e))}finally{if(version===dialogVersion)confirming.value=false}}
+watch(()=>props.modelValue,async open=>{dialogVersion++;cancelScope();confirming.value=false;if(open){chosen.value=[...props.selected];changedNotice.value='';query.extensions=props.extensions;await browser.initialize()}},{immediate:true,flush:'sync'})
 </script>
 <template>
  <el-dialog :model-value="modelValue" :title="title" width="min(1160px, calc(100vw - 28px))" class="material-picker-dialog" :close-on-click-modal="false" @update:model-value="emit('update:modelValue',$event)">
-  <div class="picker-layout">
+  <div class="picker-layout" v-loading="confirming" element-loading-text="正在核对资料状态…">
    <FolderNavigator :folders="folders" :space="query.space" :current-id="query.folderId" :loading="folderLoading" :error="folderError" @space="browser.changeSpace" @select="browser.chooseFolder" @refresh="browser.loadFolders" />
    <section class="picker-main">
     <div class="picker-location"><span><span class="muted">当前目录</span> <strong :title="currentPath">{{currentPath}}</strong></span><el-checkbox v-model="query.includeDescendants" @change="browser.search">包含下级文件夹</el-checkbox></div>

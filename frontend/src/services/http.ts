@@ -7,11 +7,25 @@ export type Requester = <T=any>(path:string,options?:RequestOptions)=>Promise<T>
 let tokenProvider: (()=>string|Promise<string>)|undefined
 /** The embedding application may supply an in-memory access-token provider. */
 export function setTokenProvider(provider:()=>string|Promise<string>) { tokenProvider=provider }
+/** Preserve useful validation reasons without dumping request bodies or credentials. */
+function errorMessage(data:any,fallback:string):string {
+ if(typeof data?.message==='string'&&data.message)return data.message
+ if(typeof data?.detail==='string'&&data.detail)return data.detail
+ if(Array.isArray(data?.detail)){
+  const reasons=data.detail.slice(0,5).map((item:any)=>{
+   if(typeof item?.msg!=='string')return ''
+   const field=Array.isArray(item.loc)?item.loc.filter((v:unknown)=>typeof v==='string'||typeof v==='number').filter((v:unknown)=>!['body','query','path'].includes(String(v))).join('.') : ''
+   return field?`${field}：${item.msg}`:item.msg
+  }).filter(Boolean)
+  if(reasons.length)return reasons.join('；')
+ }
+ return typeof data?.title==='string'&&data.title?data.title:fallback
+}
 export function createHttp(baseUrl='',fetcher:typeof fetch=fetch):Requester {
  return async <T=any>(path:string,options:RequestOptions={}):Promise<T> => {
   const query=new URLSearchParams()
   Object.entries(options.params||{}).forEach(([k,v])=>{ if(v!==undefined&&v!==null&&v!=='') query.set(k,Array.isArray(v)?v.join(','):String(v)) })
-  const url=baseUrl.replace(/\/$/,'')+path+(query.size?`?${query}`:'')
+  const url=baseUrl.replace(/\/$/,'')+path+(query.size?`${path.includes('?')?'&':'?'}${query}`:'')
   const headers:Record<string,string>={Accept:options.blob?'*/*':'application/json'}
   const token=await tokenProvider?.(); if(token)headers.Authorization=`Bearer ${token}`
   const form=typeof FormData!=='undefined'&&options.body instanceof FormData
@@ -21,15 +35,25 @@ export function createHttp(baseUrl='',fetcher:typeof fetch=fetch):Requester {
   catch(error) { if(error instanceof Error&&error.name==='AbortError')throw error; throw new ServiceError('无法连接业务服务，请检查网络或接口地址。提交超时后请先到分析记录确认，避免重复提交。') }
   if(!response.ok) {
    let message=response.status===401?'登录已过期，请在宿主系统重新登录。':response.status===403?'没有执行此操作的权限。':`请求失败（${response.status}），请重试。`
-   try{const e=await response.json();message=e.message||e.detail||message}catch{}
+   try{const e=await response.json();message=errorMessage(e,message)}catch{}
    throw new ServiceError(String(message),response.status)
   }
   if(response.status===204)return undefined as T
-  if(options.blob){if(response.headers.get('content-type')?.includes('text/html'))throw new ServiceError('导出接口返回了静态页面，请检查 API 代理配置。');if(response.headers.get('content-type')?.includes('application/json')){const b=await response.blob();try{const e=JSON.parse(await b.text());if(e.code&&![0,200,201].includes(Number(e.code)))throw new ServiceError(e.message||'导出失败')}catch(e){if(e instanceof ServiceError)throw e}return b as T}return await response.blob() as T}
-  const contentType=response.headers.get('content-type')||''
+  const contentType=(response.headers.get('content-type')||'').toLowerCase()
+  if(options.blob){
+   if(contentType.includes('text/html'))throw new ServiceError('导出接口返回了静态页面，请检查 API 代理配置。')
+   const body=await response.blob()
+   if(contentType.includes('json')){
+    let data:any
+    try{data=JSON.parse(await body.text())}catch{}
+    if(contentType.includes('application/problem+json')||(data&&typeof data==='object'&&'code'in data&&![0,200,201].includes(Number(data.code))))throw new ServiceError(errorMessage(data,'导出失败'))
+   }
+   return body as T
+  }
   if(!contentType.includes('json'))throw new ServiceError('接口未返回 JSON 数据。请检查 API 代理配置，勿将静态页面当作接口响应。')
   const data=await response.json()
-  if(data&&typeof data==='object'&&'code'in data&&![0,200,201,202].includes(Number(data.code))) throw new ServiceError(String(data.message||'业务处理失败'),response.status,String(data.code))
+  if(contentType.includes('application/problem+json'))throw new ServiceError(errorMessage(data,'业务处理失败'),response.status)
+  if(data&&typeof data==='object'&&'code'in data&&![0,200,201,202].includes(Number(data.code))) throw new ServiceError(errorMessage(data,'业务处理失败'),response.status,String(data.code))
   return (data&&typeof data==='object'&&'code'in data&&'data'in data?data.data:data) as T
  }
 }

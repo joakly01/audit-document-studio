@@ -9,7 +9,8 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "vitest run",
     "typecheck": "vue-tsc --noEmit",
-    "test:browser": "node tests/browser-workspace.mjs && node tests/browser-library.mjs && node tests/browser-results.mjs && node tests/browser-smoke.mjs && node tests/browser-api-preview.mjs"
+    "test:browser": "node tests/browser-workspace.mjs && node tests/browser-library.mjs && node tests/browser-results.mjs && node tests/browser-smoke.mjs && node tests/browser-api-preview.mjs",
+    "test:integration-review": "node tests/browser-integration-review.mjs && node tests/browser-task-boundaries.mjs"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.2",

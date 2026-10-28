@@ -1,0 +1,12 @@
+{
+  "base": "http://localhost:5174",
+  "checks": [
+    {
+      "name": "附件保存中切换工具，成功结果只回写原工具资料",
+      "passed": false,
+      "error": "Error: expect(locator).toBeDisabled() failed\n\nLocator:  getByRole('button', { name: '关联附件 甲资料.pdf', exact: true })\nExpected: disabled\nReceived: enabled\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeDisabled\" getByRole('button', { name: '关联附件 甲资料.pdf', exact: true }) with timeout 5000ms\n  - waiting for getByRole('button', { name: '关联附件 甲资料.pdf', exact: true })\n    14 × locator resolved to <button title=\"关联附件（0）\" data-v-44d7e66c=\"\" class=\"icon-button\" aria-label=\"关联附件 甲资料.pdf\">…</button>\n       - unexpected value \"enabled\"\n"
+    }
+  ],
+  "errors": [],
+  "note": "真实页面和 API adapter，HTTP 响应使用夹具；不等同真实服务联调。"
+}

@@ -9,6 +9,7 @@ export interface StudioService {
  getMaterials(ids:string[]):Promise<Material[]>
  resolveSelection(query:FileQuery, signal?:AbortSignal):Promise<Material[]>
  getSource(file:Material, signal?:AbortSignal):Promise<SourceContent>
+ /** folderId is the selected root; the provider creates relativePath subfolders exactly once. */
  upload(file:File, folderId:string, relativePath?:string):Promise<Material>
  createFolder(name:string,parentId:string|undefined,space:string):Promise<Folder>
  renameFolder(id:string,name:string):Promise<void>

@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-28",
+  "baselineCommit": "bddd10856f093395f3907a08f9f17b0b2f16bacc",
+  "sourceDigest": "2a7e157eb5d1f034438c6bd09e24c504fd33d64888fe2609e86c0fe4efd8d760",
+  "unitTests": 96,
+  "typecheck": "passed",
+  "apiProductionBuild": "passed",
+  "browserChecks": 140,
+  "suites": [
+    {
+      "suite": "工作区",
+      "passed": 14,
+      "evidence": "review/workspace/report.json"
+    },
+    {
+      "suite": "资料管理",
+      "passed": 7,
+      "evidence": "review/library/results.json"
+    },
+    {
+      "suite": "结果页",
+      "passed": 19,
+      "evidence": "review/results/report.json"
+    },
+    {
+      "suite": "路由",
+      "passed": 15,
+      "evidence": "review/routes/report.json"
+    },
+    {
+      "suite": "API原件预览",
+      "passed": 6,
+      "evidence": "review/api-preview/report.json"
+    },
+    {
+      "suite": "异常与慢响应（生产构建）",
+      "passed": 12,
+      "evidence": "review/integration-review/production.json"
+    },
+    {
+      "suite": "多尺寸界面",
+      "passed": 67,
+      "evidence": "review/ui-restore/review-20261028.json"
+    }
+  ],
+  "backendIntegration": "not executed; HTTP fixtures only",
+  "deployed": false,
+  "committed": false,
+  "knownBuildWarning": "Element Plus common chunk remains about 930 kB; no production load/capacity acceptance"
+}

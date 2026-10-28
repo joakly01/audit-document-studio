@@ -1,0 +1,32 @@
+{
+  "base": "http://localhost:5174",
+  "checks": [
+    {
+      "name": "文件夹上传只建立一次层级，文件写入最终子目录",
+      "passed": false,
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('dialog', { name: '上传资料' }).getByText('上传完成', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('dialog', { name: '上传资料' }).getByText('上传完成', { exact: true }) with timeout 5000ms\n  - waiting for getByRole('dialog', { name: '上传资料' }).getByText('上传完成', { exact: true })\n"
+    },
+    {
+      "name": "切换目录加载失败不显示上一个目录的文件",
+      "passed": false,
+      "error": "Error: expect(locator).not.toContainText(expected) failed\n\nLocator: locator('.library-table')\nExpected substring: not \"甲资料.pdf\"\nReceived string: \"本页文件名称解析状态大小更新时间操作甲资料.pdf解析完成200 B—\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"not toContainText\" locator('.library-table') with timeout 5000ms\n  - waiting for locator('.library-table')\n    14 × locator resolved to <div data-prefix=\"el\" data-v-1135f660=\"\" class=\"el-table--fit el-table--scrollable-x el-table--enable-row-transition el-table el-table--layout-fixed library-table is-scrolling-left\">…</div>\n       - unexpected value \"本页文件名称解析状态大小更新时间操作甲资料.pdf解析完成200 B—\"\n"
+    },
+    {
+      "name": "切换空间加载失败不保留原空间目录",
+      "passed": false,
+      "error": "Error: expect(locator).not.toContainText(expected) failed\n\nLocator: locator('.directory-tree')\nExpected substring: not \"甲目录\"\nReceived string: \"甲目录乙目录\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"not toContainText\" locator('.directory-tree') with timeout 5000ms\n  - waiting for locator('.directory-tree')\n    14 × locator resolved to <div data-v-65bb6c2c=\"\" class=\"el-scrollbar directory-tree\">…</div>\n       - unexpected value \"甲目录乙目录\"\n"
+    },
+    {
+      "name": "选择全部页期间切换目录，旧范围响应不能改变新选择",
+      "passed": false,
+      "error": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByRole('dialog', { name: '添加资料' }).locator('.picker-selection strong')\nExpected: \"0\"\nReceived: \"1\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveText\" getByRole('dialog', { name: '添加资料' }).locator('.picker-selection strong') with timeout 5000ms\n  - waiting for getByRole('dialog', { name: '添加资料' }).locator('.picker-selection strong')\n    14 × locator resolved to <strong data-v-1b17f025=\"\">1</strong>\n       - unexpected value \"1\"\n"
+    },
+    {
+      "name": "关闭附件确认后，旧响应不修改已选资料的附件",
+      "passed": false,
+      "error": "Error: expect(locator).not.toBeChecked() failed\n\nLocator:  getByRole('dialog', { name: '关联附件' }).getByRole('checkbox', { name: '关联 乙资料.pdf', exact: true })\nExpected: not checked\nReceived: checked\nTimeout:  5000ms\n\nCall log:\n  - Expect \"not toBeChecked\" getByRole('dialog', { name: '关联附件' }).getByRole('checkbox', { name: '关联 乙资料.pdf', exact: true }) with timeout 5000ms\n  - waiting for getByRole('dialog', { name: '关联附件' }).getByRole('checkbox', { name: '关联 乙资料.pdf', exact: true })\n    14 × locator resolved to <input type=\"checkbox\" id=\"el-id-7500-51\" class=\"el-checkbox__original\"/>\n       - unexpected value \"checked\"\n"
+    }
+  ],
+  "errors": [],
+  "note": "真实页面和 API adapter，HTTP 响应使用夹具；不等同真实服务联调。"
+}

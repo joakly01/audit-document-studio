@@ -1,0 +1,12 @@
+{
+  "base": "http://localhost:5174",
+  "checks": [
+    {
+      "name": "提交任务后切换工具，不会被旧任务响应强制跳转",
+      "passed": false,
+      "error": "Error: expect(page).toHaveURL(expected) failed\n\nExpected pattern: /#\\/tool\\/word$/\nReceived string:  \"http://localhost:5174/#/tasks/created\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toHaveURL\" with timeout 5000ms\n    14 × locator resolved to <html lang=\"zh-CN\">…</html>\n       - unexpected value \"http://localhost:5174/#/tasks/created\"\n"
+    }
+  ],
+  "errors": [],
+  "note": "真实页面和 API adapter，HTTP 响应使用夹具；不等同真实服务联调。"
+}

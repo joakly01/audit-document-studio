@@ -1,0 +1,18 @@
+{
+  "base": "http://localhost:5174",
+  "checks": [
+    {
+      "name": "查询失败时清理旧分析记录，避免旧列表冒充当前查询",
+      "passed": true
+    },
+    {
+      "name": "先点甲后点乙，甲的慢响应不能覆盖乙的任务信息",
+      "passed": true
+    },
+    {
+      "name": "关闭乙任务窗口后，甲的慢响应不重新打开窗口",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

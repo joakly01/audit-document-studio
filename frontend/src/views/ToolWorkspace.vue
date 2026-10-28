@@ -26,7 +26,7 @@ import ToolGlyph from '@/components/ToolGlyph.vue'
 const route=useRoute(),router=useRouter(),store=useWorkspace()
 const tool=computed(()=>String(route.params.tool) as ToolId),definition=computed(()=>toolMap[tool.value]),draft=computed(()=>store.getDraft(tool.value))
 const biddingMaterials=ref<InstanceType<typeof BiddingMaterials>|null>(null)
-const editorGeneration=ref(0),leftWidth=ref(320),rightWidth=ref(320)
+const editorGeneration=ref(0),leftWidth=ref(320),rightWidth=ref(320),attachmentSaving=ref(new Set<string>())
 const filePicker=ref(false),previewFile=ref<Material|null>(null),previewDialog=ref(false),attachmentsOpen=ref(false),attachmentFile=ref<Material|null>(null),fileSearch=ref(''),page=ref(1),mobilePanel=ref('materials'),associationRole=ref<'table1'|'table2'|null>(null),biddingMode=ref('bidding_only'),submitting=ref(false),confirmOpen=ref(false),errors=ref<string[]>([])
 const files=computed(()=>participatingFiles(draft.value)),filtered=computed(()=>draft.value.files.filter(f=>f.name.includes(fileSearch.value.trim()))),paged=computed(()=>filtered.value.slice((page.value-1)*30,page.value*30))
 const selectedForPicker=computed(()=>associationRole.value?[draft.value.config[associationRole.value]].filter(Boolean):draft.value.files)
@@ -34,11 +34,13 @@ const stages=computed(()=>definition.value.promptStages.filter(s=>tool.value==='
 const activeRules=computed(()=>selectedRuleCatalog(draft.value,tool.value==='bidding'?biddingMode.value:'main'))
 const workArea=ref<HTMLElement|null>(null),workAreaWidth=ref(0)
 let workAreaObserver:ResizeObserver|undefined
+let attachmentVersion=0,contextVersion=0,active=true
 watch(workArea,node=>{workAreaObserver?.disconnect();if(node){workAreaWidth.value=node.clientWidth;workAreaObserver=new ResizeObserver(()=>workAreaWidth.value=node.clientWidth);workAreaObserver.observe(node)}})
-onBeforeUnmount(()=>workAreaObserver?.disconnect())
+onBeforeUnmount(()=>{active=false;attachmentVersion++;contextVersion++;workAreaObserver?.disconnect()})
 const visiblePanel=computed({get:()=>workAreaWidth.value>=620&&mobilePanel.value==='materials'?'config':mobilePanel.value,set:(value:string)=>mobilePanel.value=value})
 
 watch(tool,()=>{
+ attachmentVersion++;contextVersion++
  leftWidth.value=rightWidth.value=tool.value==='extract'?368:320
  filePicker.value=false;attachmentsOpen.value=false;previewDialog.value=false;confirmOpen.value=false;associationRole.value=null;attachmentFile.value=null
  const key='audit:reanalysis:'+tool.value,serialized=sessionStorage.getItem(key)
@@ -53,14 +55,27 @@ function add(role?:'table1'|'table2'){associationRole.value=role||null;filePicke
 function added(next:Material[]){if(associationRole.value){draft.value.config[associationRole.value]=next[0]||null;associationRole.value=null}else draft.value.files=next;if(!previewFile.value||!files.value.some(f=>f.id===previewFile.value?.id))previewFile.value=files.value[0]||null}
 function remove(f:Material){draft.value.files=draft.value.files.filter(x=>x.id!==f.id);delete draft.value.attachments[f.id];if(previewFile.value?.id===f.id)previewFile.value=draft.value.files[0]||null}
 function preview(f:Material){previewFile.value=f;if(definition.value.layout==='two')previewDialog.value=true;else mobilePanel.value='source'}
-async function attach(f:Material){if(draft.value.sourceTaskId&&!service.capabilities.taskAttachmentOverrides){ElMessage.info('当前环境暂不支持调整历史任务的附件，原关联附件保持不变。');return}attachmentFile.value=f;if(!draft.value.attachments[f.id]&&f.attachmentIds?.length){try{draft.value.attachments[f.id]=await service.getMaterials(f.attachmentIds)}catch(e){ElMessage.error((e as Error).message);return}}attachmentsOpen.value=true}
+async function attach(f:Material){
+ if(attachmentSaving.value.has(f.id))return
+ const target=draft.value,version=++attachmentVersion
+ if(target.sourceTaskId&&!service.capabilities.taskAttachmentOverrides){ElMessage.info('当前环境暂不支持调整历史任务的附件，原关联附件保持不变。');return}
+ attachmentsOpen.value=false
+ try{
+  const attachments=target.attachments[f.id]||(f.attachmentIds?.length?await service.getMaterials(f.attachmentIds):[])
+  if(!active||version!==attachmentVersion||target!==draft.value||!target.files.some(file=>file.id===f.id))return
+  target.attachments[f.id]=attachments;attachmentFile.value=f;attachmentsOpen.value=true
+ }catch(e){if(active&&version===attachmentVersion&&target===draft.value)ElMessage.error((e as Error).message)}
+}
 async function attachmentConfirmed(next:Material[]){
- const file=attachmentFile.value;if(!file)return
+ const file=attachmentFile.value,target=draft.value,sourceTaskId=target.sourceTaskId;if(!file||attachmentSaving.value.has(file.id))return
+ attachmentSaving.value.add(file.id)
  try {
-  if(!draft.value.sourceTaskId){await service.saveAttachments(file.id,next.map(f=>f.id));file.attachmentIds=next.map(f=>f.id)}
-  draft.value.attachments[file.id]=next
-  ElMessage.success(draft.value.sourceTaskId?'已更新本次分析的附件':'关联附件已保存')
- }catch(e){ElMessage.error((e as Error).message)}
+  if(!sourceTaskId)await service.saveAttachments(file.id,next.map(f=>f.id))
+  if(!target.files.some(f=>f.id===file.id))return
+  if(!sourceTaskId)file.attachmentIds=next.map(f=>f.id)
+  target.attachments[file.id]=next
+  if(active&&target===draft.value)ElMessage.success(sourceTaskId?'已更新本次分析的附件':'关联附件已保存')
+ }catch(e){if(active&&target===draft.value)ElMessage.error((e as Error).message)}finally{attachmentSaving.value.delete(file.id)}
 }
 function promptLoaded(p:Prompt,stage:string){
  const c=draft.value.config
@@ -81,8 +96,14 @@ function promptLoaded(p:Prompt,stage:string){
 }
 function modeChanged(){if(!draft.value.config.analysisModes.includes(biddingMode.value))biddingMode.value=draft.value.config.analysisModes[0]||'bidding_only'}
 function confirm(){errors.value=validateDraft(draft.value);if(errors.value.length){mobilePanel.value='config';return}if(!draft.value.name.trim())draft.value.name=definition.value.name+' · '+new Date().toLocaleString('zh-CN',{hour12:false});confirmOpen.value=true}
-async function submit(){if(submitting.value)return;errors.value=validateDraft(draft.value);if(errors.value.length){confirmOpen.value=false;return}submitting.value=true;try{const snapshot=cloneDraft(draft.value);snapshot.files=cloneDraft(files.value);const task=await service.submitTask(snapshot);confirmOpen.value=false;await router.push('/tasks/'+encodeURIComponent(task.id))}catch(e){ElMessage.error((e as Error).message)}finally{submitting.value=false}}
-async function reset(){try{await ElMessageBox.confirm('清空当前草稿，重新选择资料和分析内容？','重新设置',{confirmButtonText:'清空',cancelButtonText:'取消'});store.reset(tool.value);editorGeneration.value++;draft.value.config.ruleCatalogs={};draft.value.config.modeRules={};draft.value.config.promptConfigs={};draft.value.config.fieldRules={};previewFile.value=null;errors.value=[]}catch{}}
+async function submit(){
+ if(submitting.value)return
+ errors.value=validateDraft(draft.value);if(errors.value.length){confirmOpen.value=false;return}
+ const context=contextVersion,snapshot=cloneDraft(draft.value);snapshot.files=cloneDraft(files.value);submitting.value=true
+ try{const task=await service.submitTask(snapshot);if(!active)return;if(context!==contextVersion){ElMessage.success(`任务「${snapshot.name}」已提交，可在任务中心查看。`);return}confirmOpen.value=false;await router.push('/tasks/'+encodeURIComponent(task.id))}
+ catch(e){if(active)ElMessage.error((e as Error).message)}finally{submitting.value=false}
+}
+async function reset(){try{await ElMessageBox.confirm('清空当前草稿，重新选择资料和分析内容？','重新设置',{confirmButtonText:'清空',cancelButtonText:'取消'});attachmentVersion++;contextVersion++;store.reset(tool.value);editorGeneration.value++;draft.value.config.ruleCatalogs={};draft.value.config.modeRules={};draft.value.config.promptConfigs={};draft.value.config.fieldRules={};previewFile.value=null;errors.value=[]}catch{}}
 </script>
 <template>
  <div ref="workArea" class="tool-page" v-if="definition" :key="tool">
@@ -93,7 +114,7 @@ async function reset(){try{await ElMessageBox.confirm('清空当前草稿，重�
    <aside class="materials panel" :class="{'selected-panel':mobilePanel==='materials'}"><div class="panel-heading"><h2 class="section-title"><span class="step">Step 1</span>{{definition.step1}}</h2><el-button v-if="tool==='bidding'" class="material-add" type="primary" :icon="Plus" @click="biddingMaterials?.addProject()">添加项目</el-button><el-button v-else-if="tool!=='association'" class="material-add" type="primary" :icon="Plus" @click="add()">添加</el-button></div>
     <BiddingMaterials ref="biddingMaterials" v-if="tool==='bidding'" :config="draft.config" @preview="preview" class="scroll-body"/>
     <div v-else-if="tool==='association'" class="scroll-body association-materials"><p class="help">分别选择两张台账，再配置右侧字段对应关系。</p><section v-for="(label,key) in {table1:'对照表 A',table2:'对照表 B'}" :key="key" class="table-role"><h3>{{label}}</h3><template v-if="draft.config[key]"><button class="table-file" @click="preview(draft.config[key])">{{draft.config[key].name}}</button><p class="muted">{{draft.config[key].path}}</p></template><p v-else class="help">尚未选择台账</p><el-button @click="add(key)" style="width:100%">{{draft.config[key]?'更换台账':'选择台账'}}</el-button></section></div>
-    <template v-else><p class="selection-guide">点击“添加”选择文件，下方为已选资料。</p><div class="file-search"><el-input v-model="fileSearch" placeholder="查找已选资料" clearable aria-label="查找已选资料"/></div><div class="selected-list scroll-body"><div v-if="!filtered.length" class="empty-state">{{draft.files.length?'没有符合条件的资料':'尚未添加资料'}}</div><article v-for="f in paged" :key="f.id" :class="['selected-file',{active:previewFile?.id===f.id}]"><button class="file-open" @click="preview(f)" :title="f.name"><el-icon><Document/></el-icon><span>{{f.name}}</span></button><button v-if="tool==='extract'" class="icon-button" :aria-label="'关联附件 '+f.name" :title="'关联附件（'+(draft.attachments[f.id]?.length||f.attachmentIds?.length||0)+'）'" @click="attach(f)"><el-icon><Paperclip/></el-icon><sup v-if="draft.attachments[f.id]?.length">{{draft.attachments[f.id].length}}</sup></button><button class="icon-button" :aria-label="'移除 '+f.name" :title="'移出本次资料：'+f.name" @click="remove(f)"><el-icon><Close/></el-icon></button></article></div><div v-if="filtered.length>30" class="file-pagination"><span>第 {{(page-1)*30+1}}–{{Math.min(page*30,filtered.length)}} 份 / {{filtered.length}} 份</span><el-pagination v-model:current-page="page" :page-size="30" :total="filtered.length" layout="prev,next" small/></div></template>
+    <template v-else><p class="selection-guide">点击“添加”选择文件，下方为已选资料。</p><div class="file-search"><el-input v-model="fileSearch" placeholder="查找已选资料" clearable aria-label="查找已选资料"/></div><div class="selected-list scroll-body"><div v-if="!filtered.length" class="empty-state">{{draft.files.length?'没有符合条件的资料':'尚未添加资料'}}</div><article v-for="f in paged" :key="f.id" :class="['selected-file',{active:previewFile?.id===f.id}]"><button class="file-open" @click="preview(f)" :title="f.name"><el-icon><Document/></el-icon><span>{{f.name}}</span></button><button v-if="tool==='extract'" class="icon-button" :disabled="attachmentSaving.has(f.id)" :aria-busy="attachmentSaving.has(f.id)" :aria-label="'关联附件 '+f.name" :title="'关联附件（'+(draft.attachments[f.id]?.length||f.attachmentIds?.length||0)+'）'" @click="attach(f)"><el-icon><Paperclip/></el-icon><sup v-if="draft.attachments[f.id]?.length">{{draft.attachments[f.id].length}}</sup></button><button class="icon-button" :aria-label="'移除 '+f.name" :title="'移出本次资料：'+f.name" @click="remove(f)"><el-icon><Close/></el-icon></button></article></div><div v-if="filtered.length>30" class="file-pagination"><span>第 {{(page-1)*30+1}}–{{Math.min(page*30,filtered.length)}} 份 / {{filtered.length}} 份</span><el-pagination v-model:current-page="page" :page-size="30" :total="filtered.length" layout="prev,next" small/></div></template>
     <PanelResizer v-if="definition.layout==='three'" v-model="leftWidth" :default-value="tool==='extract'?368:320" label="调整资料栏宽度"/><footer class="selection-total">已选 <strong>{{files.length}}</strong> 份{{tool==='prepaid'||tool==='contract'?'合同':'资料'}}</footer>
    </aside>
    <section v-if="definition.layout==='three'" class="source panel" :class="{'selected-panel':mobilePanel==='source'}"><SourcePreview :file="previewFile" :step="true"/></section>

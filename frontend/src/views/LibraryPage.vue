@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { Search, Upload, MoreFilled, Document, FolderAdd, Refresh, View, Delete, Link, DataAnalysis } from '@element-plus/icons-vue'
@@ -17,7 +17,8 @@ const router=useRouter(),browser=useFileBrowser()
 const {query,folders,files,total,loading,error,folderLoading,folderError,currentPath,currentFolder}=browser
 const selected=ref<Material[]>([]),resolving=ref(false),busy=ref(false),composition=ref(false)
 const uploadOpen=ref(false),previewOpen=ref(false),previewFile=ref<Material|null>(null),selectedOpen=ref(false),selectedRemovals=ref<string[]>([]),selectedKeyword=ref(''),selectedPage=ref(1)
-const attachmentOpen=ref(false),attachmentFile=ref<Material|null>(null),attachments=ref<Material[]>([])
+const attachmentOpen=ref(false),attachmentFile=ref<Material|null>(null),attachments=ref<Material[]>([]),attachmentSaving=ref(new Set<string>())
+let attachmentVersion=0,active=true
 const ids=computed(()=>new Set(selected.value.map(file=>file.id)))
 const pageAll=computed(()=>files.value.length>0&&files.value.every(file=>ids.value.has(file.id)))
 const pagePartial=computed(()=>!pageAll.value&&files.value.some(file=>ids.value.has(file.id)))
@@ -25,16 +26,28 @@ const parsedCount=computed(()=>selected.value.filter(file=>file.parseStatus==='p
 const selectedFiltered=computed(()=>selected.value.filter(file=>file.name.toLowerCase().includes(selectedKeyword.value.trim().toLowerCase())))
 const selectedShown=computed(()=>selectedFiltered.value.slice((selectedPage.value-1)*15,selectedPage.value*15))
 const groups=[{name:'基础分析',ids:['extract','word','theme','timeline']},{name:'审计专题',ids:['risk','meeting','contract','bidding','prepaid']},{name:'数据核对',ids:['engineering','association']}]
-function toggle(file:Material,value:boolean){selected.value=value?mergeSelection(selected.value,[file]):selected.value.filter(item=>item.id!==file.id)}
-function selectPage(value:boolean){selected.value=togglePageSelection(selected.value,files.value,value)}
-async function scopeSelection(mode:'all'|'remove'|'page'){if(mode==='page'){selected.value=[...files.value];return}resolving.value=true;try{const scoped=await service.resolveSelection({...query,page:1});const scopedIds=new Set(scoped.map((file:Material)=>file.id));if(mode==='all')selected.value=mergeSelection(selected.value,scoped);else{selected.value=selected.value.filter(file=>!scopedIds.has(file.id))}ElMessage.success(mode==='all'?`本范围已选 ${scoped.length} 份资料`:'已更新本范围选择')}catch(e){ElMessage.error(messageOf(e))}finally{resolving.value=false}}
+function toggle(file:Material,value:boolean){cancelScope();selected.value=value?mergeSelection(selected.value,[file]):selected.value.filter(item=>item.id!==file.id)}
+function selectPage(value:boolean){cancelScope();selected.value=togglePageSelection(selected.value,files.value,value)}
+let scopeRequest:AbortController|undefined
+function cancelScope(){scopeRequest?.abort();scopeRequest=undefined;resolving.value=false}
+watch(()=>JSON.stringify(query),()=>{cancelScope();attachmentVersion++},{flush:'sync'})
+onBeforeUnmount(()=>{active=false;attachmentVersion++;cancelScope()})
+async function scopeSelection(mode:'all'|'remove'|'page'){cancelScope();if(mode==='page'){selected.value=[...files.value];return}const active=scopeRequest=new AbortController();resolving.value=true;try{const scoped=await service.resolveSelection({...query,page:1},active.signal);if(active!==scopeRequest)return;const scopedIds=new Set(scoped.map((file:Material)=>file.id));if(mode==='all')selected.value=mergeSelection(selected.value,scoped);else{selected.value=selected.value.filter(file=>!scopedIds.has(file.id))}ElMessage.success(mode==='all'?`本范围已选 ${scoped.length} 份资料`:'已更新本范围选择')}catch(e){if(active===scopeRequest)ElMessage.error(messageOf(e))}finally{if(active===scopeRequest){scopeRequest=undefined;resolving.value=false}}}
 function preview(file:Material){previewFile.value=file;previewOpen.value=true}
 async function analyze(tool:ToolId){let available:Material[];try{const checked=reconcileSelection(selected.value,await service.getMaterials(selected.value.map(file=>file.id)));available=checked.files;if(checked.removed.length){selected.value=checked.files;ElMessage.warning('部分资料的状态或权限已变化，已更新选集，请核对后重新选择分析工具。');return}}catch(e){ElMessage.error(messageOf(e));return}if(selected.value.length&&!available.length){ElMessage.warning('请先解析所选资料，解析完成后即可分析。');return}if(available.length<selected.value.length)ElMessage.info(`仅带入 ${available.length} 份解析完成的资料`);sessionStorage.setItem('audit:selected-files',JSON.stringify(available));await router.push(`/tool/${tool}`)}
 async function parseSelected(){const pending=selected.value.filter(file=>file.parseStatus==='unparsed'||file.parseStatus==='failed');if(!pending.length){ElMessage.info('所选资料均已解析或正在解析。');return}busy.value=true;try{await service.parseFiles(pending.map(file=>file.id));ElMessage.success(`已提交 ${pending.length} 份资料进行解析`);await browser.loadFiles();selected.value=selected.value.map(file=>files.value.find(item=>item.id===file.id)||file)}catch(e){ElMessage.error(messageOf(e))}finally{busy.value=false}}
 async function deleteSelected(){if(!selected.value.length)return;try{await ElMessageBox.confirm(`将从资料库删除 ${selected.value.length} 份文件。请确认这些资料不再需要。`,'删除资料',{confirmButtonText:'删除',cancelButtonText:'取消',type:'warning'});busy.value=true;await service.deleteFiles(selected.value.map(file=>file.id));selected.value=[];await browser.loadFiles();ElMessage.success('资料已删除')}catch(e){if(e!=='cancel'&&e!=='close')ElMessage.error(messageOf(e))}finally{busy.value=false}}
 async function folderAction(action:string){try{if(action==='create'){const {value}=await ElMessageBox.prompt('请输入文件夹名称','新建文件夹',{inputPlaceholder:'文件夹名称',inputValidator:v=>!!v?.trim()&&!/[\\/]/.test(v)||'请输入有效名称',confirmButtonText:'创建',cancelButtonText:'取消'});await service.createFolder(value.trim(),query.folderId,query.space)}else if(action==='rename'){if(!currentFolder.value)return;const {value}=await ElMessageBox.prompt('请输入新的文件夹名称','重命名',{inputValue:currentFolder.value.name,inputValidator:v=>!!v?.trim()&&!/[\\/]/.test(v)||'请输入有效名称',confirmButtonText:'保存',cancelButtonText:'取消'});await service.renameFolder(currentFolder.value.id,value.trim())}else if(action==='delete'){if(!currentFolder.value)return;await ElMessageBox.confirm(`删除“${currentFolder.value.name}”目录？该操作可能影响其中的资料。`,'删除目录',{type:'warning',confirmButtonText:'删除',cancelButtonText:'取消'});await service.deleteFolder(currentFolder.value.id);query.folderId=undefined}await browser.initialize()}catch(e){if(e!=='cancel'&&e!=='close')ElMessage.error(messageOf(e))}}
-async function openAttachments(file:Material){try{attachmentFile.value=file;attachments.value=file.attachmentIds?.length?await service.getMaterials(file.attachmentIds):[];attachmentOpen.value=true}catch(e){ElMessage.error(messageOf(e))}}
-async function saveAttachments(values:Material[]){if(!attachmentFile.value)return;try{await service.saveAttachments(attachmentFile.value.id,values.map(file=>file.id));attachmentFile.value.attachmentIds=values.map(file=>file.id);ElMessage.success('附件关联已保存');await browser.loadFiles()}catch(e){ElMessage.error(messageOf(e))}}
+async function openAttachments(file:Material){
+ if(attachmentSaving.value.has(file.id))return
+ const version=++attachmentVersion;attachmentOpen.value=false
+ try{const values=file.attachmentIds?.length?await service.getMaterials(file.attachmentIds):[];if(!active||version!==attachmentVersion)return;attachmentFile.value=file;attachments.value=values;attachmentOpen.value=true}catch(e){if(active&&version===attachmentVersion)ElMessage.error(messageOf(e))}
+}
+async function saveAttachments(values:Material[]){
+ const file=attachmentFile.value;if(!file||attachmentSaving.value.has(file.id))return
+ attachmentSaving.value.add(file.id)
+ try{await service.saveAttachments(file.id,values.map(f=>f.id));file.attachmentIds=values.map(f=>f.id);if(active){ElMessage.success('附件关联已保存');await browser.loadFiles()}}catch(e){if(active)ElMessage.error(messageOf(e))}finally{attachmentSaving.value.delete(file.id)}
+}
 function batchRemove(){const removed=new Set(selectedRemovals.value);selected.value=selected.value.filter(file=>!removed.has(file.id));selectedRemovals.value=[];selectedPage.value=Math.min(selectedPage.value,Math.max(1,Math.ceil(selectedFiltered.value.length/15)))}
 onMounted(browser.initialize)
 </script>
@@ -51,7 +64,7 @@ onMounted(browser.initialize)
     <el-table-column label="解析状态" width="110"><template #default="{row}"><span :class="['parse-badge',row.parseStatus]">{{{parsed:'解析完成',unparsed:'未解析',parsing:'解析中',failed:'解析失败'}[row.parseStatus as string]}}</span></template></el-table-column>
     <el-table-column label="大小" width="100"><template #default="{row}">{{formatSize(row.size)}}</template></el-table-column>
     <el-table-column label="更新时间" min-width="140"><template #default="{row}">{{row.updatedAt?new Date(row.updatedAt).toLocaleDateString('zh-CN'):'—'}}</template></el-table-column>
-    <el-table-column label="操作" width="96" fixed="right"><template #default="{row}"><el-button text :icon="View" :aria-label="`预览 ${row.name}`" title="预览" @click="preview(row)"/><el-button text :icon="Link" :aria-label="`关联 ${row.name} 的附件`" title="关联附件" @click="openAttachments(row)"/></template></el-table-column>
+    <el-table-column label="操作" width="96" fixed="right"><template #default="{row}"><el-button text :icon="View" :aria-label="`预览 ${row.name}`" title="预览" @click="preview(row)"/><el-button text :icon="Link" :disabled="attachmentSaving.has(row.id)" :loading="attachmentSaving.has(row.id)" :aria-label="`关联 ${row.name} 的附件`" title="关联附件" @click="openAttachments(row)"/></template></el-table-column>
    </el-table>
    <div v-if="selected.length" class="library-selection-summary"><div v-if="selected.length"><el-button :loading="busy" @click="parseSelected">解析资料</el-button><el-button text :disabled="busy" @click="deleteSelected">删除</el-button></div></div>
    <el-pagination v-model:current-page="query.page" v-model:page-size="query.size" :total="total" :page-sizes="[20,50,100]" layout="total,prev,pager,next,sizes" @current-change="browser.changePage" @size-change="browser.changeSize"/>

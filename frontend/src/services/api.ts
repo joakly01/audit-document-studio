@@ -16,6 +16,7 @@ export function createApiService(options:ApiOptions={}):StudioService {
  const stopEndpoint=endpoints.taskStop&&!/DeleteTaskSchedules/i.test(endpoints.taskStop)?endpoints.taskStop:undefined
  const files=new Map<string,Material>(),submitted=new Map<string,ToolDraft>()
  const maxSelection=options.maxSelection||5000
+ // Share only in-flight lookups; settled paths may be renamed/deleted by another session.
  const folderCreation=new Map<string,Promise<string>>()
  const folderSpaces=new Map<string,string>()
  const requireEndpoint=(key:string,label:string)=>endpoints[key]||unavailable(label)
@@ -72,12 +73,12 @@ export function createApiService(options:ApiOptions={}):StudioService {
  async upload(file,folderId,relativePath){
   let target=folderId
   const parts=(relativePath||'').split('/').filter(Boolean);parts.pop();const space=folderSpaces.get(folderId);if(parts.length&&!space)throw new ServiceError('上传目标目录信息已失效，请刷新目录后重试。')
-  for(const part of parts){if(part==='.'||part==='..')throw new ServiceError('文件路径不合法');const key=target+'/'+part;let work=folderCreation.get(key);if(!work){work=(async()=>{const rows=arrayOf(await request(`/api/v1/file-manager/folders/${enc(target)}/children`));const existing=rows.find(x=>(x.folder_name||x.name)===part);if(existing)return String(existing.folder_id||existing.id);return(await api.createFolder(part,target,space!)).id})().catch(error=>{folderCreation.delete(key);throw error});folderCreation.set(key,work)}target=await work}
+  for(const part of parts){if(part==='.'||part==='..')throw new ServiceError('文件路径不合法');const key=target+'/'+part;let work=folderCreation.get(key);if(!work){work=(async()=>{const rows=arrayOf(await request(`/api/v1/file-manager/folders/${enc(target)}/children`));const existing=rows.find(x=>(x.folder_name||x.name)===part);if(existing)return String(existing.folder_id||existing.id);return(await api.createFolder(part,target,space!)).id})().finally(()=>{if(folderCreation.get(key)===work)folderCreation.delete(key)});folderCreation.set(key,work)}target=await work}
   const data=new FormData();data.append('file',file);data.append('folder_id',target)
   const raw=await request('/api/v1/file-manager/files/upload',{method:'POST',body:data})
-  const material=normalizeMaterial({...raw,folder_id:raw.folder_id||target,file_name:raw.file_name||file.name,file_size:raw.file_size||file.size});files.set(material.id,material);return material
+  const material=normalizeMaterial({...raw,space:raw.space||raw.space_type||space,folder_id:raw.folder_id||target,file_name:raw.file_name||file.name,file_size:raw.file_size||file.size});files.set(material.id,material);return material
  },
- async createFolder(name,parentId,space){return normalizeFolder(await request('/api/v1/file-manager/folders',{method:'POST',body:{folder_name:name,parent_id:parentId||null,space_type:space}}),space)},
+ async createFolder(name,parentId,space){const folder=normalizeFolder(await request('/api/v1/file-manager/folders',{method:'POST',body:{folder_name:name,parent_id:parentId||null,space_type:space}}),space);folderSpaces.set(folder.id,folder.space);return folder},
  async renameFolder(id,name){await request(`/api/v1/file-manager/folders/${enc(id)}/rename`,{method:'PUT',body:{folder_name:name}})},
  async deleteFolder(id){await request(`/api/v1/file-manager/folders/${enc(id)}`,{method:'DELETE'})},
  async deleteFiles(ids){for(const id of ids)await request(`/api/v1/file-manager/files/${enc(id)}`,{method:'DELETE'})},

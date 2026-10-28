@@ -1,0 +1,21 @@
+{
+  "base": "http://localhost:5174",
+  "checks": [
+    {
+      "name": "查询失败时清理旧分析记录，避免旧列表冒充当前查询",
+      "passed": false,
+      "error": "expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('.task-name')\nExpected: 0\nReceived: 2\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveCount\" locator('.task-name') with timeout 5000ms\n  - waiting for locator('.task-name')\n    14 × locator resolved to 2 elements\n       - unexpected value \"2\"\n"
+    },
+    {
+      "name": "先点甲后点乙，甲的慢响应不能覆盖乙的任务信息",
+      "passed": false,
+      "error": "expect(locator).toContainText(expected) failed\n\nLocator: getByRole('dialog', { name: '任务信息', exact: true })\nExpected substring: \"合同核查乙\"\nReceived string:    \"任务信息任务名称合同核查甲分析工具合同分析分析状态分析完成提交时间未返回处理范围1 份 · 完成 0 · 失败 0当前阶段未返回分析资料（0 份）资料名称所在目录附件暂无数据服务未返回执行资料快照。执行提示词本任务未返回提示词快照。执行参数服务未返回完整执行配置，暂不能再次分析。任务编号：a关闭\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" getByRole('dialog', { name: '任务信息', exact: true }) with timeout 5000ms\n  - waiting for getByRole('dialog', { name: '任务信息', exact: true })\n    14 × locator resolved to <div role=\"dialog\" aria-modal=\"true\" aria-label=\"任务信息\" class=\"el-overlay-dialog\" aria-describedby=\"el-id-4932-47\">…</div>\n       - unexpected value \"任务信息任务名称合同核查甲分析工具合同分析分析状态分析完成提交时间未返回处理范围1 份 · 完成 0 · 失败 0当前阶段未返回分析资料（0 份）资料名称所在目录附件暂无数据服务未返回执行资料快照。执行提示词本任务未返回提示词快照。执行参数服务未返回完整执行配置，暂不能再次分析。任务编号：a关闭\"\n"
+    },
+    {
+      "name": "关闭乙任务窗口后，甲的慢响应不重新打开窗口",
+      "passed": false,
+      "error": "expect(locator).not.toBeVisible() failed\n\nLocator:  getByRole('dialog', { name: '任务信息', exact: true })\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n  - Expect \"not toBeVisible\" getByRole('dialog', { name: '任务信息', exact: true }) with timeout 5000ms\n  - waiting for getByRole('dialog', { name: '任务信息', exact: true })\n    14 × locator resolved to <div role=\"dialog\" aria-modal=\"true\" aria-label=\"任务信息\" class=\"el-overlay-dialog\" aria-describedby=\"el-id-2836-47\">…</div>\n       - unexpected value \"visible\"\n"
+    }
+  ],
+  "errors": []
+}

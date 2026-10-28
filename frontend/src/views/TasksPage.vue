@@ -12,14 +12,24 @@ const keyword=ref(''),tool=ref<ToolId|''>(''),status=ref<TaskStatus|''>(''),page
 const scopedTool=computed(()=>typeof route.params.tool==='string' && route.params.tool in toolMap ? route.params.tool as ToolId : undefined)
 const title=computed(()=>scopedTool.value ? `${toolMap[scopedTool.value].name} · 分析记录` : '任务中心')
 let controller:AbortController|undefined,timer:ReturnType<typeof setTimeout>|undefined,version=0
+let infoRequest:AbortController|undefined,infoVersion=0
+function cancelInfo(){infoVersion++;infoRequest?.abort();infoLoading.value=''}
+watch(showInfo,visible=>{if(!visible)cancelInfo()},{flush:'sync'})
+watch([scopedTool,page,size,mode],()=>{cancelInfo();showInfo.value=false})
 function cancel(){controller?.abort();if(timer)clearTimeout(timer)}
-async function load(){cancel();const current=++version;controller=new AbortController();loading.value=true;error.value='';try{const result=await service.listTasks({page:page.value,size:size.value,tool:scopedTool.value || tool.value || undefined,keyword:keyword.value || undefined,status:status.value || undefined},controller.signal);if(current!==version)return;items.value=result.items;total.value=result.total;if(mode.value==='monitor' && items.value.some(t=>['running','queued'].includes(t.status)))timer=setTimeout(()=>void load(),6000)}catch(e){if(current!==version || controller.signal.aborted)return;error.value=e instanceof Error ? e.message : '加载分析记录失败'}finally{if(current===version)loading.value=false}}
+async function load(){cancel();const current=++version;controller=new AbortController();loading.value=true;error.value='';try{const result=await service.listTasks({page:page.value,size:size.value,tool:scopedTool.value || tool.value || undefined,keyword:keyword.value || undefined,status:status.value || undefined},controller.signal);if(current!==version)return;items.value=result.items;total.value=result.total;if(mode.value==='monitor' && items.value.some(t=>['running','queued'].includes(t.status)))timer=setTimeout(()=>void load(),6000)}catch(e){if(current!==version || controller.signal.aborted)return;items.value=[];total.value=0;error.value=e instanceof Error ? e.message : '加载分析记录失败'}finally{if(current===version)loading.value=false}}
 function search(){page.value=1;void load()}
 watch([scopedTool,page,size],()=>void load(),{immediate:true})
 watch(mode,()=>void load())
-onBeforeUnmount(()=>{version++;cancel()})
+onBeforeUnmount(()=>{version++;cancel();cancelInfo()})
 function view(task:Task){router.push(`/tasks/${encodeURIComponent(task.id)}`)}
-async function taskInfo(task:Task){infoLoading.value=task.id;try{info.value=await service.getTask(task.id);showInfo.value=true}catch(e){ElMessage.error(e instanceof Error ? e.message : '加载任务信息失败')}finally{infoLoading.value=''}}
+async function taskInfo(task:Task){
+ showInfo.value=false;cancelInfo();const current=++infoVersion
+ const request=new AbortController();infoRequest=request;infoLoading.value=task.id
+ try{const result=await service.getTask(task.id,request.signal);if(current!==infoVersion)return;info.value=result;showInfo.value=true}
+ catch(e){if(current===infoVersion&&!request.signal.aborted)ElMessage.error(e instanceof Error ? e.message : '加载任务信息失败')}
+ finally{if(current===infoVersion)infoLoading.value=''}
+}
 async function exportData(task:Task){exporting.value=task.id;try{await downloadTask(task,'excel')}catch(e){ElMessage.error(e instanceof Error ? e.message : '导出失败')}finally{exporting.value=''}}
 async function manage(task:Task,action:'retry'|'stop'){try{await ElMessageBox.confirm(action==='stop' ? '停止本任务后，已完成的分析结果仍会保留。' : '仅重试本任务中的失败部分，已完成的结果保留。',action==='stop' ? '停止分析' : '重试失败项',{confirmButtonText:'确认',cancelButtonText:'取消'});await (action==='stop' ? service.stopTask(task.id) : service.retryTask(task.id));void load()}catch(e){if(e!=='cancel'&&e!=='close')ElMessage.error(e instanceof Error ? e.message : '操作失败')}}
 function tag(status:TaskStatus):'success'|'warning'|'danger'|'info'|'primary'{return status==='completed' ? 'success' : ['failed','stopped'].includes(status) ? 'danger' : ['partial','awaiting_input'].includes(status) ? 'warning' : ['running','queued'].includes(status) ? 'primary' : 'info'}

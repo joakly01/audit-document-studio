@@ -84,3 +84,9 @@ normalizers 识别原 `task_schedule_result_list`、DISPOSAL_RESULT 大写字段
 - GET `/api/v1/task/ContractReportDownload/{source_task_uuid}`：鉴权下载。原 API 参数名为 report_task_uuid，但原 composable 实际传源分析任务 ID；联调时确认当前后端仍支持此行为。
 
 报告状态独立轮询，离开页面清理，未知状态禁止重复生成。真实报告的 Word 格式仍须验收。合同表格导出沿用 ExportContractCompletenessResults；工程沿用 ExportEngineeringProjectResultsZip，保存为 ZIP；其余使用 ExportExecutionRecords，JSON 保留实际返回内容。
+
+## 2026-10-28 复核补充
+
+文件夹上传统一由 provider 接收目标根目录和相对路径，创建子目录后上传；界面不再提前创建目录。新建目录与上传响应保留真实空间。跨页选择、附件确认及跨工具操作已补充慢响应/取消回归。后续联调顺序、待确认能力和验收标准集中在 [全面复核与联调准备](REVIEW-20261028.md)。这些验证使用请求夹具，不能代替真实服务验收。
+
+目录上传只共享进行中的同路径查询，完成后重新查找，避免目录被改名/删除后复用旧 ID。错误响应支持字符串 message/detail、参数校验 detail 数组和 application/problem+json；不会将 problem 错误作为导出文件保存。后端仍应返回正确 HTTP 状态与业务错误信息。
